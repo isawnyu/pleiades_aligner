@@ -33,7 +33,7 @@ dependencies = [
   #"platformdirs",
   #"pleiades_entities @ file:///Users/paregorios/Documents/files/P/pleiades_entities",
   #"pleiades_local @ file:///Users/paregorios/Documents/files/P/pleiades_local",
-  #"pytest",
+  "pytest",
   #"reproj",
   #"shapely",
   #"platformdirs",
