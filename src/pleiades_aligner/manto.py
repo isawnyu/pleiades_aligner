@@ -8,3 +8,12 @@
 """
 Manage data from the MANTO project
 """
+from pathlib import Path
+from pleiades_aligner.ingester import IngesterCSV
+
+
+class IngesterMANTO(IngesterCSV):
+    def __init__(self, filepath: Path):
+        IngesterCSV.__init__(self, namespace="manto", filepath=filepath)
+
+    

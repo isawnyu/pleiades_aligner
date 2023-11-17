@@ -89,6 +89,14 @@ class DataSet:
         self._places = {p.id: p for p in values}
         self.reindex()
 
+    def get_place_by_id(self, id: str):
+        try:
+            return self._places[id]
+        except KeyError as err:
+            raise KeyError(
+                f"Requested placeid {self.namespace}:{id}, but it has not been ingested."
+            ) from err
+
     def reindex(self):
         for pid, p in self._places.items():
             try:
