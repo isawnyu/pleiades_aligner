@@ -37,7 +37,7 @@ dependencies = [
   "shapely",
   #"platformdirs",
   "python-slugify",
-  #"textnorm",
+  "textnorm",
   #"validators",
   ##"webiquette @ https://github.com/isawnyu/webiquette/archive/refs/heads/main.zip"
   #"webiquette @ file:///Users/paregorios/Documents/files/W/webiquette"

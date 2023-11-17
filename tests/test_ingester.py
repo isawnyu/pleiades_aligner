@@ -11,7 +11,6 @@ Test the pleiades_aligner.ingester module
 from pathlib import Path
 from pprint import pformat, pprint
 from pleiades_aligner.ingester import IngesterCSV
-from pleiades_aligner.dataset import DataSet
 from pytest import raises
 from shapely import Point
 

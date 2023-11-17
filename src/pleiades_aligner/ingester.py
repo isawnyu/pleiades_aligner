@@ -18,6 +18,7 @@ from pathlib import Path
 from pleiades_aligner.dataset import DataSet, Place
 from pprint import pformat
 from shapely import Point
+from textnorm import normalize_space, normalize_unicode
 
 FIELDNAME_GUESSES = {
     "id": ["id", "Object ID", "item"],
@@ -31,6 +32,16 @@ class IngesterBase:
         self.logger = getLogger(f"{namespace.capitalize()}Ingester")
         self.data = DataSet(namespace=namespace)
         self.filepath = filepath
+
+    def _set_titles_from_properties(self, format_string: str):
+        for place in self.data.places:
+            try:
+                place.title = format_string.format(**place.raw_properties, id=place.id)
+            except KeyError as err:
+                raise KeyError(pformat(place.raw_properties, indent=4)) from err
+
+    def _norm_string(self, s: str) -> str:
+        return normalize_space(normalize_unicode(s))
 
 
 class IngesterCSV(IngesterBase):
@@ -77,15 +88,17 @@ class IngesterCSV(IngesterBase):
                 place.add_geometries(Point([datum[lon_key], datum[lat_key]]))
                 other_keys = [k for k in other_keys if k not in (lat_key, lon_key)]
             for k in other_keys:
+                new_values = self._norm_string(datum[k])
                 try:
                     values = place.raw_properties[k]
                 except KeyError:
-                    place.raw_properties[k] = datum[k]
+                    place.raw_properties[k] = new_values
                 else:
                     if isinstance(values, str):
-                        place.raw_properties[k] = {values, datum[k]}
+                        if values != new_values:
+                            place.raw_properties[k] = {values, new_values}
                     elif isinstance(values, set):
-                        place.raw_properties[k].add(datum[k])
+                        place.raw_properties[k].add(new_values)
             places[this_pid] = place
         if places:
             self.data.places = list(places.values())
