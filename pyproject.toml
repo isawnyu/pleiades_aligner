@@ -37,7 +37,7 @@ dependencies = [
   #"reproj",
   #"shapely",
   #"platformdirs",
-  #"python-slugify",
+  "python-slugify",
   #"textnorm",
   #"validators",
   ##"webiquette @ https://github.com/isawnyu/webiquette/archive/refs/heads/main.zip"

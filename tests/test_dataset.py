@@ -19,7 +19,7 @@ class TestDataSet:
             d = DataSet()
 
     def test_init_with_valid_namespace(self):
-        ns = "test_namespace"
+        ns = "springfield"
         d = DataSet(namespace=ns)
         assert ns == d.namespace
 
