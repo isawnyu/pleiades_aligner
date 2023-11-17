@@ -52,3 +52,57 @@ class IngesterMANTO(IngesterCSV):
 
     def _digest(self):
         self._set_titles_from_properties("{id}: {Name_1}")
+        name_fields = [
+            "Name_0",
+            "Name_1",
+            "Name (transliteration)",
+            "Name (Greek font)",
+            "Name (Latinized)",
+            "Name in Latin texts",
+            "Alternative names",
+            "Alternative name",
+        ]
+        self._set_names_from_properties(name_fields)
+        self._separate_names_and_types()
+
+    def _separate_names_and_types(self):
+        # some manto fields have embedded emojis for place type
+        for p in self.data.places:
+            p.feature_types = set()
+            new_names = set()
+            for n in p.names:
+                m = self.rx_name_symbol.match(n)
+                if m:
+                    symbol = m.group(1)
+                    try:
+                        st = self.feature_types[symbol]
+                    except KeyError as err:
+                        raise RuntimeError(
+                            f"Unrecognized MANTO symbol '{symbol}' in '{n}' for {p.uri}"
+                        )
+                    new_names.add(n[1:].strip())
+                    p.feature_types.add(st)
+                else:
+                    new_names.add(n)
+            if p.names != new_names:
+                p.names = new_names
+        # some manto fields have prefix words that indicate place type
+        for p in self.data.places:
+            for n in p.names:
+                m = self.rx_name_prefix.match(n)
+                if m:
+                    p.feature_types.add(self.feature_types[m.group(1)])
+        # some manto fields have parenthetic words that indicate place type
+        for p in self.data.places:
+            for k, v in p.raw_properties.items():
+                if k in ["Name_1", "Information", "Minimal Disambiguation"] and v:
+                    m = self.rx_name_parenthetical.match(v)
+                    if m:
+                        p.feature_types.add(self.feature_types[m.group(1)])
+        # some manto fields have plain-text substrings that indicate place type
+        for p in self.data.places:
+            for k, v in p.raw_properties.items():
+                if k in ["Name_1", "Information", "Minimal Disambiguation"] and v:
+                    m = self.rx_name_substring.match(v)
+                    if m:
+                        p.feature_types.add(self.feature_types[m.group(1)])

@@ -43,6 +43,26 @@ class IngesterBase:
     def _norm_string(self, s: str) -> str:
         return normalize_space(normalize_unicode(s))
 
+    def _set_names_from_properties(self, fieldnames: list):
+        for place in self.data.places:
+            names = set()
+            for fn in fieldnames:
+                raw = place.raw_properties[fn]
+                if raw is None:
+                    continue
+                if isinstance(raw, str):
+                    clean = {self._norm_string(r) for r in raw.split(",")}
+                elif isinstance(raw, (list, set)):
+                    clean = {self._norm_string(r) for r in raw}
+                clean = {c for c in clean if c}
+                if not clean:
+                    continue
+                clean = [
+                    c for c in clean if not c.startswith("(") and not c.endswith(")")
+                ]
+                names.update(clean)
+            place.names = names
+
 
 class IngesterCSV(IngesterBase):
     def __init__(self, namespace: str, filepath: Path = None):
