@@ -25,8 +25,7 @@ classifiers = [
 ]
 dependencies = [
   "airtight",
-  #"encoded_csv",
-  "encoded_csv @ file:///Users/paregorios/Documents/files/E/encoded_csv",
+  "encoded_csv @ https://github.com/paregorios/encoded_csv/archive/refs/heads/main.zip",
   #"iteration_utilities",
   #"fiona",
   #"platformdirs",
