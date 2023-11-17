@@ -64,6 +64,8 @@ class IngesterMANTO(IngesterCSV):
         ]
         self._set_names_from_properties(name_fields)
         self._separate_names_and_types()
+        alignment_fields = {"Pleiades": {"namespace": "pleiades", "prefix": ""}}
+        self._set_alignments_from_properties(alignment_fields)
 
     def _separate_names_and_types(self):
         # some manto fields have embedded emojis for place type

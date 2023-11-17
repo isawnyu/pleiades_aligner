@@ -31,6 +31,7 @@ class TestIngesterMANTO:
         assert place.title == "11308325: Syros"
         assert place.names == {"Syros"}
         assert place.feature_types == {"island"}
+        assert place.alignments == {"pleiades:590067"}
         place = i.data.get_place_by_id("11310538")
         assert place.title == "11310538: River Limaia"
         assert place.names == {
@@ -44,3 +45,4 @@ class TestIngesterMANTO:
             "Limia",
         }
         assert place.feature_types == {"river"}
+        assert place.alignments == {"pleiades:236518"}

@@ -33,22 +33,11 @@ class IngesterBase:
         self.data = DataSet(namespace=namespace)
         self.filepath = filepath
 
-    def _set_titles_from_properties(self, format_string: str):
+    def _set_alignments_from_properties(self, alignment_fields: dict):
         for place in self.data.places:
-            try:
-                place.title = format_string.format(**place.raw_properties, id=place.id)
-            except KeyError as err:
-                raise KeyError(pformat(place.raw_properties, indent=4)) from err
-
-    def _norm_string(self, s: str) -> str:
-        return normalize_space(normalize_unicode(s))
-
-    def _set_names_from_properties(self, fieldnames: list):
-        for place in self.data.places:
-            names = set()
-            for fn in fieldnames:
+            for fn, meta in alignment_fields.items():
                 raw = place.raw_properties[fn]
-                if raw is None:
+                if not raw:
                     continue
                 if isinstance(raw, str):
                     clean = {self._norm_string(r) for r in raw.split(",")}
@@ -60,6 +49,53 @@ class IngesterBase:
                 clean = [
                     c for c in clean if not c.startswith("(") and not c.endswith(")")
                 ]
+                if not clean:
+                    continue
+                alignment_ids = set()
+                for c in clean:
+                    if meta["prefix"]:
+                        if not c.startswith(meta["prefix"]):
+                            self.logger.error(
+                                f"Ignored invalid alignment value '{c}' in field '{fn}' because it was missing expected prefix '{meta['prefix']}'"
+                            )
+                            continue
+                        plain_id = c[len(meta["prefix"]) :]
+                    else:
+                        plain_id = c
+                    alignment_ids.add(":".join((meta["namespace"], plain_id)))
+            place.alignments = alignment_ids
+
+    def _set_titles_from_properties(self, format_string: str):
+        for place in self.data.places:
+            try:
+                place.title = format_string.format(**place.raw_properties, id=place.id)
+            except KeyError as err:
+                raise KeyError(pformat(place.raw_properties, indent=4)) from err
+
+    def _norm_string(self, s: str) -> str:
+        if not s:
+            return ""
+        return normalize_space(normalize_unicode(s))
+
+    def _set_names_from_properties(self, fieldnames: list):
+        for place in self.data.places:
+            names = set()
+            for fn in fieldnames:
+                raw = place.raw_properties[fn]
+                if not raw:
+                    continue
+                if isinstance(raw, str):
+                    clean = {self._norm_string(r) for r in raw.split(",")}
+                elif isinstance(raw, (list, set)):
+                    clean = {self._norm_string(r) for r in raw}
+                clean = {c for c in clean if c}
+                if not clean:
+                    continue
+                clean = [
+                    c for c in clean if not c.startswith("(") and not c.endswith(")")
+                ]
+                if not clean:
+                    continue
                 names.update(clean)
             place.names = names
 

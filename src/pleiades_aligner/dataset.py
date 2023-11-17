@@ -162,6 +162,39 @@ class Place:
     def id(self):
         return self._id
 
+    # Alignments
+    @property
+    def alignments(self) -> set:
+        return self._alignments
+
+    @alignments.deleter
+    def alignments(self):
+        self._alignments = set()
+
+    @alignments.setter
+    def alignments(self, values: [tuple, list, set, str, None]):
+        if values is None:
+            del self.alignments
+        elif isinstance(values, set):
+            self._alignments = values
+        elif isinstance(values, str):
+            if values:
+                self._alignments = {
+                    values,
+                }
+            else:
+                del self.alignments
+        elif isinstance(values, (tuple, list)):
+            self._alignments = set(values)
+        else:
+            raise TypeError(
+                f"Expected tuple, list, set, or str, but got {type(values)}"
+            )
+
+    def add_alignment(self, value: str):
+        if value:
+            self._alignments.add(value)
+
     # Geometries
 
     @property
