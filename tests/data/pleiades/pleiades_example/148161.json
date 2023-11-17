@@ -1,0 +1,810 @@
+{
+    "@type": "Place",
+    "bbox": [
+        3.6128344,
+        43.4395444,
+        3.6168823,
+        43.4420861
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Johan Åhlfeldt",
+            "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+            "username": "jahlfeldt"
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        }
+    ],
+    "created": "2023-04-05T17:01:46Z",
+    "creators": [
+        {
+            "name": "S. Loseby",
+            "username": null
+        }
+    ],
+    "description": "A Roman farm villa with extensive second-century CE Gallo-Roman mosaics, located at modern Les Près-Bas, just south of Loupian in Hérault, France. The site was occupied for more than 600 years.",
+    "details": "<p>The Barrington Atlas Directory notes: Les Près-Bas, Loupian</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    3.6143,
+                    43.4401
+                ],
+                "type": "Point"
+            },
+            "id": "dare-location",
+            "properties": {
+                "description": "Representative point location, site precision",
+                "link": "https://pleiades.stoa.org/places/148161/dare-location",
+                "location_precision": "precise",
+                "snippet": "Villa; 30 BC - AD 640",
+                "title": "DARE Location"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        3.6149079,
+                        43.4400454
+                    ],
+                    [
+                        3.6151047,
+                        43.4401364
+                    ],
+                    [
+                        3.6161159,
+                        43.4403875
+                    ],
+                    [
+                        3.6163896,
+                        43.4404419
+                    ],
+                    [
+                        3.6168823,
+                        43.4405674
+                    ],
+                    [
+                        3.6165625,
+                        43.4412012
+                    ],
+                    [
+                        3.6164559,
+                        43.4416384
+                    ],
+                    [
+                        3.6163637,
+                        43.4420861
+                    ],
+                    [
+                        3.6154763,
+                        43.4420087
+                    ],
+                    [
+                        3.6149145,
+                        43.4419627
+                    ],
+                    [
+                        3.6147964,
+                        43.4419459
+                    ],
+                    [
+                        3.6147618,
+                        43.4420296
+                    ],
+                    [
+                        3.6143448,
+                        43.4419187
+                    ],
+                    [
+                        3.6136901,
+                        43.4417472
+                    ],
+                    [
+                        3.6139695,
+                        43.4410171
+                    ],
+                    [
+                        3.6139954,
+                        43.4408602
+                    ],
+                    [
+                        3.6138572,
+                        43.4407912
+                    ],
+                    [
+                        3.6133645,
+                        43.4406176
+                    ],
+                    [
+                        3.613232,
+                        43.4406071
+                    ],
+                    [
+                        3.6131542,
+                        43.4406511
+                    ],
+                    [
+                        3.6130908,
+                        43.4406992
+                    ],
+                    [
+                        3.6129842,
+                        43.4406678
+                    ],
+                    [
+                        3.6128344,
+                        43.4406071
+                    ],
+                    [
+                        3.6133962,
+                        43.4398227
+                    ],
+                    [
+                        3.6133962,
+                        43.4397181
+                    ],
+                    [
+                        3.6135057,
+                        43.4395444
+                    ],
+                    [
+                        3.61403,
+                        43.4397494
+                    ],
+                    [
+                        3.6141424,
+                        43.4396532
+                    ],
+                    [
+                        3.6142202,
+                        43.439716
+                    ],
+                    [
+                        3.6143336,
+                        43.4398211
+                    ],
+                    [
+                        3.6143987,
+                        43.4398727
+                    ],
+                    [
+                        3.6145174,
+                        43.4398426
+                    ],
+                    [
+                        3.6145489,
+                        43.4398328
+                    ],
+                    [
+                        3.6145891,
+                        43.4398284
+                    ],
+                    [
+                        3.614622,
+                        43.4398442
+                    ],
+                    [
+                        3.6149079,
+                        43.4400454
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-site-gallo-romain-de-loupian",
+            "properties": {
+                "description": "Representative location based on OpenStreetMap.",
+                "link": "https://pleiades.stoa.org/places/148161/osm-location-of-site-gallo-romain-de-loupian",
+                "location_precision": "precise",
+                "snippet": "Villa; 30 BC - AD 640",
+                "title": "OSM location of Site Gallo-Romain de Loupian"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "summary; title; cleaned up BAtlas and PECS citations; added English Wikipedia; added modern Names",
+            "modified": "2023-04-05T18:53:13Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "update references for Lavagne x 2",
+            "modified": "2022-04-12T02:23:09Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "create DARMC citation to preserve cross-project linkage after retracting DARMC location",
+            "modified": "2022-04-11T14:10:20Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "added references",
+            "modified": "2014-03-22T20:46:54Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T19:20:54Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T02:30:28Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T00:08:38Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-08-02T21:02:47Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T18:58:33Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-05-19T02:20:19Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-11-01T21:03:11Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-11-01T16:52:49Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "148161",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/dare-3",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2012-10-20T19:20:52Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Johan Åhlfeldt",
+                    "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+                    "username": "jahlfeldt"
+                }
+            ],
+            "description": "Representative point location, site precision",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "villa"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "geometry": {
+                "coordinates": [
+                    3.6143,
+                    43.4401
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-10-20T19:20:53Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-10-20T19:20:53Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+                    "modified": "2012-10-20T19:20:53Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-10-20T19:20:52Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "dare-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "provenance": "Digital Atlas of the Roman Empire (2012-10-15)",
+            "references": [
+                {
+                    "accessURI": "http://francia.ahlfeldt.se/imperium.php",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/cites",
+                    "formattedCitation": "Johan Åhlfeldt, Digital Atlas of the Roman Empire, 2012.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "cites"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "DARE Location",
+            "uri": "https://pleiades.stoa.org/places/148161/dare-location"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2019-06-11T19:10:06Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representative location based on OpenStreetMap.",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "villa"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        3.6149079,
+                        43.4400454
+                    ],
+                    [
+                        3.6151047,
+                        43.4401364
+                    ],
+                    [
+                        3.6161159,
+                        43.4403875
+                    ],
+                    [
+                        3.6163896,
+                        43.4404419
+                    ],
+                    [
+                        3.6168823,
+                        43.4405674
+                    ],
+                    [
+                        3.6165625,
+                        43.4412012
+                    ],
+                    [
+                        3.6164559,
+                        43.4416384
+                    ],
+                    [
+                        3.6163637,
+                        43.4420861
+                    ],
+                    [
+                        3.6154763,
+                        43.4420087
+                    ],
+                    [
+                        3.6149145,
+                        43.4419627
+                    ],
+                    [
+                        3.6147964,
+                        43.4419459
+                    ],
+                    [
+                        3.6147618,
+                        43.4420296
+                    ],
+                    [
+                        3.6143448,
+                        43.4419187
+                    ],
+                    [
+                        3.6136901,
+                        43.4417472
+                    ],
+                    [
+                        3.6139695,
+                        43.4410171
+                    ],
+                    [
+                        3.6139954,
+                        43.4408602
+                    ],
+                    [
+                        3.6138572,
+                        43.4407912
+                    ],
+                    [
+                        3.6133645,
+                        43.4406176
+                    ],
+                    [
+                        3.613232,
+                        43.4406071
+                    ],
+                    [
+                        3.6131542,
+                        43.4406511
+                    ],
+                    [
+                        3.6130908,
+                        43.4406992
+                    ],
+                    [
+                        3.6129842,
+                        43.4406678
+                    ],
+                    [
+                        3.6128344,
+                        43.4406071
+                    ],
+                    [
+                        3.6133962,
+                        43.4398227
+                    ],
+                    [
+                        3.6133962,
+                        43.4397181
+                    ],
+                    [
+                        3.6135057,
+                        43.4395444
+                    ],
+                    [
+                        3.61403,
+                        43.4397494
+                    ],
+                    [
+                        3.6141424,
+                        43.4396532
+                    ],
+                    [
+                        3.6142202,
+                        43.439716
+                    ],
+                    [
+                        3.6143336,
+                        43.4398211
+                    ],
+                    [
+                        3.6143987,
+                        43.4398727
+                    ],
+                    [
+                        3.6145174,
+                        43.4398426
+                    ],
+                    [
+                        3.6145489,
+                        43.4398328
+                    ],
+                    [
+                        3.6145891,
+                        43.4398284
+                    ],
+                    [
+                        3.614622,
+                        43.4398442
+                    ],
+                    [
+                        3.6149079,
+                        43.4400454
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-04-11T14:09:47Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2019-06-11T19:10:46Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added OSM location",
+                    "modified": "2019-06-11T19:10:30Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2019-06-11T19:10:06Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2019-06-11T19:10:06Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-site-gallo-romain-de-loupian",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "provenance": "OpenStreetMap (Way 206638868, version 4, osm:changeset=66409493, 2019-01-17T22:21:07Z)",
+            "references": [
+                {
+                    "accessURI": "https://www.openstreetmap.org/browse/way/206638868",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 206638868",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=206638868",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "OSM location of Site Gallo-Romain de Loupian",
+            "uri": "https://pleiades.stoa.org/places/148161/osm-location-of-site-gallo-romain-de-loupian"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "twenty-first-ce",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/twenty-first-ce"
+                }
+            ],
+            "attested": "Loupian Roman Villa",
+            "contributors": [],
+            "created": "2023-04-05T17:10:13Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 2099,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-04-05T18:53:30Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2023-04-05T17:13:37Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2023-04-05T17:10:15Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2023-04-05T17:10:13Z",
+                    "modifiedBy": "thomase"
+                }
+            ],
+            "id": "loupian-roman-villa",
+            "language": "en",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "https://en.wikipedia.org/wiki/Loupian_Roman_villa",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+                    "citationDetail": "Loupian Roman villa",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (English)",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Loupian Roman Villa",
+            "start": 2000,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/148161/loupian-roman-villa"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/villa"
+    ],
+    "placeTypes": [
+        "villa"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 15 B3 Les Près-Bas",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "15 B3 Les Près-Bas",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.persee.fr/web/revues/home/prescript/article/galia_0016-4119_1976_num_34_1_1550?luceneQuery=%28%2B%28content%3Aloupian+title%3Aloupian%5E2.0+fullContent%3Aloupian%5E100.0+fullTitle%3Aloupian%5E140.0+summary%3Aloupian+authors%3Aloupian%5E5.0+illu",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/7JVFUVPF",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">H. Lavagne, D. Rouquette, and R. Prudhomme. “La Villa Gallo-Romaine Des Près-Bas à Loupian (Hérault).” <i>Gallia.  Fouilles et Monuments Archéologiques En France Métropolitaine</i> 34 (1976): 215–35.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "Lavagne 1976",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.persee.fr/web/revues/home/prescript/article/ran_0557-7705_1981_num_14_1_1064?luceneQuery=%28%2B%28content%3Aloupian+title%3Aloupian%5E2.0+fullContent%3Aloupian%5E100.0+fullTitle%3Aloupian%5E140.0+summary%3Aloupian+authors%3Aloupian%5E5.0+illust",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/G23V7GU8",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">H. Lavagne, D. Rouquette, and R. Prudhomme. “Les Nouvelles Mosaïques de La Villa Gallo-Romaine de Loupian (Hérault).” <i>Revue Archéologique de Narbonnaise</i> 14 (1981): 173–203.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "Lavagne 1981",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://fr.wikipedia.org/wiki/Villa_gallo-romaine_de_Loupian",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/B4HPCZIK",
+            "citationDetail": "Villa gallo-romaine de Loupian",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipédia: L’encyclopédie libre que chacun peut améliorer (2001-), Villa gallo-romaine de Loupian.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (French)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=loupian",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/PV9N7BQD",
+            "citationDetail": "LOUPIAN Canton of Mèze, Hérault, France",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Stillwell, Richard, William L MacDonald, and Marian Holland McAllister, eds. <i>The Princeton Encyclopedia of Classical Sites</i>. Princeton, N.J.: Princeton University Press, 1976. http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "PECS (Perseus)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "27504",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Loupian_Roman_villa",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+            "citationDetail": "Loupian Roman villa",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        }
+    ],
+    "reprPoint": [
+        3.614553028517903,
+        43.4404859828996
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:major=0",
+        "dare:ancient=0",
+        "dare:feature=villa"
+    ],
+    "title": "Les Près-Bas Roman Villa",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/148161"
+}

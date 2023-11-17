@@ -1,0 +1,537 @@
+{
+    "@type": "Place",
+    "bbox": [
+        6.6740403,
+        50.2303005,
+        6.6751872,
+        50.2309483
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Johan Åhlfeldt",
+            "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+            "username": "jahlfeldt"
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        }
+    ],
+    "created": "2009-11-02T15:55:21Z",
+    "creators": [
+        {
+            "name": "C. Haselgrove",
+            "username": null
+        },
+        {
+            "name": "J. Kunow",
+            "username": null
+        }
+    ],
+    "description": "An ancient place, cited: BAtlas 11 G2 Pelm",
+    "details": "<p>The Barrington Atlas Directory notes: Pelm, GER</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    6.67478704506,
+                    50.2307443786
+                ],
+                "type": "Point"
+            },
+            "id": "dare-location",
+            "properties": {
+                "description": "Representative point location, site precision",
+                "link": "https://pleiades.stoa.org/places/109244/dare-location",
+                "location_precision": "precise",
+                "snippet": "Temple; 30 BC - AD 640",
+                "title": "DARE Location"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        6.6740403,
+                        50.2306456
+                    ],
+                    [
+                        6.6740598,
+                        50.2306579
+                    ],
+                    [
+                        6.6744135,
+                        50.2307851
+                    ],
+                    [
+                        6.6746154,
+                        50.2308526
+                    ],
+                    [
+                        6.6748657,
+                        50.2309483
+                    ],
+                    [
+                        6.6751872,
+                        50.2306265
+                    ],
+                    [
+                        6.6748266,
+                        50.2304146
+                    ],
+                    [
+                        6.674722,
+                        50.2304866
+                    ],
+                    [
+                        6.6745583,
+                        50.2303929
+                    ],
+                    [
+                        6.6743954,
+                        50.2303005
+                    ],
+                    [
+                        6.6743003,
+                        50.2303371
+                    ],
+                    [
+                        6.6740978,
+                        50.2304915
+                    ],
+                    [
+                        6.6740696,
+                        50.2305237
+                    ],
+                    [
+                        6.6740446,
+                        50.230586
+                    ],
+                    [
+                        6.6740403,
+                        50.2306456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-kelto-rapmische-kultsta-tte",
+            "properties": {
+                "description": "Representatve location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/109244/osm-location-of-kelto-rapmische-kultsta-tte",
+                "location_precision": "precise",
+                "snippet": "Sanctuary; 30 BC - AD 640",
+                "title": "OSM location of Kelto-römische Kultstätte \"Juddekirchhof\""
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "added DARMC reference to maintain linkage after retracting less precise location",
+            "modified": "2021-11-27T12:32:45Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "added wikipedia entry",
+            "modified": "2021-11-23T17:43:32Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Initial revision",
+            "modified": "2018-12-30T21:22:09Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-21T00:13:08Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T02:12:23Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-14T23:45:24Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-09T22:52:48Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T18:52:55Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-05-19T21:32:12Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-11-02T16:56:42Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-11-02T15:55:21Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "109244",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/dare-3",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2012-10-21T00:13:06Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Johan Åhlfeldt",
+                    "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+                    "username": "jahlfeldt"
+                }
+            ],
+            "description": "Representative point location, site precision",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "temple"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple"
+            ],
+            "geometry": {
+                "coordinates": [
+                    6.67478704506,
+                    50.2307443786
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-10-21T00:13:07Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-10-21T00:13:07Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+                    "modified": "2012-10-21T00:13:07Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-10-21T00:13:06Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "dare-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple"
+            ],
+            "provenance": "Digital Atlas of the Roman Empire (2012-10-15)",
+            "references": [
+                {
+                    "accessURI": "http://francia.ahlfeldt.se/imperium.php",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/cites",
+                    "formattedCitation": "Johan Åhlfeldt, Digital Atlas of the Roman Empire, 2012.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "cites"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "DARE Location",
+            "uri": "https://pleiades.stoa.org/places/109244/dare-location"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "traces",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2021-11-23T17:41:42Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representatve location based on OpenStreetMap",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "sanctuary"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/sanctuary"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        6.6740403,
+                        50.2306456
+                    ],
+                    [
+                        6.6740598,
+                        50.2306579
+                    ],
+                    [
+                        6.6744135,
+                        50.2307851
+                    ],
+                    [
+                        6.6746154,
+                        50.2308526
+                    ],
+                    [
+                        6.6748657,
+                        50.2309483
+                    ],
+                    [
+                        6.6751872,
+                        50.2306265
+                    ],
+                    [
+                        6.6748266,
+                        50.2304146
+                    ],
+                    [
+                        6.674722,
+                        50.2304866
+                    ],
+                    [
+                        6.6745583,
+                        50.2303929
+                    ],
+                    [
+                        6.6743954,
+                        50.2303005
+                    ],
+                    [
+                        6.6743003,
+                        50.2303371
+                    ],
+                    [
+                        6.6740978,
+                        50.2304915
+                    ],
+                    [
+                        6.6740696,
+                        50.2305237
+                    ],
+                    [
+                        6.6740446,
+                        50.230586
+                    ],
+                    [
+                        6.6740403,
+                        50.2306456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2021-11-27T12:31:46Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2021-11-23T17:42:19Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added OSM location",
+                    "modified": "2021-11-23T17:42:15Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2021-11-23T17:41:42Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2021-11-23T17:41:42Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-kelto-rapmische-kultsta-tte",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/sanctuary"
+            ],
+            "provenance": "OpenStreetMap (Way 31695180, version 11, osm:changeset=104738059, 2021-05-15T15:16:32Z)",
+            "references": [
+                {
+                    "accessURI": "https://www.openstreetmap.org/browse/way/31695180",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 31695180",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=31695180",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "OSM location of Kelto-römische Kultstätte \"Juddekirchhof\"",
+            "uri": "https://pleiades.stoa.org/places/109244/osm-location-of-kelto-rapmische-kultsta-tte"
+        }
+    ],
+    "names": [],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/sanctuary",
+        "https://pleiades.stoa.org/vocabularies/place-types/temple"
+    ],
+    "placeTypes": [
+        "sanctuary",
+        "temple"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 11 G2 Pelm",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "11 G2 Pelm",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/HA3B8GSW",
+            "citationDetail": "519-20",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">H Cüppers, ed. <i>Die Römer in Rheinland-Pfalz</i>. Stuttgart, Aalen, 1990.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Römer Rheinland-Pfalz",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://de.wikipedia.org/wiki/de:Juddekirchhof",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/QVRBJVTM",
+            "citationDetail": "Juddekirchhof",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: Die freie Enzyklopädie</i>. Wikimedia Foundation, 2001. https://de.wikipedia.org.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Wikipedia (German)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "16130",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        6.674697360669454,
+        50.23068070077137
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:major=0",
+        "dare:ancient=0",
+        "dare:feature=temple"
+    ],
+    "title": "Pelm",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/109244"
+}

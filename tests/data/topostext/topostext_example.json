@@ -1,0 +1,1388 @@
+{
+    "type": "FeatureCollection",
+    "@context": "https://raw.githubusercontent.com/LinkedPasts/linked-places/master/linkedplaces-context-v1.3.jsonld",
+    "features": [
+        {
+            "@id": "https://topostext.org/place/257326PThe",
+            "type": "Feature",
+            "properties": {
+                "title": "Thebes (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            32.641,
+                            25.684
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Thebes",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Θήβαι",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Θῆβαι",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/786017"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21107"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q101583"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/257326PThe",
+                    "value": "Bronze Age to Late Antique city near Luxor in Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/292255SAmm",
+            "type": "Feature",
+            "properties": {
+                "title": "Ammon Oracle (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            25.5435,
+                            29.2052
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Ammon Oracle",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Αμμώνειον",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἀμμώνειον",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300386998",
+                    "label": "sacred sites",
+                    "sourceLabel": "sanctuary/temple"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/716520"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21870"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q958997"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/292255SAmm",
+                    "value": "famous Archaic to Roman oracle in the Egyptian desert at Siwa oasis",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/298313PMem",
+            "type": "Feature",
+            "properties": {
+                "title": "Memphis (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            31.255,
+                            29.849
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Memphis",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Μέμφις",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Μέμφις",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/736963"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21137"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q5715"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/298313PMem",
+                    "value": "Bronze Age to Hellenistic city near Mit Rahina in Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/299529PPer",
+            "type": "Feature",
+            "properties": {
+                "title": "Persepolis (Iran)",
+                "ccodes": [
+                    "IR"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            52.8909,
+                            29.9352
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Persepolis",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Περσέπολις",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Περσέπολις",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/922695"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/22222"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q129072"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/299529PPer",
+                    "value": "Achaemenid capital city and palace complex, Fars province, Iran",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/309306UNau",
+            "type": "Feature",
+            "properties": {
+                "title": "Naukratis (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            30.5925,
+                            30.8972
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Naukratis",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Ναύκρατις",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ναύκρατις",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/727169"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21703"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q137721"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/309306UNau",
+                    "value": "Archaic to Classical Greek trading station on the Nile, at Kom Gieif in Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/312299IPha",
+            "type": "Feature",
+            "properties": {
+                "title": "Pharos (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            29.8856,
+                            31.213
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Pharos",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Φάρος",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Φάρος",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300008791",
+                    "label": "islands",
+                    "sourceLabel": "island"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/727197"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/22856"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q43244"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/312299IPha",
+                    "value": "small island just off Alexandria, Egypt, site of the famous lighthouse",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/312299PAle",
+            "type": "Feature",
+            "properties": {
+                "title": "Alexandria (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            29.897,
+                            31.182
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Alexandria",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Αλεξάνδρια",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἀλεξάνδρια",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/727070"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/15898"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q87"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/312299PAle",
+                    "value": "important Hellenistic to modern polis at Alexandria in Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/313301UHer",
+            "type": "Feature",
+            "properties": {
+                "title": "Herakleion (Egypt)",
+                "ccodes": [
+                    "EG"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            30.1005,
+                            31.304
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Herakleion",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Ηράκλειον",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἡράκλειον",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/727120"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/28536"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q1607758"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/313301UHer",
+                    "value": "Egyptian trading port that flourished in the 4th c. BCE, now under water in Abu Qir bay, Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/315344UGaz",
+            "type": "Feature",
+            "properties": {
+                "title": "Gaza (Palestine)",
+                "ccodes": [
+                    "PS"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            34.432,
+                            31.523
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Gaza",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Γάζα",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Γάζα",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/687902"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21672"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q1395229"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/315344UGaz",
+                    "value": "Bronze Age through Modern settlement, Gaza in Palestine",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/317345UAsh",
+            "type": "Feature",
+            "properties": {
+                "title": "Ashqelon (Israel)",
+                "ccodes": [
+                    "IL"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            34.5464,
+                            31.6601
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Ashqelon",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Ασκάλων",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἀσκάλων",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/687839"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21670"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q60956"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/317345UAsh",
+                    "value": "important Bronze Age through Medieval coastal city",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/318352PJer",
+            "type": "Feature",
+            "properties": {
+                "title": "Jerusalem (Palaestina)",
+                "ccodes": [
+                    "PS"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            35.2341,
+                            31.7751
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Jerusalem",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Ιεροσόλυμα",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἱεροσόλυμα",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/687928"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/15896"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q1218"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/318352PJer",
+                    "value": "briefly Aelia Capitolina, Bronze Age through modern citadel and city, modern Yerushalaim (al Quds), Israel",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/320348UJop",
+            "type": "Feature",
+            "properties": {
+                "title": "Ioppe (Israel)",
+                "ccodes": [
+                    "IL"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            34.752,
+                            32.054
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Ioppe",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Ιόππη",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἰόππη",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/687931"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21683"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q11713655"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/320348UJop",
+                    "value": "Bronze Age through Medieval port city, modern Jaffa, Israel",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/320350RPal",
+            "type": "Feature",
+            "properties": {
+                "title": "Palaestina (Syria)",
+                "ccodes": [
+                    "PS"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            35.0001,
+                            32.0206
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Palaestina",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Παλαιστίνη",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Παλαιστίνη",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300387178",
+                    "label": "historical regions",
+                    "sourceLabel": "region/people"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/687995"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q23792"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/320350RPal",
+                    "value": "ancient region between Syria/Lebanon and Egypt",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/322482PSus",
+            "type": "Feature",
+            "properties": {
+                "title": "Susa (Iran)",
+                "ccodes": [
+                    "IR"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            48.247,
+                            32.191
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Susa",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Σούσα",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Σοῦσα",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/912936"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/22221"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q180773"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/322482PSus",
+                    "value": "Archaic to Hellenistic capital city of Achaemenid Persia",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/325349UCae",
+            "type": "Feature",
+            "properties": {
+                "title": "Caesarea (Israel)",
+                "ccodes": [
+                    "IL"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            34.8914,
+                            32.5026
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Caesarea",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Καισάρεια",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Καισάρεια",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/678401"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21149"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q319242"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/325349UCae",
+                    "value": "port city founded by King Herod in 22 BCE, the modern Kesaria, Israel",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/325444UBab",
+            "type": "Feature",
+            "properties": {
+                "title": "Babylon (Iraq)",
+                "ccodes": [
+                    "IQ"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            44.421,
+                            32.542
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Babylon",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Βαβυλών",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Βαβυλών",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/893951"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/22328"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q5684"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/325444UBab",
+                    "value": "famous ancient city, the modern Hillah, Iraq ",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/328219PCyr",
+            "type": "Feature",
+            "properties": {
+                "title": "Cyrene (Libya)",
+                "ccodes": [
+                    "LY"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            21.856,
+                            32.819
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Cyrene",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Κυρήνη",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Κυρήνη",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/373778"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21126"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q44112"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/328219PCyr",
+                    "value": "important Archaic to Late Antique polis at Shahhat in Libya",
+                    "lang": "en"
+                }
+            ]
+        },
+        {
+            "@id": "https://topostext.org/place/329220PApo",
+            "type": "Feature",
+            "properties": {
+                "title": "Apollonia (Libya)",
+                "ccodes": [
+                    "LY"
+                ]
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            21.9697,
+                            32.9016
+                        ]
+                    }
+                ]
+            },
+            "when": {
+                "timespans": [
+                    {
+                        "start": {
+                            "in": "-750"
+                        },
+                        "end": {
+                            "in": "0640"
+                        }
+                    }
+                ],
+                "label": "Greco-Roman civilization, 750 BCE - 640 CE"
+            },
+            "names": [
+                {
+                    "toponym": "Apollonia",
+                    "lang": "en"
+                },
+                {
+                    "toponym": "Απολλωνία",
+                    "lang": "gr"
+                },
+                {
+                    "toponym": "Ἀπολλωνία",
+                    "lang": "grc"
+                }
+            ],
+            "types": [
+                {
+                    "identifier": "aat:300417385",
+                    "label": "polities",
+                    "sourceLabel": "polity"
+                }
+            ],
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://pleiades.stoa.org/places/373732"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://dare.ht.lu.se/places/21854"
+                },
+                {
+                    "type": "closeMatch",
+                    "identifier": "https://www.wikidata.org/wiki/Q45826"
+                }
+            ],
+            "descriptions": [
+                {
+                    "@id": "https://topostext.org/place/329220PApo",
+                    "value": "port city of Cyrene, the modern Susah, Libya",
+                    "lang": "en"
+                }
+            ]
+        }
+    ]
+}

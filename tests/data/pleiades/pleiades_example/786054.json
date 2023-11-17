@@ -1,0 +1,602 @@
+{
+    "@type": "Place",
+    "bbox": [
+        33.4008878,
+        25.9423538,
+        33.4014812,
+        25.9429312
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Adam Prins",
+            "uri": "https://pleiades.stoa.org/author/adamp",
+            "username": "adamp"
+        },
+        {
+            "name": "Jen Thum",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "Herbert Verreth",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "name": "Mark Depauw",
+            "username": null
+        }
+    ],
+    "created": "2009-10-12T10:33:40Z",
+    "creators": [
+        {
+            "name": "T. Wilfong",
+            "username": null
+        },
+        {
+            "name": "S.E. Sidebotham",
+            "username": null
+        },
+        {
+            "name": "J. Keenan",
+            "username": null
+        }
+    ],
+    "description": "An ancient place, cited: BAtlas 80 C2 Krokodilo",
+    "details": "<p>The Barrington Atlas Directory notes: Mweih</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        33.4009737,
+                        25.9429312
+                    ],
+                    [
+                        33.4008878,
+                        25.9424403
+                    ],
+                    [
+                        33.4013887,
+                        25.9423538
+                    ],
+                    [
+                        33.4014207,
+                        25.9423724
+                    ],
+                    [
+                        33.4014812,
+                        25.9426813
+                    ],
+                    [
+                        33.4013409,
+                        25.9427209
+                    ],
+                    [
+                        33.4012904,
+                        25.9426405
+                    ],
+                    [
+                        33.4012312,
+                        25.9425827
+                    ],
+                    [
+                        33.4011275,
+                        25.9425963
+                    ],
+                    [
+                        33.4010976,
+                        25.9427212
+                    ],
+                    [
+                        33.4010963,
+                        25.9428339
+                    ],
+                    [
+                        33.4011178,
+                        25.9429065
+                    ],
+                    [
+                        33.4009737,
+                        25.9429312
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-krokodilo",
+            "properties": {
+                "description": "Representative location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/786054/osm-location-of-krokodilo",
+                "location_precision": "precise",
+                "snippet": "Archaeological-site; 30 BC - AD 640",
+                "title": "OSM location of Krokodilo"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "create DARMC citation to preserve cross-project linkage after retracting DARMC location",
+            "modified": "2023-05-17T07:43:36Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "updates",
+            "modified": "2021-02-17T03:25:13Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:27:59Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+            "modified": "2012-05-03T17:31:11Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:25:44Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Fixing modern/alt locations fumbled in intial import",
+            "modified": "2011-12-20T22:59:42Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-09T19:41:05Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-10-13T15:23:34Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-10-12T11:03:09Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-10-12T10:33:40Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "786054",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "traces",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2023-05-16T18:46:35Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representative location based on OpenStreetMap",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "archaeological-site"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        33.4009737,
+                        25.9429312
+                    ],
+                    [
+                        33.4008878,
+                        25.9424403
+                    ],
+                    [
+                        33.4013887,
+                        25.9423538
+                    ],
+                    [
+                        33.4014207,
+                        25.9423724
+                    ],
+                    [
+                        33.4014812,
+                        25.9426813
+                    ],
+                    [
+                        33.4013409,
+                        25.9427209
+                    ],
+                    [
+                        33.4012904,
+                        25.9426405
+                    ],
+                    [
+                        33.4012312,
+                        25.9425827
+                    ],
+                    [
+                        33.4011275,
+                        25.9425963
+                    ],
+                    [
+                        33.4010976,
+                        25.9427212
+                    ],
+                    [
+                        33.4010963,
+                        25.9428339
+                    ],
+                    [
+                        33.4011178,
+                        25.9429065
+                    ],
+                    [
+                        33.4009737,
+                        25.9429312
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-05-17T07:43:07Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2023-05-16T18:47:06Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added osm location",
+                    "modified": "2023-05-16T18:47:02Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2023-05-16T18:46:35Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2023-05-16T18:46:35Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-krokodilo",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "provenance": "OpenStreetMap (Way 1173458754, version 1, osm:changeset=136182358, 2023-05-16T18:46:06Z)",
+            "references": [
+                {
+                    "accessURI": "https://www.openstreetmap.org/browse/way/1173458754",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 1173458754",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=1173458754",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "OSM location of Krokodilo",
+            "uri": "https://pleiades.stoa.org/places/786054/osm-location-of-krokodilo"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2009-10-12T10:33:40Z",
+            "creators": [
+                {
+                    "name": "J. Keenan",
+                    "username": null
+                },
+                {
+                    "name": "S.E. Sidebotham",
+                    "username": null
+                },
+                {
+                    "name": "T. Wilfong",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:25:44Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2009-10-13T15:23:34Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2009-10-12T11:03:09Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2009-10-12T10:33:40Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "krokodilo",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 80 C2 Krokodilo",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Krokodilo",
+            "start": -30,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786054/krokodilo"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "Herbert Verreth",
+                    "username": null
+                },
+                {
+                    "name": "Mark Depauw",
+                    "username": null
+                },
+                {
+                    "name": "Jen Thum",
+                    "username": null
+                }
+            ],
+            "created": "2012-05-03T17:31:09Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Adam Prins",
+                    "uri": "https://pleiades.stoa.org/author/adamp",
+                    "username": "adamp"
+                }
+            ],
+            "description": "Modern Name",
+            "details": "",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-05-03T17:31:10Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-05-03T17:31:10Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+                    "modified": "2012-05-03T17:31:10Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-05-03T17:31:09Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "el-muwayh",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Trismegistos",
+            "references": [],
+            "review_state": "published",
+            "romanized": "El-Muwayh",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786054/el-muwayh"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site",
+        "https://pleiades.stoa.org/vocabularies/place-types/fort"
+    ],
+    "placeTypes": [
+        "archaeological-site",
+        "fort"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 80 C2 Krokodilo",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 80 C2 Krokodilo",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.jstor.org/stable/3821906",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/W2JVVV53",
+            "citationDetail": "173, 178",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Zitterkopf, R.E., and S.E. Sidebotham. “Stations and Towers on the Quseir-Nile Road.” <i>The Journal of Egyptian Archaeology</i> 75 (1989): 155–89. https://doi.org/https://doi.org/10.2307/3821906.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Zitterkopf 1989",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BJTM4FPX",
+            "citationDetail": "537",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Grimal, N. “Travaux de l’IFAO En 1995-1996.” <i>Bulletin de l’Institut Français d’Archéologie Orientale</i> 96 (1996): 489–617.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Grimal 1996",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/563FCCP9",
+            "citationDetail": "142-43",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">H. Cuvigny. “Le Crépuscule d’un Dieu: Le Déclin Du Culte de Pan Dans Le Désert Orientale.” <i>Bulletin de l’Institut Français d’Archéologie Orientale</i> 97 (1997): 139–47.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Cuvigny 1997",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/3655",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 3655: Krokodilo (El-Muwayh)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "7143",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        33.401161405524086,
+        25.942610967372314
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=0",
+        "dare:feature=fort"
+    ],
+    "title": "Krokodilo",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/786054"
+}

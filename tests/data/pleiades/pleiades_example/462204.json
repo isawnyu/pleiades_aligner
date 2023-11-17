@@ -1,0 +1,1502 @@
+{
+    "@type": "Place",
+    "bbox": [
+        15.2201265,
+        37.0902552,
+        15.2274462,
+        37.093996
+    ],
+    "connections": [
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [],
+            "connectionType": "connection",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/connection",
+            "connectsTo": "https://pleiades.stoa.org/places/462503",
+            "contributors": [],
+            "created": "2016-07-13T13:51:08Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "",
+                    "uri": "https://pleiades.stoa.org/author/admin",
+                    "username": "admin"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                }
+            ],
+            "id": "462503",
+            "provenance": "Pleiades",
+            "references": [],
+            "review_state": "published",
+            "start": null,
+            "title": "Syracusae/Syrakousai",
+            "uri": "https://pleiades.stoa.org/places/462204/462503"
+        },
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [],
+            "connectionType": "connection",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/connection",
+            "connectsTo": "https://pleiades.stoa.org/places/462492",
+            "contributors": [],
+            "created": "2016-07-13T13:51:08Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "",
+                    "uri": "https://pleiades.stoa.org/author/admin",
+                    "username": "admin"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2016-07-13T13:47:11Z",
+                    "modifiedBy": "admin"
+                }
+            ],
+            "id": "462492",
+            "provenance": "Pleiades",
+            "references": [],
+            "review_state": "published",
+            "start": null,
+            "title": "Sicilia (island)",
+            "uri": "https://pleiades.stoa.org/places/462204/462492"
+        },
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                }
+            ],
+            "connectionType": "bounds",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/bounds",
+            "connectsTo": "https://pleiades.stoa.org/places/462198",
+            "contributors": [],
+            "created": "2022-09-28T19:14:36Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": -330,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-09-28T21:33:23Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2022-09-28T19:14:41Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "cnxn",
+                    "modified": "2022-09-28T19:14:36Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2022-09-28T19:14:36Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "epipolai",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=syracuse",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/PV9N7BQD",
+                    "citationDetail": "SYRACUSE (Siracusa) Sicily",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Stillwell, Richard, William L MacDonald, and Marian Holland McAllister, eds. <i>The Princeton Encyclopedia of Classical Sites</i>. Princeton, N.J.: Princeton University Press, 1976. http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "PECS (Perseus)",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "start": -550,
+            "title": "Epipolai",
+            "uri": "https://pleiades.stoa.org/places/462204/epipolai"
+        }
+    ],
+    "connectsWith": [
+        "https://pleiades.stoa.org/places/462503",
+        "https://pleiades.stoa.org/places/462492",
+        "https://pleiades.stoa.org/places/462198"
+    ],
+    "contributors": [
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Valeria Vitale",
+            "uri": "https://pleiades.stoa.org/author/vvitale",
+            "username": "vvitale"
+        },
+        {
+            "homepage": null,
+            "name": "Jonathan Prag",
+            "uri": "https://pleiades.stoa.org/author/jprag",
+            "username": "jprag"
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        }
+    ],
+    "created": "2010-11-11T15:09:12Z",
+    "creators": [
+        {
+            "name": "R.J.A. Wilson",
+            "username": null
+        }
+    ],
+    "description": "A fortress built by Dionysius the Elder 9 km west of Syracuse, in the modern hamlet of Belvedere (Sicily).",
+    "details": "<p>The Barrington Atlas Directory notes: W extremity of Epipolai</p>\r\n<p>The fortress was first built by Dionysius I between 402 and 397 B.C. Various future modifications took place under Agathocles and Hiero II. The fortress remained in use following the Roman conquest of 212 B.C., continuing up to the Byzantine period.</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    15.222988,
+                    37.091253
+                ],
+                "type": "Point"
+            },
+            "id": "darmc-location-19118",
+            "properties": {
+                "description": "1:500,000 scale representative point location digitized from the Barrington Atlas of the Greek and Roman World by the Digital Atlas of Roman and Medieval Civilizations project at Harvard University.",
+                "link": "https://pleiades.stoa.org/places/462204/darmc-location-19118",
+                "location_precision": "precise",
+                "snippet": "Unknown; 550 BC - 30 BC",
+                "title": "DARMC location 19118"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        15.2215222,
+                        37.0906884
+                    ],
+                    [
+                        15.2217049,
+                        37.0907153
+                    ],
+                    [
+                        15.2217759,
+                        37.0907709
+                    ],
+                    [
+                        15.2220328,
+                        37.0908121
+                    ],
+                    [
+                        15.2225954,
+                        37.0909324
+                    ],
+                    [
+                        15.222649,
+                        37.0908768
+                    ],
+                    [
+                        15.222759,
+                        37.0909174
+                    ],
+                    [
+                        15.2228006,
+                        37.0908286
+                    ],
+                    [
+                        15.2228555,
+                        37.0908051
+                    ],
+                    [
+                        15.2229414,
+                        37.0908254
+                    ],
+                    [
+                        15.2230165,
+                        37.0909239
+                    ],
+                    [
+                        15.2232417,
+                        37.0909867
+                    ],
+                    [
+                        15.2241852,
+                        37.0910175
+                    ],
+                    [
+                        15.2240619,
+                        37.0904976
+                    ],
+                    [
+                        15.224027,
+                        37.0903499
+                    ],
+                    [
+                        15.2243216,
+                        37.0903888
+                    ],
+                    [
+                        15.2248169,
+                        37.0903692
+                    ],
+                    [
+                        15.2248317,
+                        37.0903799
+                    ],
+                    [
+                        15.2248773,
+                        37.0903831
+                    ],
+                    [
+                        15.224941,
+                        37.0903493
+                    ],
+                    [
+                        15.2264121,
+                        37.0902649
+                    ],
+                    [
+                        15.2264215,
+                        37.0902756
+                    ],
+                    [
+                        15.226394,
+                        37.0903093
+                    ],
+                    [
+                        15.2264143,
+                        37.0903205
+                    ],
+                    [
+                        15.2264403,
+                        37.0903349
+                    ],
+                    [
+                        15.2265597,
+                        37.0902552
+                    ],
+                    [
+                        15.2270794,
+                        37.0910249
+                    ],
+                    [
+                        15.2272121,
+                        37.0912271
+                    ],
+                    [
+                        15.2272738,
+                        37.0913245
+                    ],
+                    [
+                        15.2274176,
+                        37.0913061
+                    ],
+                    [
+                        15.2274462,
+                        37.0913181
+                    ],
+                    [
+                        15.2274394,
+                        37.0916984
+                    ],
+                    [
+                        15.2274072,
+                        37.091923
+                    ],
+                    [
+                        15.2263549,
+                        37.093996
+                    ],
+                    [
+                        15.2260171,
+                        37.0938399
+                    ],
+                    [
+                        15.2257193,
+                        37.093658
+                    ],
+                    [
+                        15.2252784,
+                        37.0935728
+                    ],
+                    [
+                        15.2248739,
+                        37.0934988
+                    ],
+                    [
+                        15.2244789,
+                        37.0933645
+                    ],
+                    [
+                        15.2243676,
+                        37.093311
+                    ],
+                    [
+                        15.224318,
+                        37.0932832
+                    ],
+                    [
+                        15.2240129,
+                        37.093012
+                    ],
+                    [
+                        15.2237876,
+                        37.0928612
+                    ],
+                    [
+                        15.2237755,
+                        37.0927983
+                    ],
+                    [
+                        15.2236139,
+                        37.0927676
+                    ],
+                    [
+                        15.223447,
+                        37.0927382
+                    ],
+                    [
+                        15.2233564,
+                        37.0927098
+                    ],
+                    [
+                        15.2232706,
+                        37.0926638
+                    ],
+                    [
+                        15.2230327,
+                        37.0924916
+                    ],
+                    [
+                        15.2227643,
+                        37.0924761
+                    ],
+                    [
+                        15.2225223,
+                        37.0924798
+                    ],
+                    [
+                        15.2215272,
+                        37.0925312
+                    ],
+                    [
+                        15.2214628,
+                        37.0925269
+                    ],
+                    [
+                        15.2214185,
+                        37.0925205
+                    ],
+                    [
+                        15.2213729,
+                        37.0924969
+                    ],
+                    [
+                        15.2206206,
+                        37.0919781
+                    ],
+                    [
+                        15.2205643,
+                        37.0919524
+                    ],
+                    [
+                        15.2204849,
+                        37.0919341
+                    ],
+                    [
+                        15.2201894,
+                        37.0919679
+                    ],
+                    [
+                        15.2201265,
+                        37.0916268
+                    ],
+                    [
+                        15.2201887,
+                        37.0916122
+                    ],
+                    [
+                        15.2201768,
+                        37.0915877
+                    ],
+                    [
+                        15.220178,
+                        37.0915588
+                    ],
+                    [
+                        15.2203234,
+                        37.0915237
+                    ],
+                    [
+                        15.2204055,
+                        37.0915035
+                    ],
+                    [
+                        15.2203826,
+                        37.0913363
+                    ],
+                    [
+                        15.2203867,
+                        37.0912725
+                    ],
+                    [
+                        15.2211101,
+                        37.0911054
+                    ],
+                    [
+                        15.2211741,
+                        37.0909266
+                    ],
+                    [
+                        15.2212864,
+                        37.0907634
+                    ],
+                    [
+                        15.2214098,
+                        37.0907003
+                    ],
+                    [
+                        15.2215222,
+                        37.0906884
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-castello-eurialo",
+            "properties": {
+                "description": "Location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/462204/osm-location-of-castello-eurialo",
+                "location_precision": "precise",
+                "snippet": "Fort; 550 BC - AD 640",
+                "title": "OSM location of Castello Eurialo"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "summary: +Belvedere",
+            "modified": "2018-02-19T22:17:24Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "Edited",
+            "modified": "2018-02-14T14:34:40Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Edited",
+            "modified": "2018-02-14T13:31:16Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "check in of working copy",
+            "modified": "2018-02-14T13:28:18Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Baseline created",
+            "modified": "2015-11-17T15:32:10Z",
+            "modifiedBy": "vvitale"
+        },
+        {
+            "comment": "edited description",
+            "modified": "2013-06-27T20:53:43Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:56:55Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "added connection",
+            "modified": "2012-10-18T20:11:36Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T05:20:26Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-09T23:33:12Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T19:54:48Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-11-11T20:00:38Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2010-11-11T15:23:58Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2010-11-11T15:09:12Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "462204",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/darmc-a",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                }
+            ],
+            "contributors": [
+                {
+                    "name": "DARMC, R. Talbert, T. Elliott, S. Gillies",
+                    "username": null
+                }
+            ],
+            "created": "2011-03-09T23:33:08Z",
+            "creators": [
+                {
+                    "name": "R.J.A. Wilson",
+                    "username": null
+                }
+            ],
+            "description": "1:500,000 scale representative point location digitized from the Barrington Atlas of the Greek and Roman World by the Digital Atlas of Roman and Medieval Civilizations project at Harvard University.",
+            "details": "DARMC OBJECTID: 19118",
+            "end": -30,
+            "featureType": [
+                "unknown"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "geometry": {
+                "coordinates": [
+                    15.222988,
+                    37.091253
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T05:20:27Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2011-03-10T05:13:05Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2011-03-09T23:33:12Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-03-09T23:33:12Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2011-03-09T23:33:08Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "darmc-location-19118",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "provenance": "DARMC OBJECTID: 19118",
+            "references": [
+                {
+                    "accessURI": "https://darmc.harvard.edu/",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/9UD9W75C",
+                    "citationDetail": "19118",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds., The Digital Atlas of Roman and Medieval Civilizations (Cambridge (Massachusetts): Harvard University, 2007-), 19118.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "DARMC",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -550,
+            "title": "DARMC location 19118",
+            "uri": "https://pleiades.stoa.org/places/462204/darmc-location-19118"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2018-02-14T14:31:31Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                },
+                {
+                    "homepage": null,
+                    "name": "Valeria Vitale",
+                    "uri": "https://pleiades.stoa.org/author/vvitale",
+                    "username": "vvitale"
+                }
+            ],
+            "description": "Location based on OpenStreetMap",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "fort"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/fort"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        15.2215222,
+                        37.0906884
+                    ],
+                    [
+                        15.2217049,
+                        37.0907153
+                    ],
+                    [
+                        15.2217759,
+                        37.0907709
+                    ],
+                    [
+                        15.2220328,
+                        37.0908121
+                    ],
+                    [
+                        15.2225954,
+                        37.0909324
+                    ],
+                    [
+                        15.222649,
+                        37.0908768
+                    ],
+                    [
+                        15.222759,
+                        37.0909174
+                    ],
+                    [
+                        15.2228006,
+                        37.0908286
+                    ],
+                    [
+                        15.2228555,
+                        37.0908051
+                    ],
+                    [
+                        15.2229414,
+                        37.0908254
+                    ],
+                    [
+                        15.2230165,
+                        37.0909239
+                    ],
+                    [
+                        15.2232417,
+                        37.0909867
+                    ],
+                    [
+                        15.2241852,
+                        37.0910175
+                    ],
+                    [
+                        15.2240619,
+                        37.0904976
+                    ],
+                    [
+                        15.224027,
+                        37.0903499
+                    ],
+                    [
+                        15.2243216,
+                        37.0903888
+                    ],
+                    [
+                        15.2248169,
+                        37.0903692
+                    ],
+                    [
+                        15.2248317,
+                        37.0903799
+                    ],
+                    [
+                        15.2248773,
+                        37.0903831
+                    ],
+                    [
+                        15.224941,
+                        37.0903493
+                    ],
+                    [
+                        15.2264121,
+                        37.0902649
+                    ],
+                    [
+                        15.2264215,
+                        37.0902756
+                    ],
+                    [
+                        15.226394,
+                        37.0903093
+                    ],
+                    [
+                        15.2264143,
+                        37.0903205
+                    ],
+                    [
+                        15.2264403,
+                        37.0903349
+                    ],
+                    [
+                        15.2265597,
+                        37.0902552
+                    ],
+                    [
+                        15.2270794,
+                        37.0910249
+                    ],
+                    [
+                        15.2272121,
+                        37.0912271
+                    ],
+                    [
+                        15.2272738,
+                        37.0913245
+                    ],
+                    [
+                        15.2274176,
+                        37.0913061
+                    ],
+                    [
+                        15.2274462,
+                        37.0913181
+                    ],
+                    [
+                        15.2274394,
+                        37.0916984
+                    ],
+                    [
+                        15.2274072,
+                        37.091923
+                    ],
+                    [
+                        15.2263549,
+                        37.093996
+                    ],
+                    [
+                        15.2260171,
+                        37.0938399
+                    ],
+                    [
+                        15.2257193,
+                        37.093658
+                    ],
+                    [
+                        15.2252784,
+                        37.0935728
+                    ],
+                    [
+                        15.2248739,
+                        37.0934988
+                    ],
+                    [
+                        15.2244789,
+                        37.0933645
+                    ],
+                    [
+                        15.2243676,
+                        37.093311
+                    ],
+                    [
+                        15.224318,
+                        37.0932832
+                    ],
+                    [
+                        15.2240129,
+                        37.093012
+                    ],
+                    [
+                        15.2237876,
+                        37.0928612
+                    ],
+                    [
+                        15.2237755,
+                        37.0927983
+                    ],
+                    [
+                        15.2236139,
+                        37.0927676
+                    ],
+                    [
+                        15.223447,
+                        37.0927382
+                    ],
+                    [
+                        15.2233564,
+                        37.0927098
+                    ],
+                    [
+                        15.2232706,
+                        37.0926638
+                    ],
+                    [
+                        15.2230327,
+                        37.0924916
+                    ],
+                    [
+                        15.2227643,
+                        37.0924761
+                    ],
+                    [
+                        15.2225223,
+                        37.0924798
+                    ],
+                    [
+                        15.2215272,
+                        37.0925312
+                    ],
+                    [
+                        15.2214628,
+                        37.0925269
+                    ],
+                    [
+                        15.2214185,
+                        37.0925205
+                    ],
+                    [
+                        15.2213729,
+                        37.0924969
+                    ],
+                    [
+                        15.2206206,
+                        37.0919781
+                    ],
+                    [
+                        15.2205643,
+                        37.0919524
+                    ],
+                    [
+                        15.2204849,
+                        37.0919341
+                    ],
+                    [
+                        15.2201894,
+                        37.0919679
+                    ],
+                    [
+                        15.2201265,
+                        37.0916268
+                    ],
+                    [
+                        15.2201887,
+                        37.0916122
+                    ],
+                    [
+                        15.2201768,
+                        37.0915877
+                    ],
+                    [
+                        15.220178,
+                        37.0915588
+                    ],
+                    [
+                        15.2203234,
+                        37.0915237
+                    ],
+                    [
+                        15.2204055,
+                        37.0915035
+                    ],
+                    [
+                        15.2203826,
+                        37.0913363
+                    ],
+                    [
+                        15.2203867,
+                        37.0912725
+                    ],
+                    [
+                        15.2211101,
+                        37.0911054
+                    ],
+                    [
+                        15.2211741,
+                        37.0909266
+                    ],
+                    [
+                        15.2212864,
+                        37.0907634
+                    ],
+                    [
+                        15.2214098,
+                        37.0907003
+                    ],
+                    [
+                        15.2215222,
+                        37.0906884
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2018-02-19T21:36:12Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2018-02-14T14:38:51Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Edited",
+                    "modified": "2018-02-14T14:38:44Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added OSM location",
+                    "modified": "2018-02-14T14:32:00Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2018-02-14T14:31:34Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2018-02-14T14:31:31Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-castello-eurialo",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/fort"
+            ],
+            "provenance": "OpenStreetMap (Way 281728577, version 7, osm:changeset=37790270, 2016-03-12T22:01:04Z)",
+            "references": [
+                {
+                    "accessURI": "http://www.openstreetmap.org/browse/way/281728577",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 281728577",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=281728577",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -550,
+            "title": "OSM location of Castello Eurialo",
+            "uri": "https://pleiades.stoa.org/places/462204/osm-location-of-castello-eurialo"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                }
+            ],
+            "attested": "Εὐρύηλος",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                },
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                },
+                {
+                    "homepage": null,
+                    "name": "Jonathan Prag",
+                    "uri": "https://pleiades.stoa.org/author/jprag",
+                    "username": "jprag"
+                }
+            ],
+            "created": "2010-11-11T15:09:12Z",
+            "creators": [
+                {
+                    "name": "R.J.A. Wilson",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": -30,
+            "history": [
+                {
+                    "comment": "Greek, evidence",
+                    "modified": "2018-02-19T21:37:47Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T05:20:27Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-11T20:00:38Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-11T15:23:58Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-11T15:09:12Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "euryelos",
+            "language": "grc",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 47 G4 Euryelos",
+            "references": [
+                {
+                    "accessURI": "http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:6.97",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "Thuc. 6.97.2 (Perseus)",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Euryelos",
+            "start": -550,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462204/euryelos"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2010-11-11T15:09:13Z",
+            "creators": [
+                {
+                    "name": "R.J.A. Wilson",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": -30,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T05:20:27Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "comment": "Time periods copied from sibling. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-01-20T03:31:31Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-11T20:00:38Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-11T15:23:59Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-11T15:09:13Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "euryalus",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 47 G4 Euryelos",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Euryalus",
+            "start": -550,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462204/euryalus"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                }
+            ],
+            "attested": "Εὐρύηλος﻿",
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "created": "2015-10-15T14:37:39Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Valeria Vitale",
+                    "uri": "https://pleiades.stoa.org/author/vvitale",
+                    "username": "vvitale"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": -30,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2018-02-14T13:29:06Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Edited",
+                    "modified": "2018-02-14T13:28:59Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2015-11-17T15:18:51Z",
+                    "modifiedBy": "vvitale"
+                },
+                {
+                    "comment": "Edited",
+                    "modified": "2015-11-17T15:16:47Z",
+                    "modifiedBy": "vvitale"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2015-10-15T14:37:54Z",
+                    "modifiedBy": "vvitale"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2015-10-15T14:37:42Z",
+                    "modifiedBy": "vvitale"
+                }
+            ],
+            "id": "euryalos",
+            "language": "grc",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "http://www.worldcat.org/oclc/8494638",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/U2CF7U8D",
+                    "citationDetail": "175, 232",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Manni, Eugenio. <i>Geografia fisica e politica della Sicilia antica</i>. Supplementi a Kókalos 4. Rome: G. Bretschneider, 1981. http://www.worldcat.org/oclc/8494638.</div>",
+                    "otherIdentifier": " ",
+                    "shortTitle": "Manni 1981",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://books.google.co.uk/books?id=8ps-AAAAcAAJ&printsec=frontcover#v=onepage&q&f=false",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "StByz (Holse, van Berkel, de Pinedo: Google)",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Euryalos",
+            "start": -550,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462204/euryalos"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/city-wall",
+        "https://pleiades.stoa.org/vocabularies/place-types/settlement-modern",
+        "https://pleiades.stoa.org/vocabularies/place-types/fort"
+    ],
+    "placeTypes": [
+        "city-wall",
+        "settlement-modern",
+        "fort"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 47 G4 Euryelos",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 47 G4 Euryelos",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.worldcat.org/oclc/8494638",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/U2CF7U8D",
+            "citationDetail": "175, 232",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Manni, Eugenio. <i>Geografia fisica e politica della Sicilia antica</i>. Supplementi a Kókalos 4. Rome: G. Bretschneider, 1981. http://www.worldcat.org/oclc/8494638.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "Manni 1981",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://it.wikipedia.org/wiki/Castello_Eurialo",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/UMFZH98D",
+            "citationDetail": "Castello Eurialo",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: L’enciclopedia libera e collaborativa (2001-), Castello Eurialo.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (Italian)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Euryalus_fortress",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+            "citationDetail": "Euryalus fortress",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        }
+    ],
+    "reprPoint": [
+        15.223517241284782,
+        37.09152515247335
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=0",
+        "dare:feature=fort"
+    ],
+    "title": "Euryelos",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/462204"
+}

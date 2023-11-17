@@ -1,0 +1,1663 @@
+{
+    "@type": "Place",
+    "bbox": [
+        13.8190089,
+        37.9639447,
+        13.825268,
+        37.9724362
+    ],
+    "connections": [
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [],
+            "connectionType": "at",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/at",
+            "connectsTo": "https://pleiades.stoa.org/places/462492",
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                }
+            ],
+            "created": "2016-07-13T13:45:24Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "comment": "located at",
+                    "modified": "2023-05-18T15:01:36Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2016-07-13T13:45:24Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2016-07-13T13:45:24Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2016-07-13T13:45:24Z",
+                    "modifiedBy": "admin"
+                }
+            ],
+            "id": "462492",
+            "provenance": "Pleiades",
+            "references": [],
+            "review_state": "published",
+            "start": null,
+            "title": "Sicilia (island)",
+            "uri": "https://pleiades.stoa.org/places/462244/462492"
+        }
+    ],
+    "connectsWith": [
+        "https://pleiades.stoa.org/places/462492",
+        "https://pleiades.stoa.org/places/421330490",
+        "https://pleiades.stoa.org/places/37484455"
+    ],
+    "contributors": [
+        {
+            "homepage": null,
+            "name": "Brady Kiesling",
+            "uri": "https://pleiades.stoa.org/author/bkiesling",
+            "username": "bkiesling"
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Johan Åhlfeldt",
+            "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+            "username": "jahlfeldt"
+        },
+        {
+            "homepage": null,
+            "name": "Valeria Vitale",
+            "uri": "https://pleiades.stoa.org/author/vvitale",
+            "username": "vvitale"
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jonathan Prag",
+            "uri": "https://pleiades.stoa.org/author/jprag",
+            "username": "jprag"
+        }
+    ],
+    "created": "2018-06-07T23:13:24Z",
+    "creators": [
+        {
+            "name": "R.J.A. Wilson",
+            "username": null
+        }
+    ],
+    "description": "A colony on the north shore of Sicily founded in 649/8 BC by the Myletidai.",
+    "details": "<p>The Barrington Atlas Directory notes: Himera</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    13.822496,
+                    37.970797
+                ],
+                "type": "Point"
+            },
+            "id": "dare-location",
+            "properties": {
+                "description": "Representative point location, site precision",
+                "link": "https://pleiades.stoa.org/places/462244/dare-location",
+                "location_precision": "precise",
+                "snippet": "Settlement; 750 BC - 330 BC",
+                "title": "DARE Location"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        13.8247841,
+                        37.972422
+                    ],
+                    [
+                        13.8249006,
+                        37.9724106
+                    ],
+                    [
+                        13.8250014,
+                        37.9724362
+                    ],
+                    [
+                        13.825137,
+                        37.9722678
+                    ],
+                    [
+                        13.8252114,
+                        37.9723056
+                    ],
+                    [
+                        13.8252415,
+                        37.9722498
+                    ],
+                    [
+                        13.825268,
+                        37.9720693
+                    ],
+                    [
+                        13.8252516,
+                        37.9717872
+                    ],
+                    [
+                        13.8252323,
+                        37.9714045
+                    ],
+                    [
+                        13.8251967,
+                        37.9713319
+                    ],
+                    [
+                        13.8251136,
+                        37.9713565
+                    ],
+                    [
+                        13.8250141,
+                        37.9714806
+                    ],
+                    [
+                        13.8249146,
+                        37.9716432
+                    ],
+                    [
+                        13.8248641,
+                        37.9717661
+                    ],
+                    [
+                        13.8247825,
+                        37.9718422
+                    ],
+                    [
+                        13.8247379,
+                        37.9718282
+                    ],
+                    [
+                        13.8246592,
+                        37.9717708
+                    ],
+                    [
+                        13.8246488,
+                        37.9716912
+                    ],
+                    [
+                        13.8246874,
+                        37.9713951
+                    ],
+                    [
+                        13.8247201,
+                        37.9712558
+                    ],
+                    [
+                        13.824726,
+                        37.971106
+                    ],
+                    [
+                        13.8247171,
+                        37.9709468
+                    ],
+                    [
+                        13.8246845,
+                        37.9707034
+                    ],
+                    [
+                        13.8246399,
+                        37.9704716
+                    ],
+                    [
+                        13.8245597,
+                        37.9702469
+                    ],
+                    [
+                        13.8245152,
+                        37.9701626
+                    ],
+                    [
+                        13.8244231,
+                        37.9700011
+                    ],
+                    [
+                        13.82434,
+                        37.9698957
+                    ],
+                    [
+                        13.8241143,
+                        37.9697705
+                    ],
+                    [
+                        13.823951,
+                        37.9696511
+                    ],
+                    [
+                        13.8238708,
+                        37.9695165
+                    ],
+                    [
+                        13.8238396,
+                        37.9693877
+                    ],
+                    [
+                        13.8238485,
+                        37.9692754
+                    ],
+                    [
+                        13.8238055,
+                        37.969156
+                    ],
+                    [
+                        13.8237179,
+                        37.969026
+                    ],
+                    [
+                        13.8235338,
+                        37.9688528
+                    ],
+                    [
+                        13.82332,
+                        37.9686573
+                    ],
+                    [
+                        13.8231938,
+                        37.9685157
+                    ],
+                    [
+                        13.8230275,
+                        37.9682629
+                    ],
+                    [
+                        13.8229399,
+                        37.968106
+                    ],
+                    [
+                        13.8228077,
+                        37.9677654
+                    ],
+                    [
+                        13.8226444,
+                        37.9674751
+                    ],
+                    [
+                        13.8224202,
+                        37.9670982
+                    ],
+                    [
+                        13.8222376,
+                        37.9667412
+                    ],
+                    [
+                        13.8221039,
+                        37.9664989
+                    ],
+                    [
+                        13.8219956,
+                        37.966321
+                    ],
+                    [
+                        13.8219376,
+                        37.9661173
+                    ],
+                    [
+                        13.8218397,
+                        37.9658094
+                    ],
+                    [
+                        13.8217951,
+                        37.9655823
+                    ],
+                    [
+                        13.8217788,
+                        37.9653927
+                    ],
+                    [
+                        13.8218248,
+                        37.965196
+                    ],
+                    [
+                        13.8218085,
+                        37.9650462
+                    ],
+                    [
+                        13.8217565,
+                        37.9648437
+                    ],
+                    [
+                        13.8217298,
+                        37.9646588
+                    ],
+                    [
+                        13.8217176,
+                        37.9644975
+                    ],
+                    [
+                        13.8217373,
+                        37.9641281
+                    ],
+                    [
+                        13.8216937,
+                        37.9639447
+                    ],
+                    [
+                        13.8216405,
+                        37.9639458
+                    ],
+                    [
+                        13.8212339,
+                        37.9646986
+                    ],
+                    [
+                        13.820925,
+                        37.9652323
+                    ],
+                    [
+                        13.8204896,
+                        37.9659475
+                    ],
+                    [
+                        13.8197144,
+                        37.9672678
+                    ],
+                    [
+                        13.8197312,
+                        37.967622
+                    ],
+                    [
+                        13.8197606,
+                        37.9679531
+                    ],
+                    [
+                        13.8198194,
+                        37.9680723
+                    ],
+                    [
+                        13.8199118,
+                        37.9684596
+                    ],
+                    [
+                        13.8196556,
+                        37.9690092
+                    ],
+                    [
+                        13.8191181,
+                        37.9696118
+                    ],
+                    [
+                        13.8190089,
+                        37.9697541
+                    ],
+                    [
+                        13.8192902,
+                        37.9700455
+                    ],
+                    [
+                        13.8193154,
+                        37.9702176
+                    ],
+                    [
+                        13.8197858,
+                        37.9703103
+                    ],
+                    [
+                        13.8201721,
+                        37.9705189
+                    ],
+                    [
+                        13.8203157,
+                        37.9705782
+                    ],
+                    [
+                        13.8204911,
+                        37.9706103
+                    ],
+                    [
+                        13.8208008,
+                        37.9706905
+                    ],
+                    [
+                        13.8211021,
+                        37.9707874
+                    ],
+                    [
+                        13.8213184,
+                        37.9709024
+                    ],
+                    [
+                        13.8215693,
+                        37.9709728
+                    ],
+                    [
+                        13.8217814,
+                        37.971015
+                    ],
+                    [
+                        13.8222476,
+                        37.9710448
+                    ],
+                    [
+                        13.8225583,
+                        37.9711226
+                    ],
+                    [
+                        13.8229258,
+                        37.971271
+                    ],
+                    [
+                        13.8231663,
+                        37.9714887
+                    ],
+                    [
+                        13.8234514,
+                        37.9715847
+                    ],
+                    [
+                        13.8238196,
+                        37.9716783
+                    ],
+                    [
+                        13.8240631,
+                        37.9717298
+                    ],
+                    [
+                        13.8243304,
+                        37.9719054
+                    ],
+                    [
+                        13.8243779,
+                        37.9720318
+                    ],
+                    [
+                        13.8245323,
+                        37.9721231
+                    ],
+                    [
+                        13.8246036,
+                        37.9721395
+                    ],
+                    [
+                        13.8246809,
+                        37.9721892
+                    ],
+                    [
+                        13.8246809,
+                        37.9722129
+                    ],
+                    [
+                        13.8248213,
+                        37.9722261
+                    ],
+                    [
+                        13.8247841,
+                        37.972422
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location",
+            "properties": {
+                "description": "Representative location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/462244/osm-location",
+                "location_precision": "precise",
+                "snippet": "Archaeological-site; 750 BC - 330 BC",
+                "title": "OSM location of Area Archeologica e Antiquarium di Himera"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "added Lonoce 2023",
+            "modified": "2023-05-18T15:02:00Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "update references",
+            "modified": "2021-12-12T04:07:31Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "add ToposText reference provided by bkiesling",
+            "modified": "2018-06-07T23:13:29Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Baseline created",
+            "modified": "2018-06-07T23:13:22Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Initial revision",
+            "modified": "2014-12-04T16:06:18Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "DARE feature tag fix.",
+            "modified": "2012-10-23T19:36:59Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:10:56Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T05:20:54Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T19:55:05Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-11-11T20:00:47Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2010-11-11T15:24:05Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2010-11-11T15:10:01Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "462244",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/dare-3",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                }
+            ],
+            "contributors": [],
+            "created": "2012-10-20T21:10:55Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Johan Åhlfeldt",
+                    "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+                    "username": "jahlfeldt"
+                }
+            ],
+            "description": "Representative point location, site precision",
+            "details": "",
+            "end": -330,
+            "featureType": [
+                "settlement"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/settlement"
+            ],
+            "geometry": {
+                "coordinates": [
+                    13.822496,
+                    37.970797
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-10-20T21:10:56Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-10-20T21:10:56Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+                    "modified": "2012-10-20T21:10:56Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-10-20T21:10:55Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "dare-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/settlement"
+            ],
+            "provenance": "Digital Atlas of the Roman Empire (2012-10-15)",
+            "references": [
+                {
+                    "accessURI": "http://francia.ahlfeldt.se/imperium.php",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/cites",
+                    "formattedCitation": "Johan Åhlfeldt, Digital Atlas of the Roman Empire, 2012.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "cites"
+                }
+            ],
+            "review_state": "published",
+            "start": -750,
+            "title": "DARE Location",
+            "uri": "https://pleiades.stoa.org/places/462244/dare-location"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                }
+            ],
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                }
+            ],
+            "created": "2014-12-04T15:59:19Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representative location based on OpenStreetMap",
+            "details": "",
+            "end": -330,
+            "featureType": [
+                "archaeological-site"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        13.8247841,
+                        37.972422
+                    ],
+                    [
+                        13.8249006,
+                        37.9724106
+                    ],
+                    [
+                        13.8250014,
+                        37.9724362
+                    ],
+                    [
+                        13.825137,
+                        37.9722678
+                    ],
+                    [
+                        13.8252114,
+                        37.9723056
+                    ],
+                    [
+                        13.8252415,
+                        37.9722498
+                    ],
+                    [
+                        13.825268,
+                        37.9720693
+                    ],
+                    [
+                        13.8252516,
+                        37.9717872
+                    ],
+                    [
+                        13.8252323,
+                        37.9714045
+                    ],
+                    [
+                        13.8251967,
+                        37.9713319
+                    ],
+                    [
+                        13.8251136,
+                        37.9713565
+                    ],
+                    [
+                        13.8250141,
+                        37.9714806
+                    ],
+                    [
+                        13.8249146,
+                        37.9716432
+                    ],
+                    [
+                        13.8248641,
+                        37.9717661
+                    ],
+                    [
+                        13.8247825,
+                        37.9718422
+                    ],
+                    [
+                        13.8247379,
+                        37.9718282
+                    ],
+                    [
+                        13.8246592,
+                        37.9717708
+                    ],
+                    [
+                        13.8246488,
+                        37.9716912
+                    ],
+                    [
+                        13.8246874,
+                        37.9713951
+                    ],
+                    [
+                        13.8247201,
+                        37.9712558
+                    ],
+                    [
+                        13.824726,
+                        37.971106
+                    ],
+                    [
+                        13.8247171,
+                        37.9709468
+                    ],
+                    [
+                        13.8246845,
+                        37.9707034
+                    ],
+                    [
+                        13.8246399,
+                        37.9704716
+                    ],
+                    [
+                        13.8245597,
+                        37.9702469
+                    ],
+                    [
+                        13.8245152,
+                        37.9701626
+                    ],
+                    [
+                        13.8244231,
+                        37.9700011
+                    ],
+                    [
+                        13.82434,
+                        37.9698957
+                    ],
+                    [
+                        13.8241143,
+                        37.9697705
+                    ],
+                    [
+                        13.823951,
+                        37.9696511
+                    ],
+                    [
+                        13.8238708,
+                        37.9695165
+                    ],
+                    [
+                        13.8238396,
+                        37.9693877
+                    ],
+                    [
+                        13.8238485,
+                        37.9692754
+                    ],
+                    [
+                        13.8238055,
+                        37.969156
+                    ],
+                    [
+                        13.8237179,
+                        37.969026
+                    ],
+                    [
+                        13.8235338,
+                        37.9688528
+                    ],
+                    [
+                        13.82332,
+                        37.9686573
+                    ],
+                    [
+                        13.8231938,
+                        37.9685157
+                    ],
+                    [
+                        13.8230275,
+                        37.9682629
+                    ],
+                    [
+                        13.8229399,
+                        37.968106
+                    ],
+                    [
+                        13.8228077,
+                        37.9677654
+                    ],
+                    [
+                        13.8226444,
+                        37.9674751
+                    ],
+                    [
+                        13.8224202,
+                        37.9670982
+                    ],
+                    [
+                        13.8222376,
+                        37.9667412
+                    ],
+                    [
+                        13.8221039,
+                        37.9664989
+                    ],
+                    [
+                        13.8219956,
+                        37.966321
+                    ],
+                    [
+                        13.8219376,
+                        37.9661173
+                    ],
+                    [
+                        13.8218397,
+                        37.9658094
+                    ],
+                    [
+                        13.8217951,
+                        37.9655823
+                    ],
+                    [
+                        13.8217788,
+                        37.9653927
+                    ],
+                    [
+                        13.8218248,
+                        37.965196
+                    ],
+                    [
+                        13.8218085,
+                        37.9650462
+                    ],
+                    [
+                        13.8217565,
+                        37.9648437
+                    ],
+                    [
+                        13.8217298,
+                        37.9646588
+                    ],
+                    [
+                        13.8217176,
+                        37.9644975
+                    ],
+                    [
+                        13.8217373,
+                        37.9641281
+                    ],
+                    [
+                        13.8216937,
+                        37.9639447
+                    ],
+                    [
+                        13.8216405,
+                        37.9639458
+                    ],
+                    [
+                        13.8212339,
+                        37.9646986
+                    ],
+                    [
+                        13.820925,
+                        37.9652323
+                    ],
+                    [
+                        13.8204896,
+                        37.9659475
+                    ],
+                    [
+                        13.8197144,
+                        37.9672678
+                    ],
+                    [
+                        13.8197312,
+                        37.967622
+                    ],
+                    [
+                        13.8197606,
+                        37.9679531
+                    ],
+                    [
+                        13.8198194,
+                        37.9680723
+                    ],
+                    [
+                        13.8199118,
+                        37.9684596
+                    ],
+                    [
+                        13.8196556,
+                        37.9690092
+                    ],
+                    [
+                        13.8191181,
+                        37.9696118
+                    ],
+                    [
+                        13.8190089,
+                        37.9697541
+                    ],
+                    [
+                        13.8192902,
+                        37.9700455
+                    ],
+                    [
+                        13.8193154,
+                        37.9702176
+                    ],
+                    [
+                        13.8197858,
+                        37.9703103
+                    ],
+                    [
+                        13.8201721,
+                        37.9705189
+                    ],
+                    [
+                        13.8203157,
+                        37.9705782
+                    ],
+                    [
+                        13.8204911,
+                        37.9706103
+                    ],
+                    [
+                        13.8208008,
+                        37.9706905
+                    ],
+                    [
+                        13.8211021,
+                        37.9707874
+                    ],
+                    [
+                        13.8213184,
+                        37.9709024
+                    ],
+                    [
+                        13.8215693,
+                        37.9709728
+                    ],
+                    [
+                        13.8217814,
+                        37.971015
+                    ],
+                    [
+                        13.8222476,
+                        37.9710448
+                    ],
+                    [
+                        13.8225583,
+                        37.9711226
+                    ],
+                    [
+                        13.8229258,
+                        37.971271
+                    ],
+                    [
+                        13.8231663,
+                        37.9714887
+                    ],
+                    [
+                        13.8234514,
+                        37.9715847
+                    ],
+                    [
+                        13.8238196,
+                        37.9716783
+                    ],
+                    [
+                        13.8240631,
+                        37.9717298
+                    ],
+                    [
+                        13.8243304,
+                        37.9719054
+                    ],
+                    [
+                        13.8243779,
+                        37.9720318
+                    ],
+                    [
+                        13.8245323,
+                        37.9721231
+                    ],
+                    [
+                        13.8246036,
+                        37.9721395
+                    ],
+                    [
+                        13.8246809,
+                        37.9721892
+                    ],
+                    [
+                        13.8246809,
+                        37.9722129
+                    ],
+                    [
+                        13.8248213,
+                        37.9722261
+                    ],
+                    [
+                        13.8247841,
+                        37.972422
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-06-17T15:52:01Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "comment": "reimported full Way geometry and updated provenance",
+                    "modified": "2022-06-17T15:51:52Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2022-06-17T13:42:14Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "update title, summary",
+                    "modified": "2022-06-17T13:42:09Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added location",
+                    "modified": "2014-12-04T16:00:02Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2014-12-04T15:59:22Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2014-12-04T15:59:20Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "provenance": "OpenStreetMap (Way 198740298, version 4, osm:changeset=31961097, 2015-06-14T12:23:20Z)",
+            "references": [
+                {
+                    "accessURI": "http://www.openstreetmap.org/browse/way/198740298",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 198740298",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=198740298",
+                    "otherIdentifier": " ",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -750,
+            "title": "OSM location of Area Archeologica e Antiquarium di Himera",
+            "uri": "https://pleiades.stoa.org/places/462244/osm-location"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                }
+            ],
+            "attested": "Ἱμέρα",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                },
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                },
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "created": "2010-11-11T15:10:01Z",
+            "creators": [
+                {
+                    "name": "R.J.A. Wilson",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": -330,
+            "history": [
+                {
+                    "comment": "added reference",
+                    "modified": "2014-12-04T16:10:03Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T05:20:54Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-11T20:00:47Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-11T15:24:05Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-11T15:10:01Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "himera",
+            "language": "grc",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 47 D3 Himera",
+            "references": [
+                {
+                    "accessURI": "http://data.perseus.org/citations/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1:6.5",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "Thuc. 6.5",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Himera",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462244/himera"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "Imera",
+            "contributors": [],
+            "created": "2015-11-23T16:39:55Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Valeria Vitale",
+                    "uri": "https://pleiades.stoa.org/author/vvitale",
+                    "username": "vvitale"
+                }
+            ],
+            "description": "",
+            "details": "\r\n<p>Himera is listed as \"Imera\" in the BTCGI. Also, the archaeological site of Himera is often called \"Imera\" in modern Italian.</p>\r\n",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2015-11-23T21:29:27Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2015-11-23T16:54:37Z",
+                    "modifiedBy": "vvitale"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2015-11-23T16:40:09Z",
+                    "modifiedBy": "vvitale"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2015-11-23T16:39:57Z",
+                    "modifiedBy": "vvitale"
+                }
+            ],
+            "id": "imera",
+            "language": "it",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "http://atlantides.org/bibliography/b.html#BTCGI-VIII",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "BTCGI VIII, 248-73",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "http://www.geonames.org/2524519/imera.html",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "GeoNames 2524519",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "https://it.wikipedia.org/wiki/Himera",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/UMFZH98D",
+                    "citationDetail": "Himera",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "Wikipedia: L’enciclopedia libera e collaborativa (2001-), Himera.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "Wikipedia (Italian)",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Imera",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462244/imera"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-roman-early-empire",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-roman-early-empire"
+                }
+            ],
+            "attested": "",
+            "contributors": [],
+            "created": "2015-11-23T21:31:02Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 300,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2015-11-24T00:30:07Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2015-11-24T00:26:43Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added name",
+                    "modified": "2015-11-23T21:31:15Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2015-11-23T21:31:05Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "name.2015-11-23.2206346777",
+            "language": "la",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "http://latin.packhum.org/loc/474/5/64/119-125,393-399,730-736,916-922,2963-2969",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "Cic. Verr. 2.2.86.2, 2.2.86.7, 2.2.87.2, 2.2.87.5, 2.2.89.13",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Himera",
+            "start": -330,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/462244/name.2015-11-23.2206346777"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/settlement",
+        "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+    ],
+    "placeTypes": [
+        "settlement",
+        "archaeological-site"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 47 D3 Himera",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "47 D3 Himera",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/3X8QE9ZE",
+            "citationDetail": "VIII, 248-73",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Nenci, Giuseppe, Georges Vallet, Ugo Fantasia, and Carmine Ampolo, eds. <i>Bibliografia topografica della colonizzazione greca in Italia e nelle isole tirreniche</i>. 21 vols. Pisa; Roma: Scuola normale superiore ; Ecole française de Rome, 1977.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "BTCGI",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/5RUAJ5HI",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Himera. <i>Himera</i>. 3 vols. Rome, 1977.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Himera I-III",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/KWCZK6IS",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Allegro, N., and S. Vassallo. “Himera. Nuove Ricerche Nella Città Bassa (1989-1992).” <i>Kokalos</i> 38 (1992): 79–150.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Allegro 1992",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=himera",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/PV9N7BQD",
+            "citationDetail": "HIMERA Sicily",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Stillwell, Richard, William L MacDonald, and Marian Holland McAllister, eds. <i>The Princeton Encyclopedia of Classical Sites</i>. Princeton, N.J.: Princeton University Press, 1976. http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "PECS (Perseus)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Himera",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/CI6F6W7W",
+            "citationDetail": "Himera",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: the free encyclopedia that anyone can edit (2001-), Himera.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.encquran.brill.nl/entries/brill-s-new-pauly/himera-e513650",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/DUTS58MJ",
+            "citationDetail": "Himera",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Hubert Cancik, Helmuth Schneider, Manfred Landfester, Christine F. Salazar, and Francis G. Gentry, eds. <i>Brill’s New Pauly: Encyclopaedia of the Ancient World.</i> Brill, 2015. https://referenceworks.brillonline.com/browse/brill-s-new-pauly.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "New Pauly",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%206.5.1&lang=original",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+            "formattedCitation": "Thuc. 6.5.1",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "citesAsEvidence"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Diod.%2013.62.4&lang=original",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+            "formattedCitation": "Diod. 13.62.4",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "citesAsEvidence"
+        },
+        {
+            "accessURI": "https://topostext.org/place/380138PHim",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/MC9RGDVB",
+            "citationDetail": "Himera (Sicily)",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Kiesling, Brady. ToposText – a Reference Tool for Greek Civilization. Version 2.0. Aikaterini Laskaridis Foundation, 2016-.",
+            "otherIdentifier": "",
+            "shortTitle": "ToposText",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BTWFQ26S",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">O Belvedere, and V. Alliata. <i>Himera III.1</i>. Rome, 1988.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Belvedere 1988",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/R2MZJ6PZ",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">De Miro, Ernesto, ed. <i>Greci e indigeni nella valle dell’Himera: scavi a Monte Saraceno di Ravanusa</i>. Messina: Regione Siciliana Assessorato dei beni culturali e ambientali e della P.I. Università di Messina, Facoltà di lettere e filosofia. Amministrazione comunale di Messina Assessorato ai servizi sociali., 1985.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "De Miro 1985",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/2GBF69CU",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Vassallo, Stefano. “Nuovi dati per la localizzazione dell’agora di Himera.” In <i>Agora greca e agorai di Sicilia</i>, 201–9. Pisa: Edizioni della Normale, 2012.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Vassallo 2012",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/8ZLF74VB",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Adriani, Achille, Università degli studi di Palermo, and Istituto di archeologia. <i>Himera. I, I,</i>. Roma: “L’Erma” di Bretschneider, 1970.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Himera I",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.sciencedirect.com/science/article/pii/S0305440323000687",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/WUFMH58M",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Lonoce, Norma, Gianpiero Dalla-Zuanna, Pier Francesco Fabbri, Stefano Vassallo, and Irene Barbiera. “An Unexpected Demographic Regime: The Western Necropolis of the Greek Colony of Himera (Sicily, Italy) (550-409 BCE).” <i>Journal of Archaeological Science</i> 155 (July 1, 2023): 105790. https://doi.org/10.1016/j.jas.2023.105790.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Lonoce 2023",
+            "type": "seeFurther"
+        }
+    ],
+    "reprPoint": [
+        13.822343795481169,
+        37.969836616449996
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=1",
+        "dare:feature=major settlement"
+    ],
+    "title": "Himera",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/462244"
+}

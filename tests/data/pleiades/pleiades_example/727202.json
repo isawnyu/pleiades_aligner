@@ -1,0 +1,538 @@
+{
+    "@type": "Place",
+    "bbox": [
+        30.948588194006447,
+        30.79351224999681,
+        31.19272089320475,
+        30.875365708597258
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "homepage": null,
+            "name": "Ryan Horne",
+            "uri": "https://pleiades.stoa.org/author/rmhorne",
+            "username": "rmhorne"
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Adam Prins",
+            "uri": "https://pleiades.stoa.org/author/adamp",
+            "username": "adamp"
+        },
+        {
+            "name": "Jen Thum",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "Herbert Verreth",
+            "username": null
+        },
+        {
+            "name": "Richard Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Michael Heubel",
+            "uri": "https://pleiades.stoa.org/author/mheubel",
+            "username": "mheubel"
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Perry Scalfano",
+            "uri": "https://pleiades.stoa.org/author/pscalfano",
+            "username": "pscalfano"
+        },
+        {
+            "name": "Mark Depauw",
+            "username": null
+        }
+    ],
+    "created": "2009-09-09T06:42:17Z",
+    "creators": [
+        {
+            "name": "A. Bernand",
+            "username": null
+        }
+    ],
+    "description": "An ancient place, cited: BAtlas 74 D3 Phthemphoutites Nomos",
+    "details": "None",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            30.948588194006447,
+                            30.79351224999681
+                        ],
+                        [
+                            30.971906911863528,
+                            30.799698848611854
+                        ],
+                        [
+                            30.989514923306785,
+                            30.804457770623515
+                        ],
+                        [
+                            31.002364012738326,
+                            30.806837231629345
+                        ],
+                        [
+                            31.015213102169696,
+                            30.810644369238787
+                        ],
+                        [
+                            31.031393437009285,
+                            30.8158791834515
+                        ],
+                        [
+                            31.047573771849102,
+                            30.82016221326211
+                        ],
+                        [
+                            31.059471076878253,
+                            30.824445243072603
+                        ],
+                        [
+                            31.07422373511423,
+                            30.829204165084263
+                        ],
+                        [
+                            31.08945228555166,
+                            30.8334871948947
+                        ],
+                        [
+                            31.105156728190025,
+                            30.838722009107585
+                        ],
+                        [
+                            31.120385278627452,
+                            30.84395682332041
+                        ],
+                        [
+                            31.131330799254158,
+                            30.848715745332072
+                        ],
+                        [
+                            31.143703996484533,
+                            30.853474667343733
+                        ],
+                        [
+                            31.155601301513684,
+                            30.857757697154227
+                        ],
+                        [
+                            31.168926283146448,
+                            30.864420187970495
+                        ],
+                        [
+                            31.19272089320475,
+                            30.875365708597258
+                        ]
+                    ]
+                ],
+                "type": "MultiLineString"
+            },
+            "id": "batlas-map-label-location",
+            "properties": {
+                "description": "Centerline/arc of label location used on the Barrington Atlas map for this feature",
+                "link": "https://pleiades.stoa.org/places/727202/batlas-map-label-location",
+                "location_precision": "precise",
+                "snippet": "Label; 330 BC - AD 640",
+                "title": "BAtlas Map Label Location"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "Initial revision",
+            "modified": "2022-08-30T23:09:17Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+            "modified": "2012-05-03T17:26:13Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Finding Nomes by their titles and setting feature types",
+            "modified": "2012-03-20T21:47:36Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:08:24Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-09-09T17:27:16Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-09-09T17:07:02Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-09-09T06:42:17Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "727202",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/awmc-batlas-data-1-500-000-scale",
+            "accuracy_value": 930.0,
+            "archaeologicalRemains": "notapplicable",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Ryan Horne",
+                    "uri": "https://pleiades.stoa.org/author/rmhorne",
+                    "username": "rmhorne"
+                },
+                {
+                    "name": "Richard Talbert",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                },
+                {
+                    "homepage": null,
+                    "name": "Michael Heubel",
+                    "uri": "https://pleiades.stoa.org/author/mheubel",
+                    "username": "mheubel"
+                }
+            ],
+            "created": "2022-08-30T11:15:33Z",
+            "creators": [
+                {
+                    "name": "A. Bernand",
+                    "username": null
+                }
+            ],
+            "description": "Centerline/arc of label location used on the Barrington Atlas map for this feature",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "label"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/label"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            30.948588194006447,
+                            30.79351224999681
+                        ],
+                        [
+                            30.971906911863528,
+                            30.799698848611854
+                        ],
+                        [
+                            30.989514923306785,
+                            30.804457770623515
+                        ],
+                        [
+                            31.002364012738326,
+                            30.806837231629345
+                        ],
+                        [
+                            31.015213102169696,
+                            30.810644369238787
+                        ],
+                        [
+                            31.031393437009285,
+                            30.8158791834515
+                        ],
+                        [
+                            31.047573771849102,
+                            30.82016221326211
+                        ],
+                        [
+                            31.059471076878253,
+                            30.824445243072603
+                        ],
+                        [
+                            31.07422373511423,
+                            30.829204165084263
+                        ],
+                        [
+                            31.08945228555166,
+                            30.8334871948947
+                        ],
+                        [
+                            31.105156728190025,
+                            30.838722009107585
+                        ],
+                        [
+                            31.120385278627452,
+                            30.84395682332041
+                        ],
+                        [
+                            31.131330799254158,
+                            30.848715745332072
+                        ],
+                        [
+                            31.143703996484533,
+                            30.853474667343733
+                        ],
+                        [
+                            31.155601301513684,
+                            30.857757697154227
+                        ],
+                        [
+                            31.168926283146448,
+                            30.864420187970495
+                        ],
+                        [
+                            31.19272089320475,
+                            30.875365708597258
+                        ]
+                    ]
+                ],
+                "type": "MultiLineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-08-30T23:06:34Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2022-08-30T18:57:20Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2022-08-30T11:15:33Z",
+                    "modifiedBy": "thomase"
+                }
+            ],
+            "id": "batlas-map-label-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/label"
+            ],
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "https://github.com/AWMC/geodata/blob/a289d378b75eba8c9b640f0248763e3cbf9d2583/Cultural-Data/regional_name_linework/regional_names_linework.geojson",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/items/AKGKQTM5",
+                    "citationDetail": "Phthemphoutites Nomos",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "<div class=\"csl-entry\">AWMC Geodata: Regional Name Linework. Geojson. Chapel Hill: Ancient World Mapping Center, University of North Carolina at Chapel Hill, June 20, 2016. Github.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "AWMC Geodata: Regional Name Linework",
+                    "type": "citesAsDataSource"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/items/MIAGQ5C6",
+                    "citationDetail": "74 D3 Phthemphoutites",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. Barrington Atlas of the Greek and Roman World. Princeton, N.J.: Princeton University Press, 2000.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "BAtlas",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "start": -330,
+            "title": "BAtlas Map Label Location",
+            "uri": "https://pleiades.stoa.org/places/727202/batlas-map-label-location"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2009-09-09T06:42:17Z",
+            "creators": [
+                {
+                    "name": "A. Bernand",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:08:24Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2009-09-09T17:27:16Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2009-09-09T17:07:02Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2009-09-09T06:42:17Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "phthemphoutites-nomos",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 74 D3 Phthemphoutites Nomos",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Phthemphoutites Nomos",
+            "start": -330,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/727202/phthemphoutites-nomos"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/nome-gr",
+        "https://pleiades.stoa.org/vocabularies/place-types/label"
+    ],
+    "placeTypes": [
+        "nome-gr",
+        "label"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 74 D3 Phthemphoutites Nomos",
+    "references": [
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Nome_(Egypt)",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/CI6F6W7W",
+            "citationDetail": "Nome (Egypt)",
+            "citationTypeURI": "http://purl.org/spar/cito/seeAlso",
+            "formattedCitation": "Wikipedia: the free encyclopedia that anyone can edit (2001-), Nome_(Egypt).",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeAlso"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/1799",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 1799: Phthemphouth",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        31.07212082544721,
+        30.830239156026543
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [],
+    "title": "Phthemphoutites Nomos",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/727202"
+}

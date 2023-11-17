@@ -1,0 +1,1013 @@
+{
+    "@type": "Place",
+    "bbox": [
+        24.01869,
+        35.515775,
+        24.01869,
+        35.515775
+    ],
+    "connections": [
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [],
+            "connectionType": "connection",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/connection",
+            "connectsTo": "https://pleiades.stoa.org/places/589748",
+            "contributors": [],
+            "created": "2016-07-13T13:40:13Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "",
+                    "uri": "https://pleiades.stoa.org/author/admin",
+                    "username": "admin"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2016-07-13T13:40:13Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2016-07-13T13:40:13Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2016-07-13T13:40:13Z",
+                    "modifiedBy": "admin"
+                }
+            ],
+            "id": "589748",
+            "provenance": "Pleiades",
+            "references": [],
+            "review_state": "published",
+            "start": null,
+            "title": "Creta (island)",
+            "uri": "https://pleiades.stoa.org/places/589886/589748"
+        }
+    ],
+    "connectsWith": [
+        "https://pleiades.stoa.org/places/589748",
+        "https://pleiades.stoa.org/places/553704982"
+    ],
+    "contributors": [
+        {
+            "homepage": null,
+            "name": "Brady Kiesling",
+            "uri": "https://pleiades.stoa.org/author/bkiesling",
+            "username": "bkiesling"
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/telliott",
+            "username": "telliott"
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Elias Kolovos",
+            "uri": "https://pleiades.stoa.org/author/ekolovos",
+            "username": "ekolovos"
+        },
+        {
+            "homepage": null,
+            "name": "Maija Gierhart",
+            "uri": "https://pleiades.stoa.org/author/mgierhart",
+            "username": "mgierhart"
+        }
+    ],
+    "created": "2018-06-08T00:19:11Z",
+    "creators": [
+        {
+            "name": "J. Bennet",
+            "username": null
+        },
+        {
+            "name": "G. Reger",
+            "username": null
+        }
+    ],
+    "description": "An ancient settlement on Crete inhabited since the Neolithic period, Kydonia has been a major center of Minoan, Greek, and Byzantine civilization.",
+    "details": "<p>The Barrington Atlas Directory notes: Khania</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    24.01869,
+                    35.515775
+                ],
+                "type": "Point"
+            },
+            "id": "darmc-location-34840",
+            "properties": {
+                "description": "representative point location digitized from the Barrington Atlas of the Greek and Roman World by the Digital Atlas of Roman and Medieval Civilizations project at Harvard University.",
+                "link": "https://pleiades.stoa.org/places/589886/darmc-location-34840",
+                "location_precision": "precise",
+                "snippet": "Unknown; 750 BC - AD 640",
+                "title": "DARMC location 34840"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "added Fouriki 2023",
+            "modified": "2023-03-03T00:24:24Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "update references",
+            "modified": "2022-06-03T14:42:40Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "add ToposText reference provided by bkiesling",
+            "modified": "2018-06-08T00:19:14Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Baseline created",
+            "modified": "2018-06-08T00:19:09Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "edited description; added references",
+            "modified": "2013-02-09T17:56:54Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "DARE feature tag fix.",
+            "modified": "2012-10-23T19:34:12Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T20:32:06Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T06:49:20Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-08-02T20:23:19Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T20:34:33Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-09-22T20:04:17Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2010-09-22T19:58:31Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2010-09-22T19:21:53Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "589886",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/darmc-a",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [
+                {
+                    "name": "DARMC, R. Talbert, T. Elliott, S. Gillies",
+                    "username": null
+                }
+            ],
+            "created": "2011-08-02T20:23:17Z",
+            "creators": [
+                {
+                    "name": "J. Bennet",
+                    "username": null
+                },
+                {
+                    "name": "G. Reger",
+                    "username": null
+                }
+            ],
+            "description": "representative point location digitized from the Barrington Atlas of the Greek and Roman World by the Digital Atlas of Roman and Medieval Civilizations project at Harvard University.",
+            "details": "DARMC OBJECTID: 34840",
+            "end": 640,
+            "featureType": [
+                "unknown"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "geometry": {
+                "coordinates": [
+                    24.01869,
+                    35.515775
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T06:49:21Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2011-08-02T21:56:18Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2011-08-02T20:23:18Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-08-02T20:23:18Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2011-08-02T20:23:17Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "darmc-location-34840",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "provenance": "DARMC OBJECTID: 34840",
+            "references": [
+                {
+                    "accessURI": "https://darmc.harvard.edu/",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/9UD9W75C",
+                    "citationDetail": "34840",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds., The Digital Atlas of Roman and Medieval Civilizations (Cambridge (Massachusetts): Harvard University, 2007-), 34840.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "DARMC",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -750,
+            "title": "DARMC location 34840",
+            "uri": "https://pleiades.stoa.org/places/589886/darmc-location-34840"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2010-09-22T19:21:53Z",
+            "creators": [
+                {
+                    "name": "J. Bennet",
+                    "username": null
+                },
+                {
+                    "name": "G. Reger",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T06:49:21Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-09-22T20:04:17Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-09-22T19:58:31Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-09-22T19:21:53Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "kydonia",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 60 B1 Kydonia",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Kydonia",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/589886/kydonia"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "less-certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/less-certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2010-09-22T19:21:53Z",
+            "creators": [
+                {
+                    "name": "J. Bennet",
+                    "username": null
+                },
+                {
+                    "name": "G. Reger",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T06:49:21Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "comment": "Time periods copied from sibling. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-01-20T03:20:24Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-09-22T20:04:17Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-09-22T19:58:31Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-09-22T19:21:53Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "apollonia",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 60 B1 Kydonia",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Apollonia",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/589886/apollonia"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "ottoman-empire-2",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/ottoman-empire-2"
+                }
+            ],
+            "attested": "حانی‍ﻪ",
+            "contributors": [],
+            "created": "2017-07-23T06:42:28Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Elias Kolovos",
+                    "uri": "https://pleiades.stoa.org/author/ekolovos",
+                    "username": "ekolovos"
+                }
+            ],
+            "description": "The Ottoman adaptation of the Venetian name of the town of Canea",
+            "details": "",
+            "end": 1923,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-05-09T17:28:08Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2017-07-23T06:43:13Z",
+                    "modifiedBy": "ekolovos"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2017-07-23T06:42:44Z",
+                    "modifiedBy": "ekolovos"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2017-07-23T06:42:28Z",
+                    "modifiedBy": "ekolovos"
+                }
+            ],
+            "id": "hanya",
+            "language": "ota",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "http://www.worldcat.org/title/hierodikeio-herakleiou-deuteros-kodikas-meros-1-1661-1665-meros-2-1670-1671/oclc/987691844&referer=brief_results",
+                    "citationDetail": "Hierodikeio Hērakleiou : deuteros kōdikas (meros 1 : 1661-1665 - meros 2 : 1670-1671)",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "",
+                    "otherIdentifier": "",
+                    "shortTitle": "",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Hanya",
+            "start": 1300,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/589886/hanya"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "Chania",
+            "contributors": [],
+            "created": "2018-05-16T16:17:55Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/telliott",
+                    "username": "telliott"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2018-05-16T16:19:19Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2018-05-16T16:18:29Z",
+                    "modifiedBy": "telliott"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2018-05-16T16:17:57Z",
+                    "modifiedBy": "telliott"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2018-05-16T16:17:55Z",
+                    "modifiedBy": "telliott"
+                }
+            ],
+            "id": "chania",
+            "language": "en",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "https://en.wikipedia.org/wiki/Chania",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+                    "citationDetail": "Chania",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (English)",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Chania",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/589886/chania"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-minoan",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-minoan"
+                }
+            ],
+            "attested": "𐀓𐀈𐀛𐀊",
+            "contributors": [],
+            "created": "2022-05-05T00:45:40Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Maija Gierhart",
+                    "uri": "https://pleiades.stoa.org/author/mgierhart",
+                    "username": "mgierhart"
+                }
+            ],
+            "description": "Toponym for Kydonia attested in Linear B tablets.",
+            "details": "",
+            "end": -1080,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-05-09T17:27:08Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2022-05-08T18:18:28Z",
+                    "modifiedBy": "mgierhart"
+                },
+                {
+                    "comment": "Edited",
+                    "modified": "2022-05-08T07:26:42Z",
+                    "modifiedBy": "mgierhart"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2022-05-05T00:45:40Z",
+                    "modifiedBy": "mgierhart"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2022-05-05T00:45:40Z",
+                    "modifiedBy": "mgierhart"
+                }
+            ],
+            "id": "ku-do-ni-ja",
+            "language": "grc-Linb",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "https://www.academia.edu/963845/The_Geography_of_the_Mycenaean_Kingdoms",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/FUTQ4XH6",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Bennet, John. “The Geography of the Mycenaean Kingdoms.” In <i>A Companion to Linear B: Mycenaean Greek Texts and Their World</i>, edited by Yves Duhoux and Anna Morpurgo Davies, 2:137–68. Louvain-La-Neuve; Walpole, MA: Peeters, 2011. https://www.academia.edu/963845/The_Geography_of_the_Mycenaean_Kingdoms.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Bennet 2011",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/NIXSP4NP",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Wilson, Anthony L. “The Place-Names in the Linear B Tablets from Knossos: Some Preliminary Considerations.” <i>Minos</i> 16, no. 1 &amp; 2 (1977): 67–125.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wilson 1977",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/H7LUBF9T",
+                    "citationDetail": "p. 399",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Aura Jorro, Francisco. <i>Diccionario Micénico</i>. Vol. 1. Diccionario Griego-Español 1. Madrid: Consejo Superior de Investigaciones Cientifícas, Instituto de Filología, 1985.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Aura Jorro 1985",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://liber.cnr.it/tablet/list",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeAlso",
+                    "formattedCitation": "",
+                    "otherIdentifier": "",
+                    "shortTitle": "LiBER",
+                    "type": "seeAlso"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN C(1) 989",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Ce 59.3",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Co 904.1",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN F 820.1",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Fh 359.b",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Lc(2) 481.B",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Lc(2) 7377.B",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Sd 4404.b",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN Wb 7713.1",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4NLKXZJN",
+                    "citationDetail": "KN L 588.3",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Melena, J. L. <i>The Knossos Tablets</i>. 6th ed. Philadelphia: INSTAP Academic Press, 2019.</div>",
+                    "otherIdentifier": "ISBN: 978-1-931534-96-3",
+                    "shortTitle": "Melena 2019",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "ku-do-ni-ja",
+            "start": -1600,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/589886/ku-do-ni-ja"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/settlement"
+    ],
+    "placeTypes": [
+        "settlement"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 60 B1 Kydonia",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 60 B1 Kydonia",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aalphabetic+letter%3DK%3Aentry+group%3D6%3Aentry%3Dkydonia",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "PECS (Perseus), KYDONIA (Khania) Crete",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.worldcat.org/oclc/1068395137",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/GGPEI2GU",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Tzedakis, Yannis, Carl-Gustaf Styrenius, Erik Hallager, and B. P Hallager, eds. <i>The Greek Swedish Excavations at the Agia Aikaterini Square Kastelli, Khania, 1970-1987 Results of the Excavations under the Dir. of Yannis Tzedakis and Carl-Gustaf Styrenius. 1, From the Geometric to the Modern Greek Period / with Main Contributions by Margrete Hahn, Maria Andreadaki-Vlasaki &amp; Erik Hallager 1. - Text 1, From the Geometric to the Modern Greek Period / with Main Contributions by Margrete Hahn, Maria Andreadaki-Vlasaki &amp; Erik Hallager 1. - Text</i>. Skrifter Utgivna Av Svenska Institutet i Athen 47. Jonsered, Sweden: Distributor, Paul Åströms Förlag, 1997. http://www.worldcat.org/oclc/1068395137.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Hallager 1997",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Chania",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/CI6F6W7W",
+            "citationDetail": "Chania",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: the free encyclopedia that anyone can edit (2001-), Chania.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://data.perseus.org/citations/urn:cts:greekLit:tlg0099.tlg001.perseus-grc1:10.4.7",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/FEVTVBA7",
+            "citationDetail": "10.4.7",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+            "formattedCitation": "<div class=\"csl-entry\">Strabo. <i>Strabonis Geographica: recognovit Augustus Meineke.</i> Edited by August Meineke. 3 in 2 vols. Lipsiae, 1877. http://data.perseus.org/texts/urn:cts:greekLit:tlg0099.tlg001.perseus-grc1.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "Str. (Meineke: Perseus)",
+            "type": "citesAsEvidence"
+        },
+        {
+            "accessURI": "https://topostext.org/place/355240PKyd",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/MC9RGDVB",
+            "citationDetail": "Kydonia (Chania)",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Kiesling, Brady. ToposText – a Reference Tool for Greek Civilization. Version 2.0. Aikaterini Laskaridis Foundation, 2016-.",
+            "otherIdentifier": "",
+            "shortTitle": "ToposText",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.sciencedirect.com/science/article/pii/S2352409X2300038X",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/2YQ3I6F7",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Fouriki, Stavroula, and Eleni Nodarou. “Pottery Traditions in Kydonia: Preliminary Results from the Petrographic Analysis of Three Pottery Assemblages in Chania.” <i>Journal of Archaeological Science: Reports</i> 48 (April 1, 2023): 103863. https://doi.org/10.1016/j.jasrep.2023.103863.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Fouriki 2023",
+            "type": "seeFurther"
+        }
+    ],
+    "reprPoint": [
+        24.01869,
+        35.515775
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=1",
+        "dare:feature=major settlement"
+    ],
+    "title": "Kydonia",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/589886"
+}

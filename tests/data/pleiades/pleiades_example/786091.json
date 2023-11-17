@@ -1,0 +1,474 @@
+{
+    "@type": "Place",
+    "bbox": [
+        33.0,
+        25.5,
+        33.5,
+        26.0
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        }
+    ],
+    "created": "2009-10-12T10:34:10Z",
+    "creators": [
+        {
+            "name": "T. Wilfong",
+            "username": null
+        },
+        {
+            "name": "S.E. Sidebotham",
+            "username": null
+        },
+        {
+            "name": "J. Keenan",
+            "username": null
+        }
+    ],
+    "description": "An ancient place, cited: BAtlas 80 C2 Phoinikon",
+    "details": "<p>The Barrington Atlas Directory notes: Laqeita</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            33.0,
+                            25.5
+                        ],
+                        [
+                            33.5,
+                            25.5
+                        ],
+                        [
+                            33.5,
+                            26.0
+                        ],
+                        [
+                            33.0,
+                            26.0
+                        ],
+                        [
+                            33.0,
+                            25.5
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "id": "undetermined",
+            "properties": {
+                "description": "",
+                "link": "https://pleiades.stoa.org/places/786091/undetermined",
+                "location_precision": "rough",
+                "snippet": "Unknown; 30 BC - AD 640",
+                "title": "Undetermined location"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "updates",
+            "modified": "2021-02-14T18:53:35Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added reference",
+            "modified": "2014-01-21T17:23:29Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:26:13Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Fixing modern/alt locations fumbled in intial import",
+            "modified": "2011-12-20T22:59:58Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-10-13T15:23:40Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-10-12T11:03:13Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-10-12T10:34:10Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "786091",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": null,
+            "accuracy_value": null,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2009-10-12T10:34:10Z",
+            "creators": [
+                {
+                    "name": "J. Keenan",
+                    "username": null
+                },
+                {
+                    "name": "S.E. Sidebotham",
+                    "username": null
+                },
+                {
+                    "name": "T. Wilfong",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "unknown"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            33.0,
+                            25.5
+                        ],
+                        [
+                            33.5,
+                            25.5
+                        ],
+                        [
+                            33.5,
+                            26.0
+                        ],
+                        [
+                            33.0,
+                            26.0
+                        ],
+                        [
+                            33.0,
+                            25.5
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:26:13Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2009-10-13T15:23:40Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2009-10-12T11:03:14Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2009-10-12T10:34:10Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "undetermined",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "provenance": "Barrington Atlas: BAtlas 80 C2 Phoinikon",
+            "references": [],
+            "review_state": "published",
+            "start": -30,
+            "title": "Undetermined location",
+            "uri": "https://pleiades.stoa.org/places/786091/undetermined"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2009-10-12T10:34:10Z",
+            "creators": [
+                {
+                    "name": "J. Keenan",
+                    "username": null
+                },
+                {
+                    "name": "S.E. Sidebotham",
+                    "username": null
+                },
+                {
+                    "name": "T. Wilfong",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:26:13Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2009-10-13T15:23:40Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2009-10-12T11:03:13Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2009-10-12T10:34:10Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "phoinikon",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 80 C2 Phoinikon",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Phoinikon",
+            "start": -30,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786091/phoinikon"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/station"
+    ],
+    "placeTypes": [
+        "station"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 80 C2 Phoinikon",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "80 C2 Phoinikon",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/6J8RM42G",
+            "citationDetail": "277",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Lepsius, Richard, Leonora Horner, and Joanna B Horner. <i>Letters from Egypt, Ethiopia, and the Peninsula of Sinai</i>. ATLA Monograph Preservation Program, ATLA fiche 1987-1425. London: Henry G. Bohn, 1853.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Lepsius 1853",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/4INP84CX",
+            "citationDetail": "117-19",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">A.J. Reinach. “Voyageurs et Pèlerins Dans l’Egypte Gréco-Romaine.” <i>Bulletin de La Société Royale d’archéologie d’Alexandrie</i> 13 (1910): 111–44.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Reinach 1910",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/IRQIM7TI",
+            "citationDetail": "445, 450-52",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Lesquier, Jean. <i>L’armée Romaine d’Égypte d’Auguste à Dioclétien</i>. Mémoires Publiés Par Les Membres de l’Institut Français d’archéologie Orientale Du Caire, t. 41. Le Caire: Impr. de l’Institut français d’archéologie orientale, 1918.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Lesquier 1918",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/EZX42XS4",
+            "citationDetail": "37-39 (nos. 1-2)",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Bernand, André. <i>Le Paneion d’El-Kanaïs: Les Inscriptions Grecques</i>. Leiden: E. J. Brill, 1972.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Bernand 1972",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/C88MK99P",
+            "citationDetail": "5 95",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Calderini, Aristide, and Sergio Daris. <i>Dizionario Dei Nomi Geografici e Topografici Dell’Egitto Greco-Romano</i>. 5 vols. + periodic supplements vols. Cairo, Madrid, Milan, Bonn, Pisa, etc., 1935.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "C-D",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/J9EG6U79",
+            "citationDetail": "98-99",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">H. Cuvigny. “Ulpius Himerus, Procurateur Impérial I. Pan 53.” <i>Bulletin de l’Institut Français d’Archéologie Orientale</i> 96 (1996): 91–101.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Cuvigny 1996",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/W2JVVV53",
+            "citationDetail": "179",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">R.E. Zitterkopf, and S.E. Sidebotham. “Stations and Towers on the Quseir-Nile Road.” <i>The Journal of Egyptian Archaeology</i> 75 (1989): 155–89.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Zitterkopf 1989",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/5036",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 5036: Phoinikon (Laqeita)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://www.cambridge.org/us/talbert/talbertdatabase/TPPlace400.html",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/QT8GLGGI",
+            "citationDetail": "8C2 (Talbert 400)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard. “Database: Peutinger Map Names and Features, with Commentary and User’s Guide.” In <i>Explore the Peutinger Map</i>. Cambridge UP, 2010. http://www.cambridge.org/us/talbert/talbertdatabase/prm.html.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "TP (Talbert: CUP)",
+            "type": "citesAsEvidence"
+        }
+    ],
+    "reprPoint": [
+        33.25,
+        25.75
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [],
+    "title": "Phoinikon",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/786091"
+}

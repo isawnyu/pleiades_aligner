@@ -1,0 +1,461 @@
+{
+    "@type": "Place",
+    "bbox": [
+        33.263046,
+        25.9192133,
+        33.2634779,
+        25.9195292
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Adam Prins",
+            "uri": "https://pleiades.stoa.org/author/adamp",
+            "username": "adamp"
+        },
+        {
+            "name": "Jen Thum",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "Herbert Verreth",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "name": "Mark Depauw",
+            "username": null
+        }
+    ],
+    "created": "2009-10-12T10:34:12Z",
+    "creators": [
+        {
+            "name": "T. Wilfong",
+            "username": null
+        },
+        {
+            "name": "S.E. Sidebotham",
+            "username": null
+        },
+        {
+            "name": "J. Keenan",
+            "username": null
+        }
+    ],
+    "description": "Qasr el-Banat is a fortified site in Egypt's Eastern Desert, some 15 km from Wadi Hammamat.",
+    "details": "<p>The Barrington Atlas Directory notes: Qasr el-Banat</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        33.263046,
+                        25.9194994
+                    ],
+                    [
+                        33.2630719,
+                        25.9192133
+                    ],
+                    [
+                        33.2634779,
+                        25.919243
+                    ],
+                    [
+                        33.263452,
+                        25.9195292
+                    ],
+                    [
+                        33.263046,
+                        25.9194994
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-qasr-el-banat",
+            "properties": {
+                "description": "Location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/786095/osm-location-of-qasr-el-banat",
+                "location_precision": "precise",
+                "snippet": "Fort, ; 30 BC - AD 640",
+                "title": "OSM location of Qasr el-Banat"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "create DARMC citation to preserve cross-project linkage after retracting DARMC location",
+            "modified": "2023-05-17T07:39:51Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "edit summary, update references",
+            "modified": "2023-05-16T18:17:53Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "edited TM GEO ID",
+            "modified": "2017-04-10T04:05:22Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added references",
+            "modified": "2014-03-09T02:20:20Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:28:21Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+            "modified": "2012-05-03T17:31:27Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:26:15Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Fixing modern/alt locations fumbled in intial import",
+            "modified": "2011-12-20T23:00:00Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-08-02T20:57:58Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-10-13T15:23:41Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-10-12T11:03:14Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-10-12T10:34:12Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "786095",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman-early-empire-late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman-early-empire-late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2014-03-09T02:18:09Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Location based on OpenStreetMap",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "fort",
+                ""
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/fort",
+                "https://pleiades.stoa.org/vocabularies/place-types/"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        33.263046,
+                        25.9194994
+                    ],
+                    [
+                        33.2630719,
+                        25.9192133
+                    ],
+                    [
+                        33.2634779,
+                        25.919243
+                    ],
+                    [
+                        33.263452,
+                        25.9195292
+                    ],
+                    [
+                        33.263046,
+                        25.9194994
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-05-17T07:38:52Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "comment": "Reimported full way geometry and updated provenance",
+                    "modified": "2023-05-16T18:15:38Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2014-03-09T02:18:53Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added location",
+                    "modified": "2014-03-09T02:18:45Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2014-03-09T02:18:11Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2014-03-09T02:18:11Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-qasr-el-banat",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/fort",
+                "https://pleiades.stoa.org/vocabularies/place-types/"
+            ],
+            "provenance": "OpenStreetMap (Way 265142459, version 1, osm:changeset=20998480, 2014-03-09T02:17:37Z)",
+            "references": [
+                {
+                    "accessURI": "http://www.openstreetmap.org/browse/way/265142459",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 265142459",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=265142459",
+                    "otherIdentifier": " ",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "OSM location of Qasr el-Banat",
+            "uri": "https://pleiades.stoa.org/places/786095/osm-location-of-qasr-el-banat"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "Herbert Verreth",
+                    "username": null
+                },
+                {
+                    "name": "Mark Depauw",
+                    "username": null
+                },
+                {
+                    "name": "Jen Thum",
+                    "username": null
+                }
+            ],
+            "created": "2012-05-03T17:31:25Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Adam Prins",
+                    "uri": "https://pleiades.stoa.org/author/adamp",
+                    "username": "adamp"
+                }
+            ],
+            "description": "Modern Name",
+            "details": "",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-05-03T17:31:27Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-05-03T17:31:26Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+                    "modified": "2012-05-03T17:31:26Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-05-03T17:31:26Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "qasr-el-banat",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Trismegistos",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Qasr el-Banat",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786095/qasr-el-banat"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/fort"
+    ],
+    "placeTypes": [
+        "fort"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 80 C2 Qasr el-Banat",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 80 C2 Qasr el-Banat",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/W2JVVV53",
+            "citationDetail": "179",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">R.E. Zitterkopf, and S.E. Sidebotham. “Stations and Towers on the Quseir-Nile Road.” <i>The Journal of Egyptian Archaeology</i> 75 (1989): 155–89.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Zitterkopf 1989",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/3653",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 3653: Qasr el-Banat",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://vici.org/vici/7779/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CQWHNDIM",
+            "citationDetail": "7779: Qasr el-Banat",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Voorburg, René. <i>Vici.org: Archaeological Atlas of Antiquity</i>, 2012. https://vici.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "vici.org",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Qasr_el_Banat",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/CI6F6W7W",
+            "citationDetail": "Qasr el Banat",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: the free encyclopedia that anyone can edit (2001-), Qasr el Banat.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "18221",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        33.26326196448911,
+        25.919371226819564
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:major=0",
+        "dare:ancient=0",
+        "dare:feature=fort"
+    ],
+    "title": "Qasr el-Banat",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/786095"
+}

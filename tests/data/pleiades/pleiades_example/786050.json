@@ -1,0 +1,1209 @@
+{
+    "@type": "Place",
+    "bbox": [
+        32.654625,
+        25.714504,
+        32.6625436,
+        25.7227535
+    ],
+    "connections": [],
+    "connectsWith": [
+        "https://pleiades.stoa.org/places/877521474",
+        "https://pleiades.stoa.org/places/20890394",
+        "https://pleiades.stoa.org/places/885585406",
+        "https://pleiades.stoa.org/places/348714102",
+        "https://pleiades.stoa.org/places/918126100",
+        "https://pleiades.stoa.org/places/464741837"
+    ],
+    "contributors": [
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Johan Åhlfeldt",
+            "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+            "username": "jahlfeldt"
+        },
+        {
+            "homepage": null,
+            "name": "Adam Prins",
+            "uri": "https://pleiades.stoa.org/author/adamp",
+            "username": "adamp"
+        },
+        {
+            "name": "Jen Thum",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Carolin Johansson",
+            "uri": "https://pleiades.stoa.org/author/cjohansson",
+            "username": "cjohansson"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Gabriel Mckee",
+            "uri": "https://pleiades.stoa.org/author/gmckee",
+            "username": "gmckee"
+        },
+        {
+            "name": "Herbert Verreth",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "name": "Mark Depauw",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Rune Rattenborg",
+            "uri": "https://pleiades.stoa.org/author/rrattenborg",
+            "username": "rrattenborg"
+        }
+    ],
+    "created": "2009-10-12T10:33:38Z",
+    "creators": [
+        {
+            "name": "T. Wilfong",
+            "username": null
+        },
+        {
+            "name": "S.E. Sidebotham",
+            "username": null
+        },
+        {
+            "name": "J. Keenan",
+            "username": null
+        }
+    ],
+    "description": "A large temple complex in Egypt, associated with the ancient site of Thebes and Luxor and inscribed together with them on the UNESCO World Heritage list.",
+    "details": "<p>The Barrington Atlas Directory notes: Karnak</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    32.6566111,
+                    25.7191736
+                ],
+                "type": "Point"
+            },
+            "id": "dare-location",
+            "properties": {
+                "description": "Representative point location, site precision",
+                "link": "https://pleiades.stoa.org/places/786050/dare-location",
+                "location_precision": "precise",
+                "snippet": "Temple-2, ; 750 BC - AD 300",
+                "title": "DARE Location"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        32.659435,
+                        25.714504
+                    ],
+                    [
+                        32.654625,
+                        25.7164038
+                    ],
+                    [
+                        32.6573787,
+                        25.7212012
+                    ],
+                    [
+                        32.657607,
+                        25.7215331
+                    ],
+                    [
+                        32.6580377,
+                        25.7209489
+                    ],
+                    [
+                        32.6581331,
+                        25.7208874
+                    ],
+                    [
+                        32.6584084,
+                        25.7207844
+                    ],
+                    [
+                        32.6587485,
+                        25.7206573
+                    ],
+                    [
+                        32.659661,
+                        25.7216679
+                    ],
+                    [
+                        32.6594413,
+                        25.7218179
+                    ],
+                    [
+                        32.6596063,
+                        25.7220445
+                    ],
+                    [
+                        32.6599739,
+                        25.7225496
+                    ],
+                    [
+                        32.6600405,
+                        25.7225136
+                    ],
+                    [
+                        32.6602601,
+                        25.7227535
+                    ],
+                    [
+                        32.6604754,
+                        25.7226052
+                    ],
+                    [
+                        32.6605997,
+                        25.7225196
+                    ],
+                    [
+                        32.6604199,
+                        25.7222257
+                    ],
+                    [
+                        32.6608127,
+                        25.7219258
+                    ],
+                    [
+                        32.6610936,
+                        25.7217718
+                    ],
+                    [
+                        32.6614251,
+                        25.72159
+                    ],
+                    [
+                        32.6617047,
+                        25.7216379
+                    ],
+                    [
+                        32.661838,
+                        25.721929
+                    ],
+                    [
+                        32.6619244,
+                        25.7221177
+                    ],
+                    [
+                        32.6625436,
+                        25.7217039
+                    ],
+                    [
+                        32.662204,
+                        25.7183752
+                    ],
+                    [
+                        32.6617314,
+                        25.7175296
+                    ],
+                    [
+                        32.6621108,
+                        25.7173496
+                    ],
+                    [
+                        32.6620576,
+                        25.716468
+                    ],
+                    [
+                        32.6613652,
+                        25.7160181
+                    ],
+                    [
+                        32.6608992,
+                        25.7161921
+                    ],
+                    [
+                        32.659435,
+                        25.714504
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "karnak-temple-complex",
+            "properties": {
+                "description": "Polygon representing the boundaries of the Karnak Temple Complex, derived from an OpenStreetMap Way.",
+                "link": "https://pleiades.stoa.org/places/786050/karnak-temple-complex",
+                "location_precision": "precise",
+                "snippet": "Temple-2, Architecturalcomplex; 2010 BC - AD 300",
+                "title": "OSM location of Karnak Temple Complex"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    32.6586,
+                    25.7168
+                ],
+                "type": "Point"
+            },
+            "id": "cigs-location-of-al-karnak",
+            "properties": {
+                "description": "",
+                "link": "https://pleiades.stoa.org/places/786050/cigs-location-of-al-karnak",
+                "location_precision": "precise",
+                "snippet": "Archaeological-site",
+                "title": "CIGS location of Al-Karnak"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "added Coulon 2023",
+            "modified": "2023-06-30T22:29:11Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "add TGN 7001446: Karnak (deserted settlement)",
+            "modified": "2023-05-23T03:05:52Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "ref. update",
+            "modified": "2020-08-20T00:21:15Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "references",
+            "modified": "2020-02-03T17:01:46Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "edited TM GEO ID",
+            "modified": "2017-04-12T00:59:26Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Edited",
+            "modified": "2017-04-03T15:29:01Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Edited",
+            "modified": "2016-08-29T03:01:13Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added reference",
+            "modified": "2013-06-10T19:13:54Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Edited",
+            "modified": "2013-02-10T14:41:33Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "Initial revision",
+            "modified": "2013-02-10T14:37:58Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:27:58Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+            "modified": "2012-05-03T17:31:09Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:25:41Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Fixing modern/alt locations fumbled in intial import",
+            "modified": "2011-12-20T22:59:42Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-09T22:49:54Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-10-13T15:23:34Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-10-12T11:03:09Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-10-12T10:33:38Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "786050",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/dare-3",
+            "accuracy_value": 10.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                }
+            ],
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2012-10-20T21:27:56Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Johan Åhlfeldt",
+                    "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+                    "username": "jahlfeldt"
+                }
+            ],
+            "description": "Representative point location, site precision",
+            "details": "",
+            "end": 300,
+            "featureType": [
+                "temple-2",
+                ""
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple-2",
+                "https://pleiades.stoa.org/vocabularies/place-types/"
+            ],
+            "geometry": {
+                "coordinates": [
+                    32.6566111,
+                    25.7191736
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "comment": "Edited",
+                    "modified": "2016-08-29T03:01:39Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-10-20T21:27:57Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-10-20T21:27:57Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+                    "modified": "2012-10-20T21:27:57Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-10-20T21:27:56Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "dare-location",
+            "locationType": [
+                "representative",
+                ""
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple-2",
+                "https://pleiades.stoa.org/vocabularies/place-types/"
+            ],
+            "provenance": "Digital Atlas of the Roman Empire (2012-10-15)",
+            "references": [
+                {
+                    "accessURI": "http://francia.ahlfeldt.se/imperium.php",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/cites",
+                    "formattedCitation": "Johan Åhlfeldt, Digital Atlas of the Roman Empire, 2012.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "cites"
+                }
+            ],
+            "review_state": "published",
+            "start": -750,
+            "title": "DARE Location",
+            "uri": "https://pleiades.stoa.org/places/786050/dare-location"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "middle-kingdom-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/middle-kingdom-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "second-intermediate-period-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/second-intermediate-period-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "new-kingdom-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/new-kingdom-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "third-intermediate-period-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/third-intermediate-period-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-period-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-period-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "ptolemaic-egypt",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/ptolemaic-egypt"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                }
+            ],
+            "contributors": [],
+            "created": "2019-05-10T19:54:33Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Gabriel Mckee",
+                    "uri": "https://pleiades.stoa.org/author/gmckee",
+                    "username": "gmckee"
+                }
+            ],
+            "description": "Polygon representing the boundaries of the Karnak Temple Complex, derived from an OpenStreetMap Way.",
+            "details": "",
+            "end": 300,
+            "featureType": [
+                "temple-2",
+                "architecturalcomplex"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple-2",
+                "https://pleiades.stoa.org/vocabularies/place-types/architecturalcomplex"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        32.659435,
+                        25.714504
+                    ],
+                    [
+                        32.654625,
+                        25.7164038
+                    ],
+                    [
+                        32.6573787,
+                        25.7212012
+                    ],
+                    [
+                        32.657607,
+                        25.7215331
+                    ],
+                    [
+                        32.6580377,
+                        25.7209489
+                    ],
+                    [
+                        32.6581331,
+                        25.7208874
+                    ],
+                    [
+                        32.6584084,
+                        25.7207844
+                    ],
+                    [
+                        32.6587485,
+                        25.7206573
+                    ],
+                    [
+                        32.659661,
+                        25.7216679
+                    ],
+                    [
+                        32.6594413,
+                        25.7218179
+                    ],
+                    [
+                        32.6596063,
+                        25.7220445
+                    ],
+                    [
+                        32.6599739,
+                        25.7225496
+                    ],
+                    [
+                        32.6600405,
+                        25.7225136
+                    ],
+                    [
+                        32.6602601,
+                        25.7227535
+                    ],
+                    [
+                        32.6604754,
+                        25.7226052
+                    ],
+                    [
+                        32.6605997,
+                        25.7225196
+                    ],
+                    [
+                        32.6604199,
+                        25.7222257
+                    ],
+                    [
+                        32.6608127,
+                        25.7219258
+                    ],
+                    [
+                        32.6610936,
+                        25.7217718
+                    ],
+                    [
+                        32.6614251,
+                        25.72159
+                    ],
+                    [
+                        32.6617047,
+                        25.7216379
+                    ],
+                    [
+                        32.661838,
+                        25.721929
+                    ],
+                    [
+                        32.6619244,
+                        25.7221177
+                    ],
+                    [
+                        32.6625436,
+                        25.7217039
+                    ],
+                    [
+                        32.662204,
+                        25.7183752
+                    ],
+                    [
+                        32.6617314,
+                        25.7175296
+                    ],
+                    [
+                        32.6621108,
+                        25.7173496
+                    ],
+                    [
+                        32.6620576,
+                        25.716468
+                    ],
+                    [
+                        32.6613652,
+                        25.7160181
+                    ],
+                    [
+                        32.6608992,
+                        25.7161921
+                    ],
+                    [
+                        32.659435,
+                        25.714504
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2019-05-11T03:27:35Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2019-05-10T19:59:29Z",
+                    "modifiedBy": "gmckee"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2019-05-10T19:57:48Z",
+                    "modifiedBy": "gmckee"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2019-05-10T19:54:33Z",
+                    "modifiedBy": "gmckee"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2019-05-10T19:54:33Z",
+                    "modifiedBy": "gmckee"
+                }
+            ],
+            "id": "karnak-temple-complex",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/temple-2",
+                "https://pleiades.stoa.org/vocabularies/place-types/architecturalcomplex"
+            ],
+            "provenance": "OpenStreetMap (Way 298144107, version 5, osm:changeset=48252518, 2017-04-29T10:52:48Z)",
+            "references": [
+                {
+                    "accessURI": "https://www.openstreetmap.org/browse/way/298144107",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 298144107",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=298144107",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -2010,
+            "title": "OSM location of Karnak Temple Complex",
+            "uri": "https://pleiades.stoa.org/places/786050/karnak-temple-complex"
+        },
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/google-earth-2016ff",
+            "accuracy_value": 5.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [],
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "created": "2023-05-22T09:46:01Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Carolin Johansson",
+                    "uri": "https://pleiades.stoa.org/author/cjohansson",
+                    "username": "cjohansson"
+                },
+                {
+                    "homepage": null,
+                    "name": "Rune Rattenborg",
+                    "uri": "https://pleiades.stoa.org/author/rrattenborg",
+                    "username": "rrattenborg"
+                }
+            ],
+            "description": "",
+            "details": "<p>Centre point location extracted from polygon drawn around entire site as identified on Google Earth base imagery in QGIS 3.x.</p>",
+            "end": null,
+            "featureType": [
+                "archaeological-site"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "geometry": {
+                "coordinates": [
+                    32.6586,
+                    25.7168
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-05-23T03:01:19Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "update references",
+                    "modified": "2023-05-23T03:01:14Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2023-05-22T09:46:57Z",
+                    "modifiedBy": "cjohansson"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2023-05-22T09:46:01Z",
+                    "modifiedBy": "cjohansson"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2023-05-22T09:46:01Z",
+                    "modifiedBy": "cjohansson"
+                }
+            ],
+            "id": "cigs-location-of-al-karnak",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+            ],
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/I48WQYLT",
+                    "citationDetail": "page 237",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Porada, Edith. “A Syrian Seal from East Karnak.” <i>Journal of the Society for the Study of Egyptian Antiquities</i> 13, no. 4 (1983): 237–40.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Porada 1983",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://en.wikipedia.org/wiki/Karnak",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+                    "citationDetail": "Karnak",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>, Karnak.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (English)",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://ar.wikipedia.org/wiki/الكرنك",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/2GIR336Y",
+                    "citationDetail": "الكرنك",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>الموسوعة الحرة التي يستطيع الجميع تحريرها: ويكيبيديا</i>. Wikimedia Foundation, 2001. https://ar.wikipedia.org.</div>, الكرنك.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (Arabic)",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://www.wikidata.org/wiki/Q522862",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BCQIKDKS",
+                    "citationDetail": "Q522862: Karnak Temple Complex",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikidata: The Free Knowledge Base That Anyone Can Edit</i>. Wikimedia Foundation, 2014. https://www.wikidata.org/.</div>, Q522862.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikidata",
+                    "type": "citesAsRelated"
+                }
+            ],
+            "review_state": "published",
+            "start": null,
+            "title": "CIGS location of Al-Karnak",
+            "uri": "https://pleiades.stoa.org/places/786050/cigs-location-of-al-karnak"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "الكرنك",
+            "contributors": [],
+            "created": "2023-05-22T09:45:50Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Carolin Johansson",
+                    "uri": "https://pleiades.stoa.org/author/cjohansson",
+                    "username": "cjohansson"
+                },
+                {
+                    "homepage": null,
+                    "name": "Rune Rattenborg",
+                    "uri": "https://pleiades.stoa.org/author/rrattenborg",
+                    "username": "rrattenborg"
+                }
+            ],
+            "description": "",
+            "details": "<p>Romanization according to the ALA-LC specifications for Arabic (2012) (https://www.loc.gov/catdir/cpso/roman.html).</p>",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-05-23T03:02:28Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2023-05-22T09:47:22Z",
+                    "modifiedBy": "cjohansson"
+                },
+                {
+                    "comment": "Initial revision",
+                    "modified": "2023-05-22T09:45:51Z",
+                    "modifiedBy": "cjohansson"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2023-05-22T09:45:50Z",
+                    "modifiedBy": "cjohansson"
+                }
+            ],
+            "id": "al-karnak",
+            "language": "ar",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "https://en.wikipedia.org/wiki/Karnak",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/CI6F6W7W",
+                    "citationDetail": "Karnak",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikipedia: The Free Encyclopedia That Anyone Can Edit</i>. Wikimedia Foundation, 2001. https://en.wikipedia.org.</div>, Karnak.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (English)",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://ar.wikipedia.org/wiki/الكرنك",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/2GIR336Y",
+                    "citationDetail": "الكرنك",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>الموسوعة الحرة التي يستطيع الجميع تحريرها: ويكيبيديا</i>. Wikimedia Foundation, 2001. https://ar.wikipedia.org.</div>, الكرنك.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikipedia (Arabic)",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://www.wikidata.org/wiki/Q522862",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BCQIKDKS",
+                    "citationDetail": "Q522862",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\"><i>Wikidata: The Free Knowledge Base That Anyone Can Edit</i>. Wikimedia Foundation, 2014. https://www.wikidata.org/.</div>, Q522862.",
+                    "otherIdentifier": "",
+                    "shortTitle": "Wikidata",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Al-Karnak",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786050/al-karnak"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [],
+            "attested": "Karnak",
+            "contributors": [],
+            "created": "2023-05-23T03:08:36Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2023-05-23T18:54:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2023-05-23T03:08:43Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "add name",
+                    "modified": "2023-05-23T03:08:37Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2023-05-23T03:08:36Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "karnak",
+            "language": "en",
+            "nameType": "label",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "http://www.worldcat.org/oclc/43970336",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+                    "citationDetail": "80 B2 Karnak",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "BAtlas",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9377UUFB",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A. <i>Barrington Atlas of the Greek and Roman World : Map-by-Map Directory</i>. 2 vols. Princeton, N.J.: Princeton University Press, 2000.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "BAtlDir",
+                    "type": "seeFurther"
+                },
+                {
+                    "accessURI": "https://worldcat.org/title/10954935",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/GSADFAIZ",
+                    "citationDetail": "1-301",
+                    "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+                    "formattedCitation": "<div class=\"csl-entry\">Porter, Bertha, and Rosalind Louisa Beaufort Moss. <i>Topographical Bibliography of Ancient Egyptian Hieroglyphic Texts, Reliefs, and Paintings</i>. 2d , rev.Augment. Oxford Eng: Clarendon Press, 1972. https://worldcat.org/title/10954935.</div>",
+                    "otherIdentifier": "",
+                    "shortTitle": "Porter 1972",
+                    "type": "seeFurther"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Karnak",
+            "start": null,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786050/karnak"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/architecturalcomplex",
+        "https://pleiades.stoa.org/vocabularies/place-types/temple-2",
+        "https://pleiades.stoa.org/vocabularies/place-types/archaeological-site"
+    ],
+    "placeTypes": [
+        "architecturalcomplex",
+        "temple-2",
+        "archaeological-site"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 80 B2 Karnak",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "80 B2 Karnak",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/GSADFAIZ",
+            "citationDetail": "1-301",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Porter, Bertha, and Rosalind L. B Moss. <i>Topographical Bibliography of Ancient Egyptian Hieroglyphic Texts, Reliefs, and Paintings</i>. 2d , rev. and augment. Oxford Eng: Clarendon Press, 1972.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Porter 1972",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/13524",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 13524: Ipet-sout (Karnak)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "http://dlib.etc.ucla.edu/projects/Karnak/",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Digital Karnak",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://whc.unesco.org/en/list/87",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BIIFWTIR",
+            "citationDetail": "87: Ancient Thebes with Its Necropolis",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">UNESCO World Heritage Centre. <i>World Heritage List</i>, 1978. http://whc.unesco.org/en/list/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "WHL",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.cfeetk.cnrs.fr/karnak/",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Karnak (v 0.1.2) Projet d'index global des inscriptions des temples de Karnak",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "16023",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "http://vocab.getty.edu/page/tgn/7001446",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/ZLJQ5AZJ",
+            "citationDetail": "7001446: Karnak (deserted settlement)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\"><i>Getty Thesaurus of Geographic Names® Online</i>, n.d. https://www.getty.edu/research/tools/vocabularies/tgn/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "TGN",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://journals.openedition.org/baefe/9294",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/JWR9KZAN",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Coulon, Laurent, Cyril Giorgi, Anna Guillou, Aleksandra Hallmann, Sylvie Marchand, Raphaële Meffre, and Frédéric Payraudeau. “Karnak – Sanctuaires osiriens (2022).” <i>Bulletin archéologique des Écoles françaises à l’étranger</i>, June 1, 2023. https://doi.org/10.4000/baefe.9294.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Coulon 2023",
+            "type": "seeFurther"
+        }
+    ],
+    "reprPoint": [
+        32.658127567772674,
+        25.71822004908206
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "extant remains",
+        "UWHS"
+    ],
+    "title": "Karnak",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/786050"
+}

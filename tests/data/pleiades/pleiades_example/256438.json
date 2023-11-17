@@ -1,0 +1,1798 @@
+{
+    "@type": "Place",
+    "bbox": [
+        -8.6774238,
+        39.2335206,
+        -8.6774238,
+        39.2335206
+    ],
+    "connections": [
+        {
+            "@type": "Connection",
+            "associationCertainty": "certain",
+            "attestations": [],
+            "connectionType": "on",
+            "connectionTypeURI": "https://pleiades.stoa.org/vocabularies/relationship-types/on",
+            "connectsTo": "https://pleiades.stoa.org/places/256463",
+            "contributors": [],
+            "created": "2020-11-20T21:53:12Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": null,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2020-11-24T02:55:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2020-11-20T21:53:21Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "cnxn",
+                    "modified": "2020-11-20T21:53:15Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2020-11-20T21:53:12Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "tagus-river",
+            "provenance": "Pleiades",
+            "references": [],
+            "review_state": "published",
+            "start": null,
+            "title": "Tagus (river)",
+            "uri": "https://pleiades.stoa.org/places/256438/tagus-river"
+        }
+    ],
+    "connectsWith": [
+        "https://pleiades.stoa.org/places/256463"
+    ],
+    "contributors": [
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Brady Kiesling",
+            "uri": "https://pleiades.stoa.org/author/bkiesling",
+            "username": "bkiesling"
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "name": "R. Warner",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        }
+    ],
+    "created": "2010-11-09T19:38:23Z",
+    "creators": [
+        {
+            "name": "Jr.",
+            "username": null
+        },
+        {
+            "name": "F.H. Stanley",
+            "username": null
+        },
+        {
+            "name": "R.C. Knapp",
+            "username": null
+        }
+    ],
+    "description": "An ancient place, cited: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+    "details": "<p>The Barrington Atlas Directory notes: Santarém POR</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -8.6771957,
+                        39.2348913
+                    ],
+                    [
+                        -8.6770668,
+                        39.2349721
+                    ],
+                    [
+                        -8.6769154,
+                        39.2350384
+                    ],
+                    [
+                        -8.6769093,
+                        39.2350514
+                    ],
+                    [
+                        -8.6768972,
+                        39.2350537
+                    ],
+                    [
+                        -8.6768859,
+                        39.2350538
+                    ],
+                    [
+                        -8.6768766,
+                        39.2350503
+                    ],
+                    [
+                        -8.6768734,
+                        39.235045
+                    ],
+                    [
+                        -8.6768725,
+                        39.2350391
+                    ],
+                    [
+                        -8.6768435,
+                        39.2350505
+                    ],
+                    [
+                        -8.6767578,
+                        39.2351342
+                    ],
+                    [
+                        -8.6767326,
+                        39.2351653
+                    ],
+                    [
+                        -8.6767029,
+                        39.2352051
+                    ],
+                    [
+                        -8.6766658,
+                        39.2352414
+                    ],
+                    [
+                        -8.676629,
+                        39.2352794
+                    ],
+                    [
+                        -8.6765894,
+                        39.2353052
+                    ],
+                    [
+                        -8.676518,
+                        39.2353406
+                    ],
+                    [
+                        -8.6764701,
+                        39.2353577
+                    ],
+                    [
+                        -8.6764021,
+                        39.2353872
+                    ],
+                    [
+                        -8.6763406,
+                        39.2354237
+                    ],
+                    [
+                        -8.6762992,
+                        39.2353669
+                    ],
+                    [
+                        -8.6762208,
+                        39.2353044
+                    ],
+                    [
+                        -8.676087,
+                        39.2351883
+                    ],
+                    [
+                        -8.6758693,
+                        39.2350082
+                    ],
+                    [
+                        -8.6758045,
+                        39.2348323
+                    ],
+                    [
+                        -8.6758087,
+                        39.2348186
+                    ],
+                    [
+                        -8.6758818,
+                        39.2347573
+                    ],
+                    [
+                        -8.6757183,
+                        39.2346067
+                    ],
+                    [
+                        -8.6757676,
+                        39.2345708
+                    ],
+                    [
+                        -8.6756025,
+                        39.234462
+                    ],
+                    [
+                        -8.6754813,
+                        39.2343607
+                    ],
+                    [
+                        -8.6752713,
+                        39.2341821
+                    ],
+                    [
+                        -8.6751859,
+                        39.2340587
+                    ],
+                    [
+                        -8.6750967,
+                        39.2339155
+                    ],
+                    [
+                        -8.6750936,
+                        39.2337788
+                    ],
+                    [
+                        -8.6750951,
+                        39.2336427
+                    ],
+                    [
+                        -8.6751112,
+                        39.2335395
+                    ],
+                    [
+                        -8.6751273,
+                        39.233501
+                    ],
+                    [
+                        -8.6751588,
+                        39.2334536
+                    ],
+                    [
+                        -8.6751435,
+                        39.2334378
+                    ],
+                    [
+                        -8.6751863,
+                        39.2333357
+                    ],
+                    [
+                        -8.6751414,
+                        39.233317
+                    ],
+                    [
+                        -8.6753128,
+                        39.2331041
+                    ],
+                    [
+                        -8.6753128,
+                        39.2330952
+                    ],
+                    [
+                        -8.6753155,
+                        39.2330871
+                    ],
+                    [
+                        -8.6753191,
+                        39.2330831
+                    ],
+                    [
+                        -8.6753282,
+                        39.2330791
+                    ],
+                    [
+                        -8.6753393,
+                        39.2330775
+                    ],
+                    [
+                        -8.675351,
+                        39.2330785
+                    ],
+                    [
+                        -8.6753568,
+                        39.233082
+                    ],
+                    [
+                        -8.6753633,
+                        39.2330892
+                    ],
+                    [
+                        -8.6753642,
+                        39.2330971
+                    ],
+                    [
+                        -8.6753635,
+                        39.233106
+                    ],
+                    [
+                        -8.6754308,
+                        39.2331119
+                    ],
+                    [
+                        -8.6754979,
+                        39.2331474
+                    ],
+                    [
+                        -8.6755793,
+                        39.233197
+                    ],
+                    [
+                        -8.6757006,
+                        39.2332784
+                    ],
+                    [
+                        -8.6757374,
+                        39.2332997
+                    ],
+                    [
+                        -8.6757182,
+                        39.2333184
+                    ],
+                    [
+                        -8.6758139,
+                        39.2334274
+                    ],
+                    [
+                        -8.6760183,
+                        39.2334781
+                    ],
+                    [
+                        -8.6761942,
+                        39.2335146
+                    ],
+                    [
+                        -8.6762479,
+                        39.2335255
+                    ],
+                    [
+                        -8.67628,
+                        39.2335285
+                    ],
+                    [
+                        -8.6762991,
+                        39.2335174
+                    ],
+                    [
+                        -8.67631,
+                        39.2335139
+                    ],
+                    [
+                        -8.6763201,
+                        39.2335127
+                    ],
+                    [
+                        -8.6763333,
+                        39.2335153
+                    ],
+                    [
+                        -8.6763533,
+                        39.2335283
+                    ],
+                    [
+                        -8.676364,
+                        39.2335407
+                    ],
+                    [
+                        -8.6765075,
+                        39.2334609
+                    ],
+                    [
+                        -8.6768457,
+                        39.2329482
+                    ],
+                    [
+                        -8.6768764,
+                        39.2329678
+                    ],
+                    [
+                        -8.6772467,
+                        39.2332078
+                    ],
+                    [
+                        -8.6772859,
+                        39.233249
+                    ],
+                    [
+                        -8.6773134,
+                        39.2332786
+                    ],
+                    [
+                        -8.6773989,
+                        39.2333223
+                    ],
+                    [
+                        -8.6773332,
+                        39.2333872
+                    ],
+                    [
+                        -8.6773874,
+                        39.233472
+                    ],
+                    [
+                        -8.6773881,
+                        39.2334731
+                    ],
+                    [
+                        -8.6774238,
+                        39.2335206
+                    ],
+                    [
+                        -8.6775038,
+                        39.2336412
+                    ],
+                    [
+                        -8.6775516,
+                        39.2337035
+                    ],
+                    [
+                        -8.6775864,
+                        39.2336816
+                    ],
+                    [
+                        -8.6776247,
+                        39.2337557
+                    ],
+                    [
+                        -8.6776478,
+                        39.2337878
+                    ],
+                    [
+                        -8.6776993,
+                        39.2338321
+                    ],
+                    [
+                        -8.6777719,
+                        39.2338901
+                    ],
+                    [
+                        -8.6779058,
+                        39.2340279
+                    ],
+                    [
+                        -8.6779645,
+                        39.2340565
+                    ],
+                    [
+                        -8.6783248,
+                        39.2341522
+                    ],
+                    [
+                        -8.6783717,
+                        39.2341675
+                    ],
+                    [
+                        -8.6784997,
+                        39.2342083
+                    ],
+                    [
+                        -8.6784984,
+                        39.2342537
+                    ],
+                    [
+                        -8.6784461,
+                        39.2342943
+                    ],
+                    [
+                        -8.6784161,
+                        39.2343382
+                    ],
+                    [
+                        -8.678489,
+                        39.2343941
+                    ],
+                    [
+                        -8.6785318,
+                        39.2344256
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location",
+            "properties": {
+                "description": "Representative location based on OpenStreetMap",
+                "link": "https://pleiades.stoa.org/places/256438/osm-location",
+                "location_precision": "precise",
+                "snippet": "City-wall; 750 BC - AD 640",
+                "title": "OSM location of Restos das muralhas de Santarém"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "updated refs., added topostext",
+            "modified": "2020-11-20T21:51:33Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added DARMC reference",
+            "modified": "2018-07-11T23:03:56Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "added reference",
+            "modified": "2013-11-12T23:56:32Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "DARE feature tag fix.",
+            "modified": "2012-10-23T19:39:58Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-23T17:36:49Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T03:46:29Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-09T18:59:39Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T19:20:02Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-11-10T17:53:10Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2010-11-09T20:27:22Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2010-11-09T19:38:23Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "256438",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman-early-empire-late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman-early-empire-late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2023-04-04T22:59:30Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representative location based on OpenStreetMap",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "city-wall"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/city-wall"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        -8.6771957,
+                        39.2348913
+                    ],
+                    [
+                        -8.6770668,
+                        39.2349721
+                    ],
+                    [
+                        -8.6769154,
+                        39.2350384
+                    ],
+                    [
+                        -8.6769093,
+                        39.2350514
+                    ],
+                    [
+                        -8.6768972,
+                        39.2350537
+                    ],
+                    [
+                        -8.6768859,
+                        39.2350538
+                    ],
+                    [
+                        -8.6768766,
+                        39.2350503
+                    ],
+                    [
+                        -8.6768734,
+                        39.235045
+                    ],
+                    [
+                        -8.6768725,
+                        39.2350391
+                    ],
+                    [
+                        -8.6768435,
+                        39.2350505
+                    ],
+                    [
+                        -8.6767578,
+                        39.2351342
+                    ],
+                    [
+                        -8.6767326,
+                        39.2351653
+                    ],
+                    [
+                        -8.6767029,
+                        39.2352051
+                    ],
+                    [
+                        -8.6766658,
+                        39.2352414
+                    ],
+                    [
+                        -8.676629,
+                        39.2352794
+                    ],
+                    [
+                        -8.6765894,
+                        39.2353052
+                    ],
+                    [
+                        -8.676518,
+                        39.2353406
+                    ],
+                    [
+                        -8.6764701,
+                        39.2353577
+                    ],
+                    [
+                        -8.6764021,
+                        39.2353872
+                    ],
+                    [
+                        -8.6763406,
+                        39.2354237
+                    ],
+                    [
+                        -8.6762992,
+                        39.2353669
+                    ],
+                    [
+                        -8.6762208,
+                        39.2353044
+                    ],
+                    [
+                        -8.676087,
+                        39.2351883
+                    ],
+                    [
+                        -8.6758693,
+                        39.2350082
+                    ],
+                    [
+                        -8.6758045,
+                        39.2348323
+                    ],
+                    [
+                        -8.6758087,
+                        39.2348186
+                    ],
+                    [
+                        -8.6758818,
+                        39.2347573
+                    ],
+                    [
+                        -8.6757183,
+                        39.2346067
+                    ],
+                    [
+                        -8.6757676,
+                        39.2345708
+                    ],
+                    [
+                        -8.6756025,
+                        39.234462
+                    ],
+                    [
+                        -8.6754813,
+                        39.2343607
+                    ],
+                    [
+                        -8.6752713,
+                        39.2341821
+                    ],
+                    [
+                        -8.6751859,
+                        39.2340587
+                    ],
+                    [
+                        -8.6750967,
+                        39.2339155
+                    ],
+                    [
+                        -8.6750936,
+                        39.2337788
+                    ],
+                    [
+                        -8.6750951,
+                        39.2336427
+                    ],
+                    [
+                        -8.6751112,
+                        39.2335395
+                    ],
+                    [
+                        -8.6751273,
+                        39.233501
+                    ],
+                    [
+                        -8.6751588,
+                        39.2334536
+                    ],
+                    [
+                        -8.6751435,
+                        39.2334378
+                    ],
+                    [
+                        -8.6751863,
+                        39.2333357
+                    ],
+                    [
+                        -8.6751414,
+                        39.233317
+                    ],
+                    [
+                        -8.6753128,
+                        39.2331041
+                    ],
+                    [
+                        -8.6753128,
+                        39.2330952
+                    ],
+                    [
+                        -8.6753155,
+                        39.2330871
+                    ],
+                    [
+                        -8.6753191,
+                        39.2330831
+                    ],
+                    [
+                        -8.6753282,
+                        39.2330791
+                    ],
+                    [
+                        -8.6753393,
+                        39.2330775
+                    ],
+                    [
+                        -8.675351,
+                        39.2330785
+                    ],
+                    [
+                        -8.6753568,
+                        39.233082
+                    ],
+                    [
+                        -8.6753633,
+                        39.2330892
+                    ],
+                    [
+                        -8.6753642,
+                        39.2330971
+                    ],
+                    [
+                        -8.6753635,
+                        39.233106
+                    ],
+                    [
+                        -8.6754308,
+                        39.2331119
+                    ],
+                    [
+                        -8.6754979,
+                        39.2331474
+                    ],
+                    [
+                        -8.6755793,
+                        39.233197
+                    ],
+                    [
+                        -8.6757006,
+                        39.2332784
+                    ],
+                    [
+                        -8.6757374,
+                        39.2332997
+                    ],
+                    [
+                        -8.6757182,
+                        39.2333184
+                    ],
+                    [
+                        -8.6758139,
+                        39.2334274
+                    ],
+                    [
+                        -8.6760183,
+                        39.2334781
+                    ],
+                    [
+                        -8.6761942,
+                        39.2335146
+                    ],
+                    [
+                        -8.6762479,
+                        39.2335255
+                    ],
+                    [
+                        -8.67628,
+                        39.2335285
+                    ],
+                    [
+                        -8.6762991,
+                        39.2335174
+                    ],
+                    [
+                        -8.67631,
+                        39.2335139
+                    ],
+                    [
+                        -8.6763201,
+                        39.2335127
+                    ],
+                    [
+                        -8.6763333,
+                        39.2335153
+                    ],
+                    [
+                        -8.6763533,
+                        39.2335283
+                    ],
+                    [
+                        -8.676364,
+                        39.2335407
+                    ],
+                    [
+                        -8.6765075,
+                        39.2334609
+                    ],
+                    [
+                        -8.6768457,
+                        39.2329482
+                    ],
+                    [
+                        -8.6768764,
+                        39.2329678
+                    ],
+                    [
+                        -8.6772467,
+                        39.2332078
+                    ],
+                    [
+                        -8.6772859,
+                        39.233249
+                    ],
+                    [
+                        -8.6773134,
+                        39.2332786
+                    ],
+                    [
+                        -8.6773989,
+                        39.2333223
+                    ],
+                    [
+                        -8.6773332,
+                        39.2333872
+                    ],
+                    [
+                        -8.6773874,
+                        39.233472
+                    ],
+                    [
+                        -8.6773881,
+                        39.2334731
+                    ],
+                    [
+                        -8.6774238,
+                        39.2335206
+                    ],
+                    [
+                        -8.6775038,
+                        39.2336412
+                    ],
+                    [
+                        -8.6775516,
+                        39.2337035
+                    ],
+                    [
+                        -8.6775864,
+                        39.2336816
+                    ],
+                    [
+                        -8.6776247,
+                        39.2337557
+                    ],
+                    [
+                        -8.6776478,
+                        39.2337878
+                    ],
+                    [
+                        -8.6776993,
+                        39.2338321
+                    ],
+                    [
+                        -8.6777719,
+                        39.2338901
+                    ],
+                    [
+                        -8.6779058,
+                        39.2340279
+                    ],
+                    [
+                        -8.6779645,
+                        39.2340565
+                    ],
+                    [
+                        -8.6783248,
+                        39.2341522
+                    ],
+                    [
+                        -8.6783717,
+                        39.2341675
+                    ],
+                    [
+                        -8.6784997,
+                        39.2342083
+                    ],
+                    [
+                        -8.6784984,
+                        39.2342537
+                    ],
+                    [
+                        -8.6784461,
+                        39.2342943
+                    ],
+                    [
+                        -8.6784161,
+                        39.2343382
+                    ],
+                    [
+                        -8.678489,
+                        39.2343941
+                    ],
+                    [
+                        -8.6785318,
+                        39.2344256
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "comment": "Reimported full way geometry and updated provenance",
+                    "modified": "2023-04-11T01:35:15Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "updated title, summary; changed location type",
+                    "modified": "2020-11-20T21:52:16Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2018-07-11T23:03:04Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2014-05-03T17:30:55Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added location",
+                    "modified": "2014-05-03T17:30:40Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2014-05-03T17:29:45Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2014-05-03T17:29:45Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/city-wall"
+            ],
+            "provenance": "OpenStreetMap (Way 140838607, version 5, osm:changeset=85435419, 2020-05-19T10:37:49Z)",
+            "references": [
+                {
+                    "accessURI": "http://www.openstreetmap.org/browse/way/140838607",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 140838607",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=140838607",
+                    "otherIdentifier": " ",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -750,
+            "title": "OSM location of Restos das muralhas de Santarém",
+            "uri": "https://pleiades.stoa.org/places/256438/osm-location"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Warner",
+                    "username": null
+                },
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2010-11-09T19:38:23Z",
+            "creators": [
+                {
+                    "name": "R.C. Knapp",
+                    "username": null
+                },
+                {
+                    "name": "F.H. Stanley, Jr.",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T03:46:30Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-10T17:53:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-09T20:27:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-09T19:38:23Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "scallabis",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Scallabis",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/256438/scallabis"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "Praesidium Iulium",
+            "contributors": [
+                {
+                    "name": "R. Warner",
+                    "username": null
+                },
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                },
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                },
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "created": "2010-11-09T19:38:23Z",
+            "creators": [
+                {
+                    "name": "Jr.",
+                    "username": null
+                },
+                {
+                    "name": "F.H. Stanley",
+                    "username": null
+                },
+                {
+                    "name": "R.C. Knapp",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "ref. update",
+                    "modified": "2020-11-21T03:47:59Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added reference",
+                    "modified": "2015-03-10T20:55:23Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T03:46:31Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "comment": "Time periods copied from sibling. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-01-20T03:19:56Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-10T17:53:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-09T20:27:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-09T19:38:23Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "praesidium-iulium",
+            "language": "la",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+            "references": [
+                {
+                    "accessURI": "http://latin.packhum.org/loc/978/1/313/1226-1240#315",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/8AK7HSRG",
+                    "citationDetail": "4.117.8",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "<div class=\"csl-entry\">Plinius Secundus Maior, C. <i>Naturalis Historiae</i>. Edited by Karl Friedrich Theodor Mayhoff. Bibliotheca Scriptorum Graecorum et Romanorum Teubneriana. Lipsiae: Teubner, 1906. http://latin.packhum.org/loc/978/1/0.</div>",
+                    "otherIdentifier": " ",
+                    "shortTitle": "Plin., NH (Mayhoff: PHI)",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Praesidium Iulium",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/256438/praesidium-iulium"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Warner",
+                    "username": null
+                },
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2010-11-09T19:38:23Z",
+            "creators": [
+                {
+                    "name": "R.C. Knapp",
+                    "username": null
+                },
+                {
+                    "name": "F.H. Stanley, Jr.",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T03:46:31Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "comment": "Time periods copied from sibling. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-01-20T03:19:56Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-10T17:53:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-09T20:27:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-09T19:38:23Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "col-scallabitana",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Col. Scallabitana",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/256438/col-scallabitana"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "archaic",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/archaic"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "classical",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/classical"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "Colonia Scalabitana",
+            "contributors": [
+                {
+                    "name": "R. Warner",
+                    "username": null
+                },
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                },
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                },
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "created": "2010-11-09T19:38:24Z",
+            "creators": [
+                {
+                    "name": "Jr.",
+                    "username": null
+                },
+                {
+                    "name": "F.H. Stanley",
+                    "username": null
+                },
+                {
+                    "name": "R.C. Knapp",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "added reference",
+                    "modified": "2020-11-21T03:46:55Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T03:46:31Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "comment": "Time periods copied from sibling. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-01-20T03:19:57Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2010-11-10T17:53:10Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2010-11-09T20:27:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2010-11-09T19:38:24Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "col-scalabitana",
+            "language": "la",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+            "references": [
+                {
+                    "accessURI": "http://eda-bea.es/pub/record_card_1.php?rec=21115",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "CIL II 35 = IRCP 185 = D 2920 = AE 1967, 195 = RAP 525 = HEp 12, 2002, 667",
+                    "otherIdentifier": "",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Col. Scalabitana",
+            "start": -750,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/256438/col-scalabitana"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                }
+            ],
+            "attested": "Scalabis",
+            "contributors": [
+                {
+                    "homepage": null,
+                    "name": "Tom Elliott",
+                    "uri": "https://pleiades.stoa.org/author/thomase",
+                    "username": "thomase"
+                }
+            ],
+            "created": "2015-03-10T20:51:15Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 300,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2018-07-11T23:02:56Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "comment": "Edited",
+                    "modified": "2018-07-11T23:02:50Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2015-03-10T20:56:08Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added name",
+                    "modified": "2015-03-10T20:51:24Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2015-03-10T20:51:18Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "name.2015-03-10.6442864655",
+            "language": "la",
+            "nameType": "geographic",
+            "provenance": "Pleiades",
+            "references": [
+                {
+                    "accessURI": "http://latin.packhum.org/loc/978/1/313/1226-1240#315",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsEvidence",
+                    "formattedCitation": "Plin. HN 4.117.7",
+                    "otherIdentifier": " ",
+                    "shortTitle": "",
+                    "type": "citesAsEvidence"
+                }
+            ],
+            "review_state": "published",
+            "romanized": "Scalabis",
+            "start": -30,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/256438/name.2015-03-10.6442864655"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/city-wall",
+        "https://pleiades.stoa.org/vocabularies/place-types/settlement"
+    ],
+    "placeTypes": [
+        "city-wall",
+        "settlement"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 26 B2 Scallabis/Praesidium Iulium",
+    "references": [
+        {
+            "accessURI": "http://www.worldcat.org/oclc/43970336",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MIAGQ5C6",
+            "citationDetail": "26 B2 Scallabis/Praesidium Iulium",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Talbert, Richard J. A., ed. <i>Barrington Atlas of the Greek and Roman World</i>. Princeton, N.J.: Princeton University Press, 2000. http://www.worldcat.org/oclc/43970336.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "BAtlas",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.worldcat.org/oclc/37821577",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9FFZTKE2",
+            "citationDetail": "II.2, 116",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Alarcão, Jorge de. <i>Roman Portugal</i>. 2 in 4 vols. Warminster: Aris &amp; Phillips, 1988. http://www.worldcat.org/oclc/37821577.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Alarcão 1988",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.worldcat.org/oclc/36156421",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/PCC822HP",
+            "citationDetail": "145",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Alarcão, Jorge de, Adela Cepas, José Ignacio Reguera Cardiel, Angela Alonso Sánchez, and Union académique internationale, eds. <i>Tabula Imperii Romani. Hoja J-29 : Lisboa : Emerita, Scallabis, Pax Iulia, Gades: sobre la base cartográfica del mapa a escala 1:1000000 del IGN</i>. Tabula Imperii Romani, J-29. Madrid: Consejo Superior de Investigaciones Cientificas : Ministerio de Obras Públicas, Transportes y Medio Ambiente, Instituto Geográfico Nacional : Ministerio de Cultura, 1995. http://www.worldcat.org/oclc/36156421.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "TIR Emerita",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://en.wikipedia.org/wiki/Scalabis",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/items/CI6F6W7W",
+            "citationDetail": "Scalabis",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: the free encyclopedia that anyone can edit (2001-), Scalabis.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (English)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/9UD9W75C",
+            "citationDetail": "3508",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds. <i>The Digital Atlas of Roman and Medieval Civilizations</i>. Cambridge (Massachusetts): Harvard University, 2007. https://darmc.harvard.edu/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://topostext.org/place/392-86USca",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MC9RGDVB",
+            "citationDetail": "Scalabis (Lusitania)",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Kiesling, Brady. <i>ToposText – a Reference Tool for Greek Civilization</i>. Version 2.0. Aikaterini Laskaridis Foundation, 2016. https://topostext.org/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "ToposText",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.wikidata.org/wiki/Q3326323",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/BCQIKDKS",
+            "citationDetail": "Q3326323: Scalabis",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\"><i>Wikidata: The Free Knowledge Base That Anyone Can Edit</i>. Wikimedia Foundation, 2014. https://www.wikidata.org/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Wikidata",
+            "type": "citesAsRelated"
+        },
+        {
+            "accessURI": "https://www.trismegistos.org/place/25936",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 25936: Scallabis (Santarém)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        -8.6774238,
+        39.2335206
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=1",
+        "dare:feature=major settlement"
+    ],
+    "title": "Scallabis/Praesidium Iulium",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/256438"
+}

@@ -10,6 +10,16 @@ Define common classes for managing ingested datasets and their place records
 """
 
 from logging import getLogger
+from shapely import (
+    GeometryCollection,
+    Point,
+    LinearRing,
+    LineString,
+    Polygon,
+    MultiPoint,
+    MultiPolygon,
+    MultiLineString,
+)
 from slugify import slugify
 
 
@@ -55,6 +65,49 @@ class DataSet:
     def namespace(self):
         return self._namespace
 
+    # places
+    @property
+    def pids(self):
+        return list(self._places.keys())
+
+    @property
+    def places(self):
+        return list(self._places.values())
+
+    @places.setter
+    def places(self, values=list()):
+        if not isinstance(values, list):
+            raise TypeError(
+                f"Expected type list for values argument, but got {type(values)}"
+            )
+        fails = [p for p in values if not isinstance(p, Place)]
+        if fails:
+            fail_types = {type(f) for f in fails}
+            raise TypeError(
+                "One or more items in values argument is not of type Place: {fail_types}"
+            )
+        self._places = {p.id: p for p in values}
+        self.reindex()
+
+    def reindex(self):
+        for pid, p in self._places.items():
+            try:
+                p.names
+            except AttributeError:
+                pass
+            else:
+                for n in p.names:
+                    slug = slugify(n)
+                    try:
+                        self._name_index[slug]
+                    except KeyError:
+                        self._name_index[slug] = dict()
+                    finally:
+                        self._name_index[slug][pid] = 1
+
+    def __len__(self):
+        return len(self.places)
+
 
 class Place:
     """
@@ -69,9 +122,10 @@ class Place:
         self._alignments = set()
         self._geometries = list()
         self._name_strings = set()
-        self._accuracy = 0.0  # assume unsigned decimal degrees
+        self.accuracy = 0.0  # assume unsigned decimal degrees
         self._centroid = None  # assume signed decimal degrees WGS84
         self._footprint = None  # assume signed decimal degrees WGS84
+        self.raw_properties = dict()
 
         for k, arg in kwargs.items():
             try:
@@ -99,3 +153,127 @@ class Place:
     @property
     def id(self):
         return self._id
+
+    # Geometries
+
+    @property
+    def geometries(self) -> GeometryCollection:
+        return self._geometries
+
+    @geometries.deleter
+    def geometries(self):
+        self._geometries = None
+
+    @geometries.setter
+    def geometries(
+        self,
+        values: [
+            GeometryCollection,
+            LinearRing,
+            LineString,
+            list,
+            MultiLineString,
+            MultiPoint,
+            MultiPolygon,
+            Point,
+            Polygon,
+            set,
+            tuple,
+            None,
+        ],
+    ):
+        if not values or values is None:
+            del self.geometries
+        elif isinstance(values, GeometryCollection):
+            self._geometries = values
+        elif isinstance(values, list):
+            self._geometries = GeometryCollection(values)
+        elif isinstance(
+            values,
+            (
+                LinearRing,
+                LineString,
+                MultiLineString,
+                MultiPoint,
+                MultiPolygon,
+                Point,
+                Polygon,
+            ),
+        ):
+            self._geometries = GeometryCollection(
+                [
+                    values,
+                ]
+            )
+        elif isinstance(values, (tuple, set)):
+            self._geometries = GeometryCollection(list(values))
+        self._recalculate_spatial_metadata()
+
+    def add_geometries(
+        self,
+        values: [
+            GeometryCollection,
+            LinearRing,
+            LineString,
+            list,
+            MultiLineString,
+            MultiPoint,
+            MultiPolygon,
+            Point,
+            Polygon,
+            set,
+            tuple,
+        ],
+    ):
+        if not values or values is None:
+            pass
+        elif isinstance(values, GeometryCollection):
+            gg = set(self.geometries.geoms)
+            gg.update(values.geoms)
+            self._geometries = GeometryCollection(list(gg))
+        elif isinstance(values, (list, tuple)):
+            gg = set(self.geometries.geoms)
+            gg.update(values)
+            self._geometries = GeometryCollection(list(gg))
+        elif isinstance(
+            values,
+            (
+                LinearRing,
+                LineString,
+                MultiLineString,
+                MultiPoint,
+                MultiPolygon,
+                Point,
+                Polygon,
+            ),
+        ):
+            gg = set(self.geometries.geoms)
+            gg.add(values)
+            self._geometries = GeometryCollection(list(gg))
+        self._recalculate_spatial_metadata()
+
+    def remove_geometries(self):
+        raise NotImplementedError
+
+    @property
+    def centroid(self):
+        return self._centroid
+
+    @property
+    def footprint(self):
+        return self._footprint
+
+    def _recalculate_spatial_metadata(self):
+        if self._geometries is None:
+            self._footprint = None
+            self._centroid = None
+        else:
+            if self.accuracy:
+                gg = GeometryCollection(
+                    [g.buffer(self.accuracy) for g in self._geometries.geoms]
+                )
+                self._footprint = gg.convex_hull
+                self._centroid = gg.centroid
+            else:
+                self._footprint = self._geometries.convex_hull
+                self._centroid = self._geometries.centroid

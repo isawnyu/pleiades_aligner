@@ -1,0 +1,564 @@
+{
+    "@type": "Place",
+    "bbox": [
+        33.568897,
+        25.950983,
+        33.568897,
+        25.950983
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Adam Prins",
+            "uri": "https://pleiades.stoa.org/author/adamp",
+            "username": "adamp"
+        },
+        {
+            "name": "Jen Thum",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        },
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "Herbert Verreth",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "name": "Mark Depauw",
+            "username": null
+        }
+    ],
+    "created": "2009-10-12T10:34:04Z",
+    "creators": [
+        {
+            "name": "T. Wilfong",
+            "username": null
+        },
+        {
+            "name": "S.E. Sidebotham",
+            "username": null
+        },
+        {
+            "name": "J. Keenan",
+            "username": null
+        }
+    ],
+    "description": "A cluster of mines and associated late-antique settlement at Bir Umm Fawakhir in Egypt's Eastern Desert.",
+    "details": "<p>The Barrington Atlas notes: settlement and mine cluster at Fawakhir.</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    33.568897,
+                    25.950983
+                ],
+                "type": "Point"
+            },
+            "id": "darmc-location-2729",
+            "properties": {
+                "description": "500K scale point location",
+                "link": "https://pleiades.stoa.org/places/786086/darmc-location-2729",
+                "location_precision": "precise",
+                "snippet": "Unknown; 330 BC - AD 300",
+                "title": "DARMC location 2729"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "title; summary",
+            "modified": "2023-05-17T07:47:08Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "comment": "ctype",
+            "modified": "2021-02-12T16:04:05Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-20T21:28:16Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+            "modified": "2012-05-03T17:31:22Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T08:26:07Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "Fixing modern/alt locations fumbled in intial import",
+            "modified": "2011-12-20T22:59:55Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Add in location mistakenly added to http://pleiades.stoa.org/places/786087/, the neighboring Persou, during DARMC reconciliation.",
+            "modified": "2011-08-04T22:16:41Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Fix feature type and details messed up during DARMC reconciliation process ",
+            "modified": "2011-08-04T22:10:20Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2009-10-13T15:23:39Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2009-10-12T11:03:13Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2009-10-12T10:34:04Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "786086",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/darmc-c",
+            "accuracy_value": 10000.0,
+            "archaeologicalRemains": "unknown",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "hellenistic-republican",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/hellenistic-republican"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                }
+            ],
+            "contributors": [
+                {
+                    "name": "DARMC, R. Talbert, T. Elliott, S. Gillies",
+                    "username": null
+                }
+            ],
+            "created": "2011-03-09T18:52:27Z",
+            "creators": [
+                {
+                    "name": "J. Keenan",
+                    "username": null
+                },
+                {
+                    "name": "S.E. Sidebotham",
+                    "username": null
+                },
+                {
+                    "name": "T. Wilfong",
+                    "username": null
+                }
+            ],
+            "description": "500K scale point location",
+            "details": "DARMC OBJECTID: 2729",
+            "end": 300,
+            "featureType": [
+                "unknown"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "geometry": {
+                "coordinates": [
+                    33.568897,
+                    25.950983
+                ],
+                "type": "Point"
+            },
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:26:08Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2011-08-05T21:21:37Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2011-08-05T21:21:33Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Retract",
+                    "modified": "2011-08-05T21:21:24Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2011-03-10T04:56:18Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2011-03-09T18:52:28Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+                    "modified": "2011-03-09T18:52:28Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2011-03-09T18:52:27Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "darmc-location-2729",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/unknown"
+            ],
+            "provenance": "DARMC OBJECTID: 2729",
+            "references": [
+                {
+                    "accessURI": "https://darmc.harvard.edu/",
+                    "alternateURI": "",
+                    "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/9UD9W75C",
+                    "citationDetail": "2729",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds., The Digital Atlas of Roman and Medieval Civilizations (Cambridge (Massachusetts): Harvard University, 2007-), 2729.",
+                    "otherIdentifier": " ",
+                    "shortTitle": "DARMC",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -330,
+            "title": "DARMC location 2729",
+            "uri": "https://pleiades.stoa.org/places/786086/darmc-location-2729"
+        }
+    ],
+    "names": [
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "R. Talbert",
+                    "username": null
+                },
+                {
+                    "name": "T. Elliott",
+                    "username": null
+                },
+                {
+                    "homepage": null,
+                    "name": "Sean Gillies",
+                    "uri": "https://pleiades.stoa.org/author/sgillies",
+                    "username": "sgillies"
+                }
+            ],
+            "created": "2009-10-12T10:34:04Z",
+            "creators": [
+                {
+                    "name": "J. Keenan",
+                    "username": null
+                },
+                {
+                    "name": "S.E. Sidebotham",
+                    "username": null
+                },
+                {
+                    "name": "T. Wilfong",
+                    "username": null
+                }
+            ],
+            "description": "",
+            "details": "",
+            "end": 640,
+            "history": [
+                {
+                    "comment": "Global migration and reindexing of citations and provenance, February 2012",
+                    "modified": "2012-02-15T08:26:08Z",
+                    "modifiedBy": "admin"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2011-08-04T22:17:53Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2011-08-04T22:17:23Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2011-08-04T22:12:39Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Publish externally",
+                    "modified": "2009-10-13T15:23:39Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2009-10-12T11:03:13Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2009-10-12T10:34:04Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "persou",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Barrington Atlas: BAtlas 80 D1 Persou",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Persou",
+            "start": 300,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786086/persou"
+        },
+        {
+            "@type": "Name",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "modern",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/modern"
+                }
+            ],
+            "attested": "",
+            "contributors": [
+                {
+                    "name": "Herbert Verreth",
+                    "username": null
+                },
+                {
+                    "name": "Mark Depauw",
+                    "username": null
+                },
+                {
+                    "name": "Jen Thum",
+                    "username": null
+                }
+            ],
+            "created": "2012-05-03T17:31:21Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Adam Prins",
+                    "uri": "https://pleiades.stoa.org/author/adamp",
+                    "username": "adamp"
+                }
+            ],
+            "description": "Modern Name",
+            "details": "",
+            "end": 2100,
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2012-05-03T17:31:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2012-05-03T17:31:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "comment": "Trismegistos references from Adam Prins et al (adamp, Mark Depauw, Herbert Verreth, Jen Thum) and reviewd by Tom Elliott (thomase) in May 2012",
+                    "modified": "2012-05-03T17:31:22Z",
+                    "modifiedBy": "sgillies"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2012-05-03T17:31:21Z",
+                    "modifiedBy": "sgillies"
+                }
+            ],
+            "id": "bir-umm-fawakhir",
+            "language": "",
+            "nameType": "geographic",
+            "provenance": "Trismegistos",
+            "references": [],
+            "review_state": "published",
+            "romanized": "Bir Umm Fawakhir",
+            "start": 1700,
+            "transcriptionAccuracy": "accurate",
+            "transcriptionCompleteness": "complete",
+            "uri": "https://pleiades.stoa.org/places/786086/bir-umm-fawakhir"
+        }
+    ],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/settlement",
+        "https://pleiades.stoa.org/vocabularies/place-types/quarry"
+    ],
+    "placeTypes": [
+        "settlement",
+        "quarry"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 80 D1 Persou",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 80 D1 Persou",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/H6WN9EDE",
+            "citationDetail": "215-17",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Klemm, Rosemarie, and Dietrich D Klemm. “Chronologischer Abriss Der Antiken Goldgewinnung in Der Ostwüste Ägyptens.” <i>Mitteilungen Des Deutschen Archäologischen Instituts. Abteilung Kairo</i> 50 (1994): 189–222.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Klemm 1994",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/E2I3D8J8",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">C. Meyer. “Gold, Granite and Water: The Bir Umm Fawakhir Survey Project 1992.” <i>AASOR</i> 52 (1994): 37–92.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Meyer 1994",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/byzantine-goldmining-town-in-the-eastern-desert-of-egypt-bir-umm-fawakhir-199293/9247D0525EE86C8DBDB49FA589CFB611",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TI539MSQ",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">C. Meyer. “A Byzantine Gold-Mining Town in the Eastern Desert of Egypt: Bir Umm Fawakhir, 1992-93.” <i>Journal of Roman Archaeology</i> 8 (1995): 192–224. https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/byzantine-goldmining-town-in-the-eastern-desert-of-egypt-bir-umm-fawakhir-199293/9247D0525EE86C8DBDB49FA589CFB611.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Meyer 1995",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://www.tms.org/pubs/journals/JOM/9703/Meyer-9703.html",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/M87IQDHI",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Meyer, Carol. “Bir Umm Fawakhir: Insights into Ancient Egyptian Mining.” <i>Journal of Minerals, Metals, and Materials</i> 49 (1997): 64–67. https://www.tms.org/pubs/journals/JOM/9703/Meyer-9703.html.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Meyer 1997",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/7H5A3NS6",
+            "citationDetail": "Bir Umm Fawakhir",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Bard, Kathryn A., and Steven Blake Shubert, eds. <i>Encyclopedia of the Archaeology of Ancient Egypt</i>. London: Routledge, 1999.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "EAAE",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://atlantides.org/bibliography/h.html#H.-Cuvigny",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "H. Cuvigny",
+            "otherIdentifier": "",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.trismegistos.org/place/2837",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/TN3GJAU8",
+            "citationDetail": "GEO ID 2837: Persou (Bir Umm Fawakhir)",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "<div class=\"csl-entry\">Depauw, Mark, Tom Gheldof, Herbert Verreth, Nico Dogaer, Willy Clarysse, Yanne Broux, Gert Baetens, and Heinz-Josef Thissen. <i>Trismegistos: An Interdisciplinary Portal of the Ancient World</i>. Leuven, 2006. http://www.trismegistos.org/.</div>",
+            "otherIdentifier": " ",
+            "shortTitle": "TM",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        33.568897,
+        25.950983
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Creators. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:ancient=1",
+        "dare:major=0",
+        "dare:feature=mine"
+    ],
+    "title": "Persou (Bir Umm Fawakhir)",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/786086"
+}

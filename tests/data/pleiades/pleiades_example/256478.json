@@ -1,0 +1,447 @@
+{
+    "@type": "Place",
+    "bbox": [
+        -7.4904129,
+        39.0606105,
+        -7.4868831,
+        39.0633096
+    ],
+    "connections": [],
+    "connectsWith": [],
+    "contributors": [
+        {
+            "name": "DARMC",
+            "username": null
+        },
+        {
+            "name": "R. Talbert",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Sean Gillies",
+            "uri": "https://pleiades.stoa.org/author/sgillies",
+            "username": "sgillies"
+        },
+        {
+            "homepage": null,
+            "name": "Johan Åhlfeldt",
+            "uri": "https://pleiades.stoa.org/author/jahlfeldt",
+            "username": "jahlfeldt"
+        },
+        {
+            "name": "R. Warner",
+            "username": null
+        },
+        {
+            "homepage": null,
+            "name": "Jeffrey Becker",
+            "uri": "https://pleiades.stoa.org/author/jbecker",
+            "username": "jbecker"
+        },
+        {
+            "homepage": null,
+            "name": "Tom Elliott",
+            "uri": "https://pleiades.stoa.org/author/thomase",
+            "username": "thomase"
+        }
+    ],
+    "created": "2010-11-09T19:39:02Z",
+    "creators": [
+        {
+            "name": "Jr.",
+            "username": null
+        },
+        {
+            "name": "F.H. Stanley",
+            "username": null
+        },
+        {
+            "name": "R.C. Knapp",
+            "username": null
+        }
+    ],
+    "description": "A large Roman villa inhabited from ca. the second century A.D. to the Visigothic period.",
+    "details": "<p>The Barrington Atlas Directory notes: Torre de Palma, 5 miles NW Monforte POR</p>",
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -7.4876019,
+                        39.0630847
+                    ],
+                    [
+                        -7.4868831,
+                        39.0614353
+                    ],
+                    [
+                        -7.4882456,
+                        39.0609604
+                    ],
+                    [
+                        -7.4894151,
+                        39.0606105
+                    ],
+                    [
+                        -7.4900803,
+                        39.0607438
+                    ],
+                    [
+                        -7.4903807,
+                        39.0609604
+                    ],
+                    [
+                        -7.4904129,
+                        39.0614353
+                    ],
+                    [
+                        -7.4903592,
+                        39.0619101
+                    ],
+                    [
+                        -7.4899837,
+                        39.0623433
+                    ],
+                    [
+                        -7.4896189,
+                        39.0626849
+                    ],
+                    [
+                        -7.4887154,
+                        39.0629503
+                    ],
+                    [
+                        -7.488428,
+                        39.0630347
+                    ],
+                    [
+                        -7.4876985,
+                        39.0633096
+                    ],
+                    [
+                        -7.4876019,
+                        39.0630847
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "id": "osm-location-of-torre-de-palma-roman-villa",
+            "properties": {
+                "description": "Representative location based on OpenStreetMap.",
+                "link": "https://pleiades.stoa.org/places/256478/osm-location-of-torre-de-palma-roman-villa",
+                "location_precision": "precise",
+                "snippet": "Villa; 30 BC - AD 640",
+                "title": "OSM location of Torre de Palma (Roman villa)"
+            },
+            "type": "Feature"
+        }
+    ],
+    "history": [
+        {
+            "comment": "Edited",
+            "modified": "2017-08-05T22:28:34Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "darmc 21129",
+            "modified": "2017-08-05T22:25:50Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added reference",
+            "modified": "2016-02-13T22:19:13Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "added reference",
+            "modified": "2014-07-05T00:41:11Z",
+            "modifiedBy": "jbecker"
+        },
+        {
+            "comment": "Location updates and tags from Johan Ahlfeldt's (jahlfeldt) Digital Atlas of the Roman Empire in October 2012",
+            "modified": "2012-10-23T17:37:24Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Global migration and reindexing of citations and provenance, February 2012",
+            "modified": "2012-02-15T03:46:54Z",
+            "modifiedBy": "admin"
+        },
+        {
+            "comment": "New locations, coordinates, and metadata from Harvard's DARMC project. See http://atlantides.org/trac/pleiades/wiki/PlaceUpgradesAndMigrations",
+            "modified": "2011-03-10T00:26:07Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "comment": "Detail text updated from former modernLocation. See http://atlantides.org/trac/pleiades/wiki/PlaceDetailsUpgrade",
+            "modified": "2011-01-14T19:20:13Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Publish externally",
+            "modified": "2010-11-10T17:53:18Z",
+            "modifiedBy": "thomase"
+        },
+        {
+            "action": "Submit for review",
+            "modified": "2010-11-09T20:27:28Z",
+            "modifiedBy": "sgillies"
+        },
+        {
+            "action": "Create",
+            "modified": "2010-11-09T19:39:02Z",
+            "modifiedBy": "sgillies"
+        }
+    ],
+    "id": "256478",
+    "locations": [
+        {
+            "@type": "Location",
+            "accuracy": "https://pleiades.stoa.org/features/metadata/generic-osm-accuracy-assessment",
+            "accuracy_value": 20.0,
+            "archaeologicalRemains": "substantive",
+            "associationCertainty": "certain",
+            "associationCertaintyURI": "https://pleiades.stoa.org/vocabularies/association-certainty/certain",
+            "attestations": [
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "roman",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/roman"
+                },
+                {
+                    "confidence": "confident",
+                    "confidenceURI": "https://pleiades.stoa.org/vocabularies/attestation-confidence/confident",
+                    "timePeriod": "late-antique",
+                    "timePeriodURI": "https://pleiades.stoa.org/vocabularies/time-periods/late-antique"
+                }
+            ],
+            "contributors": [],
+            "created": "2017-08-05T22:23:16Z",
+            "creators": [
+                {
+                    "homepage": null,
+                    "name": "Jeffrey Becker",
+                    "uri": "https://pleiades.stoa.org/author/jbecker",
+                    "username": "jbecker"
+                }
+            ],
+            "description": "Representative location based on OpenStreetMap.",
+            "details": "",
+            "end": 640,
+            "featureType": [
+                "villa"
+            ],
+            "featureTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "geometry": {
+                "coordinates": [
+                    [
+                        -7.4876019,
+                        39.0630847
+                    ],
+                    [
+                        -7.4868831,
+                        39.0614353
+                    ],
+                    [
+                        -7.4882456,
+                        39.0609604
+                    ],
+                    [
+                        -7.4894151,
+                        39.0606105
+                    ],
+                    [
+                        -7.4900803,
+                        39.0607438
+                    ],
+                    [
+                        -7.4903807,
+                        39.0609604
+                    ],
+                    [
+                        -7.4904129,
+                        39.0614353
+                    ],
+                    [
+                        -7.4903592,
+                        39.0619101
+                    ],
+                    [
+                        -7.4899837,
+                        39.0623433
+                    ],
+                    [
+                        -7.4896189,
+                        39.0626849
+                    ],
+                    [
+                        -7.4887154,
+                        39.0629503
+                    ],
+                    [
+                        -7.488428,
+                        39.0630347
+                    ],
+                    [
+                        -7.4876985,
+                        39.0633096
+                    ],
+                    [
+                        -7.4876019,
+                        39.0630847
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "history": [
+                {
+                    "action": "Publish externally",
+                    "modified": "2022-05-03T17:44:40Z",
+                    "modifiedBy": "thomase"
+                },
+                {
+                    "action": "Submit for review",
+                    "modified": "2017-08-05T22:24:02Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "added OSM location",
+                    "modified": "2017-08-05T22:23:45Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "comment": "Location from OSM created by Products.PleiadesEntity.browser.osm.OSMLocationFactory",
+                    "modified": "2017-08-05T22:23:17Z",
+                    "modifiedBy": "jbecker"
+                },
+                {
+                    "action": "Create",
+                    "modified": "2017-08-05T22:23:16Z",
+                    "modifiedBy": "jbecker"
+                }
+            ],
+            "id": "osm-location-of-torre-de-palma-roman-villa",
+            "locationType": [
+                "representative"
+            ],
+            "locationTypeURI": [
+                "https://pleiades.stoa.org/vocabularies/place-types/villa"
+            ],
+            "provenance": "OpenStreetMap (Way 291407885, version 5, osm:changeset=47953707, 2017-04-19T22:14:49Z)",
+            "references": [
+                {
+                    "accessURI": "http://www.openstreetmap.org/browse/way/291407885",
+                    "alternateURI": "",
+                    "bibliographicURI": "",
+                    "citationDetail": "Way 291407885",
+                    "citationTypeURI": "http://purl.org/spar/cito/citesAsDataSource",
+                    "formattedCitation": "osm:way=291407885",
+                    "otherIdentifier": "",
+                    "shortTitle": "OSM",
+                    "type": "citesAsDataSource"
+                }
+            ],
+            "review_state": "published",
+            "start": -30,
+            "title": "OSM location of Torre de Palma (Roman villa)",
+            "uri": "https://pleiades.stoa.org/places/256478/osm-location-of-torre-de-palma-roman-villa"
+        }
+    ],
+    "names": [],
+    "placeTypeURIs": [
+        "https://pleiades.stoa.org/vocabularies/place-types/villa"
+    ],
+    "placeTypes": [
+        "villa"
+    ],
+    "provenance": "Barrington Atlas: BAtlas 26 C2 Torre de Palma",
+    "references": [
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "http://openlibrary.org/works/OL8327792W",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "BAtlas 26 C2 Torre de Palma",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/MI5GPRSU",
+            "citationDetail": "465",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Gorges, Jean Gérard. <i>Les Villas Hispano-Romaines: Inventaire et Problématique Archéologiques</i>. Publications Du Centre Pierre Paris 4. Paris: diffusion E. de Boccard, 1979.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "Gorges 1979",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.worldcat.org/oclc/36156421",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/pleiades/items/PCC822HP",
+            "citationDetail": "154-55",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "<div class=\"csl-entry\">Alarcão, Jorge de, Adela Cepas, José Ignacio Reguera Cardiel, Angela Alonso Sánchez, and Union académique internationale, eds. <i>Tabula Imperii Romani. Hoja J-29 : Lisboa : Emerita, Scallabis, Pax Iulia, Gades: sobre la base cartográfica del mapa a escala 1:1000000 del IGN</i>. Tabula Imperii Romani J-29. Madrid: Consejo Superior de Investigaciones Cientificas : Ministerio de Obras Públicas, Transportes y Medio Ambiente, Instituto Geográfico Nacional : Ministerio de Cultura, 1995. http://www.worldcat.org/oclc/36156421.</div>",
+            "otherIdentifier": "",
+            "shortTitle": "TIR Emerita",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://de.wikipedia.org/wiki/Villa_Lusitano_Romana_de_Torre_de_Palma",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/QVRBJVTM",
+            "citationDetail": "Villa Lusitano Romana de Torre de Palma",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "Wikipedia: Die freie Enzyklopädie (2001-), Villa Lusitano Romana de Torre de Palma.",
+            "otherIdentifier": " ",
+            "shortTitle": "Wikipedia (German)",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aalphabetic+letter%3DT%3Aentry+group%3D5%3Aentry%3Dtorre-de-palma",
+            "alternateURI": "",
+            "bibliographicURI": "",
+            "citationDetail": "",
+            "citationTypeURI": "http://purl.org/spar/cito/seeFurther",
+            "formattedCitation": "PECS (Perseus), TORRE DE PALMA Alentejo, Portugal",
+            "otherIdentifier": " ",
+            "shortTitle": "",
+            "type": "seeFurther"
+        },
+        {
+            "accessURI": "https://darmc.harvard.edu/",
+            "alternateURI": "",
+            "bibliographicURI": "https://www.zotero.org/groups/2533/pleiades/items/itemKey/9UD9W75C",
+            "citationDetail": "21129",
+            "citationTypeURI": "http://purl.org/spar/cito/citesAsRelated",
+            "formattedCitation": "Michael McCormick, Giovanni Zambotti, Leland Grigoli, and Kelly Gibson, eds., The Digital Atlas of Roman and Medieval Civilizations (Cambridge (Massachusetts): Harvard University, 2007-), 21129.",
+            "otherIdentifier": "",
+            "shortTitle": "DARMC",
+            "type": "citesAsRelated"
+        }
+    ],
+    "reprPoint": [
+        -7.4886827745881535,
+        39.061854197650874
+    ],
+    "review_state": "published",
+    "rights": "Copyright © The Contributors. Sharing and remixing permitted under terms of the Creative Commons Attribution 3.0 License (cc-by).",
+    "subject": [
+        "dare:major=0",
+        "villa",
+        "dare:feature=villa",
+        "extant remains",
+        "dare:ancient=0",
+        "mosaics"
+    ],
+    "title": "Torre de Palma",
+    "type": "FeatureCollection",
+    "uri": "https://pleiades.stoa.org/places/256478"
+}

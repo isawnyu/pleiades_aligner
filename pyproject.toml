@@ -26,16 +26,15 @@ classifiers = [
 dependencies = [
   "airtight",
   #"encoded_csv",
-  #"encoded_csv @ file:///Users/paregorios/Documents/files/E/encoded_csv",
+  "encoded_csv @ file:///Users/paregorios/Documents/files/E/encoded_csv",
   #"iteration_utilities",
   #"fiona",
-  #"numpy",
   #"platformdirs",
   #"pleiades_entities @ file:///Users/paregorios/Documents/files/P/pleiades_entities",
   #"pleiades_local @ file:///Users/paregorios/Documents/files/P/pleiades_local",
   "pytest",
   #"reproj",
-  #"shapely",
+  "shapely",
   #"platformdirs",
   "python-slugify",
   #"textnorm",
@@ -46,3 +45,6 @@ dependencies = [
 [project.urls]
 # "Homepage" = "https://github.com/pypa/sampleproject"
 # "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
