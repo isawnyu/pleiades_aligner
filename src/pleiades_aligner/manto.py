@@ -88,10 +88,14 @@ class IngesterMANTO(IngesterCSV):
                 p.names = new_names
         # some manto fields have prefix words that indicate place type
         for p in self.data.places:
+            new_names = set()
             for n in p.names:
                 m = self.rx_name_prefix.match(n)
                 if m:
                     p.feature_types.add(self.feature_types[m.group(1)])
+                    new_names.add(self._norm_string(n[len(m.group(1)) :]))
+            if new_names:
+                p.add_names(new_names)
         # some manto fields have parenthetic words that indicate place type
         for p in self.data.places:
             for k, v in p.raw_properties.items():

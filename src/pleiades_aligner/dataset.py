@@ -285,3 +285,59 @@ class Place:
             else:
                 self._footprint = self._geometries.convex_hull
                 self._centroid = self._geometries.centroid
+
+    # Names
+
+    @property
+    def names(self) -> set:
+        return self._names
+
+    @names.deleter
+    def names(self):
+        self._names = set()
+
+    @names.setter
+    def names(self, values: [tuple, list, set, str, None]):
+        if values is None:
+            del self.names
+        elif isinstance(values, set):
+            self._names = values
+        elif isinstance(values, str):
+            if values:
+                self._names = {
+                    values,
+                }
+            else:
+                del self.names
+        elif isinstance(values, (tuple, list)):
+            self._names = set(values)
+        else:
+            raise TypeError(
+                f"Expected tuple, list, set, or str, but got {type(values)}"
+            )
+
+    def add_names(self, values: [tuple, list, set, str, None]):
+        if values is None:
+            return
+        if values:
+            if isinstance(values, (set, tuple, list)):
+                self._names.update(values)
+            elif isinstance(values, str):
+                self._names.add(values)
+            else:
+                raise TypeError(
+                    f"Expected tuple, list, set, or str, but got {type(values)}"
+                )
+
+    def remove_names(self, values: [tuple, list, set, str, None]):
+        if values is None:
+            return
+        if values:
+            if isinstance(values, str):
+                self._names.discard(values)
+            elif isinstance(values, (tuple, list, set)):
+                self._names = self._names.difference(values)
+            else:
+                raise TypeError(
+                    f"Expected tuple, list, set, or str, but got {type(values)}"
+                )
