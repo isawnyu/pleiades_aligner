@@ -41,7 +41,7 @@ class TestAligner:
                 [
                     a
                     for a in self.aligner.alignments.values()
-                    if a.has_namespace("pleiades")
+                    if a.has_id_namespace("pleiades")
                 ]
             )
             == 19
@@ -51,7 +51,7 @@ class TestAligner:
                 [
                     a
                     for a in self.aligner.alignments.values()
-                    if a.has_namespace("chronique")
+                    if a.has_id_namespace("chronique")
                 ]
             )
             == 15
@@ -61,7 +61,7 @@ class TestAligner:
                 [
                     a
                     for a in self.aligner.alignments.values()
-                    if a.has_namespace("manto")
+                    if a.has_id_namespace("manto")
                 ]
             )
             == 16
@@ -71,8 +71,28 @@ class TestAligner:
                 [
                     a
                     for a in self.aligner.alignments.values()
-                    if a.has_namespace("geonames")
+                    if a.has_authority_namespace("manto")
+                ]
+            )
+            == 16
+        )
+        assert (
+            len(
+                [
+                    a
+                    for a in self.aligner.alignments.values()
+                    if a.has_id_namespace("geonames")
                 ]
             )
             == 12
+        )
+        assert (
+            len(
+                [
+                    a
+                    for a in self.aligner.alignments.values()
+                    if a.has_authority_namespace("chronique")
+                ]
+            )
+            == 15
         )
