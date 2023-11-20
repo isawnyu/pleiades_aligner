@@ -35,6 +35,7 @@ class IngesterBase:
 
     def _set_alignments_from_properties(self, alignment_fields: dict):
         for place in self.data.places:
+            alignment_ids = set()
             for fn, meta in alignment_fields.items():
                 raw = place.raw_properties[fn]
                 if not raw:
@@ -51,7 +52,6 @@ class IngesterBase:
                 ]
                 if not clean:
                     continue
-                alignment_ids = set()
                 for c in clean:
                     if meta["prefix"]:
                         if not c.startswith(meta["prefix"]):

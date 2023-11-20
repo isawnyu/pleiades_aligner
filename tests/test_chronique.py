@@ -35,6 +35,10 @@ class TestIngesterChronique:
             "Vetren",
             "Δ.Δ.Νέου Πετριτσίου",
         }
+        assert place.alignments == {"geonames:734947"}
+
+        place = i.data.get_place_by_id("1083")
+        assert place.alignments == {"pleiades:589694", "geonames:264858"}
 
     #     assert place.title == "11308325: Syros"
     #     assert place.names == {"Syros"}
