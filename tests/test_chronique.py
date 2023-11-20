@@ -13,6 +13,7 @@ from pathlib import Path
 from pprint import pformat, pprint
 from pleiades_aligner.chronique import IngesterChronique
 from pytest import raises
+from shapely import Point
 
 data_path = Path("tests/data")
 
@@ -40,20 +41,4 @@ class TestIngesterChronique:
 
         place = i.data.get_place_by_id("1083")
         assert place.alignments == {"pleiades:589694", "geonames:264858"}
-
-    #     assert place.feature_types == {"island"}
-    #     assert place.alignments == {"pleiades:590067"}
-    #     place = i.data.get_place_by_id("11310538")
-    #     assert place.title == "11310538: River Limaia"
-    #     assert place.names == {
-    #         "River Limaia",
-    #         "River Lima",
-    #         "River Belion",
-    #         "River Limia",
-    #         "Limaia",
-    #         "Lima",
-    #         "Belion",
-    #         "Limia",
-    #     }
-    #     assert place.feature_types == {"river"}
-    #     assert place.alignments == {"pleiades:236518"}
+        assert place.centroid == Point([24.1, 35.216667])
