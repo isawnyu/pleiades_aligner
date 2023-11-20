@@ -12,13 +12,20 @@ from logging import getLogger
 
 
 class Alignment:
-    def __init__(self, id_1: str, id_2: str, authority: str):
+    def __init__(self, id_1: str, id_2: str, authority: str, mode: str):
         self._aligned_ids = {id_1, id_2}
         self._namespaces = {id.split(":")[0] for id in self._aligned_ids}
         self._authorities = {
             authority,
         }
         self._authority_namespaces = {a.split(":")[0] for a in self._authorities}
+        self.supported_modes = ["assertion"]
+        if mode in self.supported_modes:
+            self._modes = {
+                mode,
+            }
+        else:
+            raise ValueError(f"Unsupported alignment mode '{mode}'")
 
     @property
     def aligned_ids(self) -> list:
@@ -37,6 +44,16 @@ class Alignment:
 
     def has_authority_namespace(self, namespace: str) -> bool:
         return namespace in self._authority_namespaces
+
+    @property
+    def modes(self) -> set:
+        return self._modes
+
+    def add_mode(self, mode: str):
+        if mode in self.supported_modes:
+            self._modes.add(mode)
+        else:
+            raise ValueError(f"Unsupported alignment mode '{mode}'")
 
     def __hash__(self):
         return hash(repr(self))
@@ -66,11 +83,10 @@ class Aligner:
             for place in ingester.data.places:
                 full_place_id = ":".join((namespace, place.id))
                 for target_id in place.alignments:
-                    alignment = Alignment(full_place_id, target_id, full_place_id)
+                    alignment = Alignment(
+                        full_place_id, target_id, full_place_id, "assertion"
+                    )
                     ahash = hash(alignment)
-                    if target_id == "pleiades:589704":
-                        print(alignment)
-                        print(ahash)
                     try:
                         self.alignments[ahash]
                     except KeyError:

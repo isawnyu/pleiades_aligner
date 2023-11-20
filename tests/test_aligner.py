@@ -106,3 +106,7 @@ class TestAligner:
             )
             == 2
         )
+        assert (
+            len([a for a in self.aligner.alignments.values() if "assertion" in a.modes])
+            == 32
+        )
