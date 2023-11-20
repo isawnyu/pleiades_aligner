@@ -1,0 +1,13 @@
+{
+    "data_sources": {
+        "chronique": "tests/data/chronique/chronique_example.csv",
+        "manto": "tests/data/manto/manto_example.csv"
+    },
+    "redirects": {
+        "pleiades.stoa.org": {
+            "565088210": "818481608",
+            "101249987": "101249988",
+            "5356": "531536068"
+        }
+    }
+}
