@@ -5,13 +5,20 @@
 # Licensed under the AGPL-3.0; see LICENSE.txt file.
 #
 """
-change me
+Run Alignments
 """
 
 from airtight.cli import configure_commandline
+import json
 import logging
+from pathlib import Path
+from platformdirs import user_cache_dir, user_config_dir
 
 logger = logging.getLogger(__name__)
+
+DEFAULT_CONFIG_FILE_PATH = str(
+    Path(user_config_dir("pleiades_aligner", "isaw_nyu")) / "default.config"
+)
 
 DEFAULT_LOG_LEVEL = logging.WARNING
 OPTIONAL_ARGUMENTS = [
@@ -31,6 +38,7 @@ OPTIONAL_ARGUMENTS = [
         "very verbose output (logging level == DEBUG)",
         False,
     ],
+    ["-c", "--config", DEFAULT_CONFIG_FILE_PATH, "path to config file", False],
 ]
 POSITIONAL_ARGUMENTS = [
     # each row is a list with 3 elements: name, type, help
@@ -41,7 +49,11 @@ def main(**kwargs):
     """
     main function
     """
-    # logger = logging.getLogger(sys._getframe().f_code.co_name)
+    logger = logging.getLogger()
+    config_file_path = Path(kwargs["config"].strip()).expanduser().resolve()
+    with open(config_file_path, "r", encoding="utf-8") as f:
+        config = json.load(f)
+    del f
 
 
 if __name__ == "__main__":
