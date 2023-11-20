@@ -70,7 +70,6 @@ class IngesterMANTO(IngesterCSV):
     def _separate_names_and_types(self):
         # some manto fields have embedded emojis for place type
         for p in self.data.places:
-            p.feature_types = set()
             new_names = set()
             for n in p.names:
                 m = self.rx_name_symbol.match(n)

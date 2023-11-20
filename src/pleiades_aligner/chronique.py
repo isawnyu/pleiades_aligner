@@ -29,6 +29,14 @@ class IngesterChronique(IngesterCSV):
         self._set_titles_from_properties("Toponym {id}: {Full_name}")
         name_fields = ["Greekname", "Full_name"]
         self._set_names_from_properties(name_fields)
+        place_type_values = {
+            "PPL": "populated place",
+            "BAY": "bay",
+            "DD": "municipality",
+        }
+        self._set_feature_types_from_properties(
+            fieldname="Dsg", feature_types=place_type_values
+        )
         alignment_fields = {
             "Pleiades_id": {"namespace": "pleiades", "prefix": ""},
             "Geoname_id": {"namespace": "geonames", "prefix": ""},

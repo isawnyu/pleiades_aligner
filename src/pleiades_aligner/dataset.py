@@ -131,6 +131,7 @@ class Place:
         self._geometries = list()
         self._name_strings = set()
         self.accuracy = 0.0  # assume unsigned decimal degrees
+        self.feature_types = set()
         self._centroid = None  # assume signed decimal degrees WGS84
         self._footprint = None  # assume signed decimal degrees WGS84
         self.raw_properties = dict()

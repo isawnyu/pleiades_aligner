@@ -65,6 +65,16 @@ class IngesterBase:
                     alignment_ids.add(":".join((meta["namespace"], plain_id)))
             place.alignments = alignment_ids
 
+    def _set_feature_types_from_properties(self, fieldname: str, feature_types: dict):
+        for place in self.data.places:
+            type_code = self._norm_string(place.raw_properties[fieldname])
+            try:
+                place.feature_types.add(feature_types[type_code])
+            except KeyError:
+                raise KeyError(
+                    f"Unsupported feature type code '{type_code}' in field {fieldname}"
+                )
+
     def _set_titles_from_properties(self, format_string: str):
         for place in self.data.places:
             try:
