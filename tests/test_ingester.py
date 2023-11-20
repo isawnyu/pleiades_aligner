@@ -51,7 +51,7 @@ class TestIngesterCSV:
         whence = data_path / "manto" / "manto_example.csv"
         i = IngesterCSV(namespace="manto", filepath=whence)
         i.ingest(unique_rows=False)
-        assert len(i.data) == 16
+        assert len(i.data) == 17
         place = i.data.get_place_by_id("11308325")
         assert place.centroid is None
         assert set(place.raw_properties.keys()) == {

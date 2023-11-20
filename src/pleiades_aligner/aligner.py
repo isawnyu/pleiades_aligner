@@ -68,9 +68,12 @@ class Aligner:
                 for target_id in place.alignments:
                     alignment = Alignment(full_place_id, target_id, full_place_id)
                     ahash = hash(alignment)
+                    if target_id == "pleiades:589704":
+                        print(alignment)
+                        print(ahash)
                     try:
                         self.alignments[ahash]
                     except KeyError:
                         self.alignments[ahash] = alignment
                     else:
-                        self.logger.error(f"collision: {alignment}")
+                        raise NotImplementedError("assertion alignment hash collision")

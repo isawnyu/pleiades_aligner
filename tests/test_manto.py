@@ -26,7 +26,7 @@ class TestIngesterMANTO:
         whence = data_path / "manto" / "manto_example.csv"
         i = IngesterMANTO(filepath=whence)
         i.ingest()
-        assert len(i.data) == 16
+        assert len(i.data) == 17
         place = i.data.get_place_by_id("11308325")
         assert place.title == "11308325: Syros"
         assert place.names == {"Syros"}

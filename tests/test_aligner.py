@@ -44,7 +44,7 @@ class TestAligner:
                     if a.has_id_namespace("pleiades")
                 ]
             )
-            == 19
+            == 20
         )
         assert (
             len(
@@ -64,7 +64,7 @@ class TestAligner:
                     if a.has_id_namespace("manto")
                 ]
             )
-            == 16
+            == 17
         )
         assert (
             len(
@@ -74,7 +74,7 @@ class TestAligner:
                     if a.has_authority_namespace("manto")
                 ]
             )
-            == 16
+            == 17
         )
         assert (
             len(
@@ -95,4 +95,14 @@ class TestAligner:
                 ]
             )
             == 15
+        )
+        assert (
+            len(
+                [
+                    a
+                    for a in self.aligner.alignments.values()
+                    if "pleiades:589704" in a.aligned_ids
+                ]
+            )
+            == 2
         )
