@@ -26,4 +26,6 @@ class IngesterChronique(IngesterCSV):
         self._digest()
 
     def _digest(self):
-        pass
+        self._set_titles_from_properties("Toponym {id}: {Full_name}")
+        name_fields = ["Greekname", "Full_name"]
+        self._set_names_from_properties(name_fields)

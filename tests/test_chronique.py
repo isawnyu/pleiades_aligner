@@ -28,6 +28,13 @@ class TestIngesterChronique:
         i.ingest()
         assert len(i.data) == 13
         place = i.data.get_place_by_id("10035")
+        assert place.title == "Toponym 10035: Neon Petritsion, Vetrina, Vetren"
+        assert place.names == {
+            "Neon Petritsion",
+            "Vetrina",
+            "Vetren",
+            "Δ.Δ.Νέου Πετριτσίου",
+        }
 
     #     assert place.title == "11308325: Syros"
     #     assert place.names == {"Syros"}
