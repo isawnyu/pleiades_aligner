@@ -22,12 +22,13 @@ class TestIngesterChronique:
         with raises(TypeError):
             IngesterChronique()
 
-    # def test_load(self):
-    #     whence = data_path / "manto" / "manto_example.csv"
-    #     i = IngesterMANTO(filepath=whence)
-    #     i.ingest()
-    #     assert len(i.data) == 16
-    #     place = i.data.get_place_by_id("11308325")
+    def test_load(self):
+        whence = data_path / "chronique" / "chronique_example.csv"
+        i = IngesterChronique(filepath=whence)
+        i.ingest()
+        assert len(i.data) == 13
+        place = i.data.get_place_by_id("10035")
+
     #     assert place.title == "11308325: Syros"
     #     assert place.names == {"Syros"}
     #     assert place.feature_types == {"island"}

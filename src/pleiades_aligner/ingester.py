@@ -104,12 +104,12 @@ class IngesterCSV(IngesterBase):
     def __init__(self, namespace: str, filepath: Path = None):
         IngesterBase.__init__(self, namespace, filepath)
 
-    def ingest(self, unique_rows=True):
+    def ingest(self, unique_rows=True, id_clean=dict()):
         raw_data, fieldnames = self._load_csv()
         if unique_rows:
-            self._ingest_unique_rows(raw_data, fieldnames)
+            self._ingest_unique_rows(raw_data, fieldnames, id_clean)
         else:
-            self._ingest_nonunique_rows(raw_data, fieldnames)
+            self._ingest_nonunique_rows(raw_data, fieldnames, id_clean)
 
     def _guess_csv_field(self, fieldnames: str, candidates: str) -> str:
         """
@@ -128,14 +128,14 @@ class IngesterCSV(IngesterBase):
                 return fieldnames[i]  # sic
         return None
 
-    def _ingest_nonunique_rows(self, raw_data: list, fieldnames: list):
+    def _ingest_nonunique_rows(self, raw_data: list, fieldnames: list, id_clean: dict):
         id_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["id"])
         lat_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["latitude"])
         lon_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["longitude"])
         other_keys = [k for k in fieldnames if k != id_key]
         places = dict()
         for datum in raw_data:
-            this_pid = datum[id_key]
+            this_pid = self._clean_id(datum[id_key], id_clean)
             try:
                 place = places[this_pid]
             except KeyError:
@@ -159,14 +159,28 @@ class IngesterCSV(IngesterBase):
         if places:
             self.data.places = list(places.values())
 
-    def _ingest_unique_rows(self, raw_data: list, fieldnames: list):
+    def _clean_id(self, raw_id: str, id_clean: dict) -> str:
+        if not id_clean:
+            return raw_id
+        cooked = raw_id
+        for action, value in id_clean.items():
+            if action == "strip-prefix":
+                cooked = cooked[len(value) :]
+            else:
+                raise NotImplementedError(
+                    f"_clean_id(action={action}\n{pformat(id_clean, indent=4)}"
+                )
+        return cooked
+
+    def _ingest_unique_rows(self, raw_data: list, fieldnames: list, id_clean: dict):
         id_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["id"])
         lat_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["latitude"])
         lon_key = self._guess_csv_field(fieldnames, FIELDNAME_GUESSES["longitude"])
         other_keys = [k for k in fieldnames if k != id_key]
         places = list()
         for datum in raw_data:
-            p = Place(id=datum[id_key])
+            this_id = self._clean_id(datum[id_key], id_clean)
+            p = Place(id=this_id)
             if lat_key and lon_key:
                 p.geometries = [Point([datum[lon_key], datum[lat_key]])]
                 other_keys = [k for k in other_keys if k not in (lat_key, lon_key)]

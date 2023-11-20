@@ -20,7 +20,9 @@ class IngesterChronique(IngesterCSV):
         self.base_uri = "https://chronique.efa.gr/?kroute=topo_public&id="
 
     def ingest(self):
-        IngesterCSV.ingest(self)
+        IngesterCSV.ingest(
+            self, id_clean={"strip-prefix": 'GA_OPE_EDIT" target="_blank">'}
+        )
         self._digest()
 
     def _digest(self):
