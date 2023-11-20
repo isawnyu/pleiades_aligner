@@ -13,6 +13,8 @@ import json
 import logging
 from pathlib import Path
 from platformdirs import user_cache_dir, user_config_dir
+import pleiades_aligner
+from pprint import pformat
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +56,24 @@ def main(**kwargs):
     with open(config_file_path, "r", encoding="utf-8") as f:
         config = json.load(f)
     del f
-
+    ingesters = dict()
+    for namespace, file_path in config["data_sources"].items():
+        if namespace == "chronique":
+            ingesters[namespace] = pleiades_aligner.IngesterChronique(file_path)
+        elif namespace == "manto":
+            ingesters[namespace] = pleiades_aligner.IngesterMANTO(file_path)
+        else:
+            raise NotImplementedError(
+                f"No supported ingester for namespace '{namespace}'"
+            )
+    logger.info(f"Ingesters are configured for the following namespaces: {", ".join(list(ingesters.keys()))}")
+    for namespace, ingester in ingesters.items():
+        logger.info(f"Ingesting data for namespace '{namespace}'")
+        ingester.ingest()
+        logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
+    aligner = pleiades_aligner.Aligner(ingesters, config["data_sources"], config["redirects"])
+    aligner.align(modes=config["alignment_modes"])
+    logger.info(pformat(list(aligner.alignments.values()), indent=4))
 
 if __name__ == "__main__":
     main(
