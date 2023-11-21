@@ -20,6 +20,7 @@ from shapely import (
     MultiPolygon,
     MultiLineString,
 )
+from shapely.geometry import box
 from slugify import slugify
 
 
@@ -134,6 +135,7 @@ class Place:
         self.feature_types = set()
         self._centroid = None  # assume signed decimal degrees WGS84
         self._footprint = None  # assume signed decimal degrees WGS84
+        self._bin = None  # n x n degree bin into which the footprint fits
         self.raw_properties = dict()
 
         for k, arg in kwargs.items():
@@ -298,6 +300,10 @@ class Place:
         raise NotImplementedError
 
     @property
+    def bin(self):
+        return self._bin
+
+    @property
     def centroid(self):
         return self._centroid
 
@@ -319,6 +325,19 @@ class Place:
             else:
                 self._footprint = self._geometries.convex_hull
                 self._centroid = self._geometries.centroid
+        # now, bin it
+        if isinstance(self._footprint, Point):
+            bounds = self._footprint.buffer(0.00001).bounds
+        else:
+            bounds = self._footprint.bounds
+        min_x, min_y, max_x, max_y = bounds
+        round_bounds = [
+            float(int(min_x)),
+            float(int(min_y)),
+            float(1 + int(max_x)),
+            float(1 + int(max_y)),
+        ]
+        self._bin = box(*round_bounds)
 
     # Names
 

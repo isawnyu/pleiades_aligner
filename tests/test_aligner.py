@@ -50,3 +50,15 @@ class TestAligner:
         assert len(self.aligner.alignments_by_full_id("pleiades:589704")) == 2
 
         assert len(self.aligner.alignments_by_mode("assertion")) == 32
+
+    def test_distance(self):
+        self.aligner.align(
+            modes=["proximity"],
+            proximity_categories={
+                "identical": ("centroid", 0.0),
+                "tight": ("centroid", 0.0001),
+                "overlapping": ("footprint", 0.0),
+                "close": ("centroid", 0.001),
+                "near": ("footprint", 0.001),
+            },
+        )
