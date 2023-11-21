@@ -12,6 +12,10 @@ Use, reuse, and remixing of this software is governed by the terms of the AGPL-3
 python scripts/align.py --config=data/default_config.json
 ```
 
+## Next step
+
+- [ ] add support for Pleiades ingest so we can see if proximity alignment really works properly
+
 ## Supported Datasets
 
 ### MANTO
