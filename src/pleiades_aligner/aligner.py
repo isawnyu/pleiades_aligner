@@ -202,25 +202,37 @@ class Aligner:
         for geom, places in bins.items():
             print(f"{geom}: {len(places)}")
             for place_a in places:
-                for cat_name, cat_params in proximity_categories.items():
-                    for place_b in places:
-                        if place_a != place_b:
-                            val_a = getattr(place_a, cat_params[0])
-                            val_b = getattr(place_b, cat_params[0])
-                            if distance(val_a, val_b) <= cat_params[1]:
-                                print(3 * "\n" + "WOOT" + 3 * "\n")
-                                alignment = Alignment(
-                                    place_a.id,
-                                    place_b.id,
-                                    mode="proximity",
-                                    proximity=cat_params[0],
-                                )
-                                ahash = hash(alignment)
-                                try:
-                                    self.alignments[ahash]
-                                except KeyError:
-                                    self.alignments[ahash] = alignment
-                                else:
-                                    raise NotImplementedError(
-                                        "assertion alignment hash collision"
+                for place_b in places:
+                    if place_a == place_b:
+                        continue
+                    alignment = None
+                    for cat_name, cat_params in proximity_categories.items():
+                        attr_name = cat_params[0]
+                        val_a = getattr(place_a, attr_name)
+                        val_b = getattr(place_b, attr_name)
+                        threshold = cat_params[1]
+                        if distance(val_a, val_b) <= threshold:
+                            print(3 * "\n" + "WOOT" + 3 * "\n")
+                            if alignment is None:
+                                alignment = set(
+                                    self.alignments_by_full_id(place_a.id)
+                                ).intersection(self.alignments_by_full_id(place_b.id))
+                                if not alignment:
+                                    alignment = Alignment(
+                                        place_a.id,
+                                        place_b.id,
+                                        mode="proximity",
+                                        proximity=cat_name,
                                     )
+                                    ahash = hash(alignment)
+                                    try:
+                                        self.alignments[ahash]
+                                    except KeyError:
+                                        self.alignments[ahash] = alignment
+                                    else:
+                                        raise NotImplementedError(
+                                            "proximity alignment hash collision"
+                                        )
+                                else:
+                                    alignment.add_mode("proximity")
+                                    alignment.add_proximity(cat_name)

@@ -51,7 +51,7 @@ class TestAligner:
 
         assert len(self.aligner.alignments_by_mode("assertion")) == 32
 
-    def test_distance(self):
+    def test_proximity(self):
         self.aligner.align(
             modes=["proximity"],
             proximity_categories={
@@ -62,3 +62,4 @@ class TestAligner:
                 "near": ("footprint", 0.001),
             },
         )
+        assert len(self.aligner.alignments_by_mode("proximity")) == 0
