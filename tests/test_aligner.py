@@ -36,77 +36,17 @@ class TestAligner:
 
     def test_assertions(self):
         self.aligner.align(modes=["assertions"])
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_id_namespace("pleiades")
-                ]
-            )
-            == 20
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_id_namespace("chronique")
-                ]
-            )
-            == 15
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_id_namespace("manto")
-                ]
-            )
-            == 17
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_authority_namespace("manto")
-                ]
-            )
-            == 17
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_id_namespace("geonames")
-                ]
-            )
-            == 12
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if a.has_authority_namespace("chronique")
-                ]
-            )
-            == 15
-        )
-        assert (
-            len(
-                [
-                    a
-                    for a in self.aligner.alignments.values()
-                    if "pleiades:589704" in a.aligned_ids
-                ]
-            )
-            == 2
-        )
-        assert (
-            len([a for a in self.aligner.alignments.values() if "assertion" in a.modes])
-            == 32
-        )
+
+        assert len(self.aligner.alignments_by_id_namespace("pleiades")) == 20
+        assert len(self.aligner.alignments_by_id_namespace("chronique")) == 15
+        assert len(self.aligner.alignments_by_id_namespace("geonames")) == 12
+        assert len(self.aligner.alignments_by_id_namespace("manto")) == 17
+
+        assert len(self.aligner.alignments_by_authority_namespace("pleiades")) == 0
+        assert len(self.aligner.alignments_by_authority_namespace("chronique")) == 15
+        assert len(self.aligner.alignments_by_authority_namespace("geonames")) == 0
+        assert len(self.aligner.alignments_by_authority_namespace("manto")) == 17
+
+        assert len(self.aligner.alignments_by_full_id("pleiades:589704")) == 2
+
+        assert len(self.aligner.alignments_by_mode("assertion")) == 32
