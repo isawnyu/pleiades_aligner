@@ -26,3 +26,5 @@ class TestIngesterPleiades:
         i = IngesterPleiades(filepath=whence)
         i.ingest()
         assert len(i.data) == 1391
+        place = i.data.get_place_by_id("837")
+        assert place.names == {"Asia Minor"}

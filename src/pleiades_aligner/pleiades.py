@@ -31,6 +31,15 @@ class IngesterPleiades(IngesterBase):
             # alignments
             # geometries
             # names
+            name_strings = set()
+            for p_name in datum["names"]:
+                if p_name["attested"]:
+                    name_strings.add(p_name["attested"])
+                for n in p_name["romanized"].split(","):
+                    if n.strip():
+                        name_strings.add(n.strip())
+            if name_strings:
+                p.names = name_strings
             places.append(p)
         if places:
             self.data.places = places
