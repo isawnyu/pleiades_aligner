@@ -12,10 +12,17 @@ Use, reuse, and remixing of this software is governed by the terms of the AGPL-3
 python scripts/align.py --config=data/default_config.json
 ```
 
+Now try:
+
+```bash
+python scripts/align.py -c data/chronique2pleiades_config.json -v > ~/scratch/alignments.json
+```
+
 ## Next step
 
 - [x] add support for Pleiades ingest
-- [ ] test proximity alignment with Pleiades
+- [x] test proximity alignment with Pleiades
+- [ ] work on getting good chronique alignments
 
 ## Supported Datasets
 
