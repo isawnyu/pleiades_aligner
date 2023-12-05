@@ -29,7 +29,7 @@ dependencies = [
   #"iteration_utilities",
   #"fiona",
   #"pleiades_entities @ file:///Users/paregorios/Documents/files/P/pleiades_entities",
-  #"pleiades_local @ file:///Users/paregorios/Documents/files/P/pleiades_local",
+  "pleiades_local @ file:///Users/paregorios/Documents/files/P/pleiades_local",
   "pytest",
   #"reproj",
   "shapely",
