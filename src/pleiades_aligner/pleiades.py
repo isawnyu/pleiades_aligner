@@ -39,6 +39,7 @@ class IngesterPleiades(IngesterBase):
             datum = self._pleiades_file_system.get(pid)
             p = Place(id=pid)
 
+            p.title = datum["title"].strip()
             # alignments
             alignment_ids = set()
             for p_ref in datum["references"]:

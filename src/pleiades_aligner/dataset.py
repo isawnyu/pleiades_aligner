@@ -133,7 +133,7 @@ class Place:
 
         self._alignments = set()
         self._geometries = list()
-        self._name_strings = set()
+        self._names = set()
         self._accuracy = 0.0  # assume unsigned decimal degrees
         self.feature_types = set()
         self._centroid = None  # assume signed decimal degrees WGS84

@@ -152,6 +152,7 @@ class Aligner:
 
     def _align_assertions(self, **kwargs):
         """Record all alignments asserted in ingested data items"""
+        self.logger.info("Performing assertion alignments")
         self._alignment_hashes_by_mode["assertion"] = set()
         for namespace, ingester in self.ingesters.items():
             for place in ingester.data.places:
@@ -199,6 +200,7 @@ class Aligner:
 
     def _align_proximity(self, proximity_categories: dict, **kwargs):
         """Compare all ingested places to find possible associations by proximity"""
+        self.logger.info("Performing proximity alignments")
         self._alignment_hashes_by_mode["proximity"] = set()
         # sort all places into geometric bins
         bins = dict()
@@ -228,9 +230,6 @@ class Aligner:
                         if distance(val_a, val_b) <= threshold:
                             place_a_full_id = ":".join((place_a_namespace, place_a.id))
                             place_b_full_id = ":".join((place_b_namespace, place_b.id))
-                            self.logger.error(
-                                f"proximity category '{cat_name}' alignment detected: {place_a_full_id} <> {place_b_full_id}"
-                            )
                             if alignment is None:
                                 try:
                                     alignment = set(
