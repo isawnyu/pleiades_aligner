@@ -14,7 +14,8 @@ python scripts/align.py --config=data/default_config.json
 
 ## Next step
 
-- [ ] add support for Pleiades ingest so we can see if proximity alignment really works properly
+- [x] add support for Pleiades ingest
+- [ ] test proximity alignment with Pleiades
 
 ## Supported Datasets
 
