@@ -14,7 +14,7 @@ import logging
 from pathlib import Path
 from platformdirs import user_cache_dir, user_config_dir
 import pleiades_aligner
-from pprint import pformat
+from pprint import pformat, pprint
 
 logger = logging.getLogger(__name__)
 
@@ -74,8 +74,10 @@ def main(**kwargs):
         ingester.ingest()
         logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
     aligner = pleiades_aligner.Aligner(ingesters, config["data_sources"], config["redirects"])
-    aligner.align(modes=config["alignment_modes"])
+    aligner.align(modes=config["alignment_modes"], proximity_categories=config["proximity_categories"])
     logger.info(pformat(list(aligner.alignments.values()), indent=4))
+    for alignment in aligner.alignments.values():
+        pprint(alignment.asdict(), indent=4)
 
 if __name__ == "__main__":
     main(

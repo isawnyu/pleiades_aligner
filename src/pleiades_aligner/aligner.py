@@ -96,6 +96,16 @@ class Alignment:
     def __str__(self):
         return "<Alignment: " + " >< ".join(self.aligned_ids)
 
+    def asdict(self):
+        d = {
+            "aligned_ids": self.aligned_ids,
+            "authorities": sorted(self.authorities),
+            "modes": sorted(self.modes),
+        }
+        if "proximity" in self.modes:
+            d["proximity"] = self.proximity
+        return d
+
 
 class Aligner:
     def __init__(self, ingesters: dict, data_sources: dict, redirects: dict):
@@ -140,7 +150,7 @@ class Aligner:
             for ahash in self._alignment_hashes_by_id_namespace[namespace]
         ]
 
-    def _align_assertions(self):
+    def _align_assertions(self, **kwargs):
         """Record all alignments asserted in ingested data items"""
         self._alignment_hashes_by_mode["assertion"] = set()
         for namespace, ingester in self.ingesters.items():
@@ -159,7 +169,10 @@ class Aligner:
                     except KeyError:
                         self.alignments[ahash] = alignment
                     else:
-                        raise NotImplementedError("assertion alignment hash collision")
+                        # alignment already noted
+                        prior_alignment = self.alignments[ahash]
+                        prior_alignment.add_authority(full_place_id)
+                        prior_alignment.add_mode("assertion")
                     # populate indexes
                     self._alignment_hashes_by_mode["assertion"].add(ahash)
                     for id in [full_place_id, target_id]:
@@ -184,7 +197,7 @@ class Aligner:
                         finally:
                             self._alignment_hashes_by_id_namespace[ns].add(ahash)
 
-    def _align_proximity(self, proximity_categories: dict):
+    def _align_proximity(self, proximity_categories: dict, **kwargs):
         """Compare all ingested places to find possible associations by proximity"""
         self._alignment_hashes_by_mode["proximity"] = set()
         # sort all places into geometric bins
@@ -197,11 +210,13 @@ class Aligner:
                     except KeyError:
                         bins[place.bin] = set()
                     finally:
-                        bins[place.bin].add(place)
+                        bins[place.bin].add((ingester.data.namespace, place))
 
-        for geom, places in bins.items():
-            for place_a in places:
-                for place_b in places:
+        for geom, places_info in bins.items():
+            for place_a_namespace, place_a in places_info:
+                for place_b_namespace, place_b in places_info:
+                    if place_a_namespace == place_b_namespace:
+                        continue
                     if place_a == place_b:
                         continue
                     alignment = None
@@ -211,15 +226,29 @@ class Aligner:
                         val_b = getattr(place_b, attr_name)
                         threshold = cat_params[1]
                         if distance(val_a, val_b) <= threshold:
-                            print(3 * "\n" + "WOOT" + 3 * "\n")
+                            self.logger.error(
+                                f"proximity category '{cat_name}' alignment detected"
+                            )
+                            place_a_full_id = ":".join((place_a_namespace, place_a.id))
+                            place_b_full_id = ":".join((place_b_namespace, place_b.id))
                             if alignment is None:
-                                alignment = set(
-                                    self.alignments_by_full_id(place_a.id)
-                                ).intersection(self.alignments_by_full_id(place_b.id))
+                                try:
+                                    alignment = set(
+                                        self.alignments_by_full_id(place_a_full_id)
+                                    ).intersection(
+                                        self.alignments_by_full_id(place_b_full_id)
+                                    )
+                                except KeyError:
+                                    pass
+                                else:
+                                    if len(alignment) == 1:
+                                        alignment = alignment.pop()
+                                    else:
+                                        alignment = None
                                 if not alignment:
                                     alignment = Alignment(
-                                        place_a.id,
-                                        place_b.id,
+                                        place_a_full_id,
+                                        place_b_full_id,
                                         mode="proximity",
                                         proximity=cat_name,
                                     )
@@ -229,9 +258,9 @@ class Aligner:
                                     except KeyError:
                                         self.alignments[ahash] = alignment
                                     else:
-                                        raise NotImplementedError(
-                                            "proximity alignment hash collision"
-                                        )
+                                        prior_alignment = self.alignments[ahash]
+                                        prior_alignment.add_mode("proximity")
+                                        prior_alignment.add_proximity(cat_name)
                                 else:
                                     alignment.add_mode("proximity")
                                     alignment.add_proximity(cat_name)

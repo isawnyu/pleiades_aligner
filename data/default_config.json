@@ -12,6 +12,29 @@
         }
     },
     "alignment_modes": [
-        "assertions"
-    ]
+        "assertions",
+        "proximity"
+    ],
+    "proximity_categories": {
+        "identical": [
+            "centroid",
+            0.0
+        ],
+        "tight": [
+            "centroid",
+            0.0001
+        ],
+        "overlapping": [
+            "footprint",
+            0.0
+        ],
+        "close": [
+            "centroid",
+            0.001
+        ],
+        "near": [
+            "footprint",
+            0.001
+        ]
+    }
 }
