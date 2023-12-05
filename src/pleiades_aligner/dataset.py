@@ -180,6 +180,10 @@ class Place:
             self._recalculate_spatial_metadata()
 
     def _furthest_cardinal_point(self, origin: Point, distance_meters: float) -> Point:
+        if not isinstance(distance_meters, float):
+            raise TypeError(
+                f"Expected float for distance_meters, but got {type(distance_meters)}={distance_meters}"
+            )
         points = [
             inverse_haversine(
                 (origin.y, origin.x), distance_meters, dir, unit=Unit.METERS

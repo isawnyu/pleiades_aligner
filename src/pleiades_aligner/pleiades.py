@@ -60,9 +60,10 @@ class IngesterPleiades(IngesterBase):
                     g = shape(p_loc["geometry"])
                     p.add_geometries(g)
                     if p_loc["accuracy_value"]:
-                        p.set_accuracy_if_larger(
-                            g.centroid, p_loc["accuracy_value"], "meters"
-                        )
+                        if isinstance(p_loc["accuracy_value"], float):
+                            p.set_accuracy_if_larger(
+                                g.centroid, p_loc["accuracy_value"], "meters"
+                            )
 
             # names
             name_strings = set()
