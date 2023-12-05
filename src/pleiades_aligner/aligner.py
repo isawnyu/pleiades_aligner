@@ -98,12 +98,12 @@ class Alignment:
 
     def asdict(self):
         d = {
-            "aligned_ids": self.aligned_ids,
+            "aligned_ids": list(self.aligned_ids),
             "authorities": sorted(self.authorities),
             "modes": sorted(self.modes),
         }
         if "proximity" in self.modes:
-            d["proximity"] = self.proximity
+            d["proximity"] = list(self.proximity)[0]
         return d
 
 
@@ -226,11 +226,11 @@ class Aligner:
                         val_b = getattr(place_b, attr_name)
                         threshold = cat_params[1]
                         if distance(val_a, val_b) <= threshold:
-                            self.logger.error(
-                                f"proximity category '{cat_name}' alignment detected"
-                            )
                             place_a_full_id = ":".join((place_a_namespace, place_a.id))
                             place_b_full_id = ":".join((place_b_namespace, place_b.id))
+                            self.logger.error(
+                                f"proximity category '{cat_name}' alignment detected: {place_a_full_id} <> {place_b_full_id}"
+                            )
                             if alignment is None:
                                 try:
                                     alignment = set(

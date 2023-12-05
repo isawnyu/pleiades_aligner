@@ -75,9 +75,12 @@ def main(**kwargs):
         logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
     aligner = pleiades_aligner.Aligner(ingesters, config["data_sources"], config["redirects"])
     aligner.align(modes=config["alignment_modes"], proximity_categories=config["proximity_categories"])
-    logger.info(pformat(list(aligner.alignments.values()), indent=4))
-    for alignment in aligner.alignments.values():
-        pprint(alignment.asdict(), indent=4)
+    ignore = set(kwargs["ignoreauthorities"].split(","))
+    alignments = [a for a in aligner.alignments.values() if not ignore.intersection(a.authority_namespaces)]
+    # alignments = [a for a in alignments if "chronique" in a.authority_namespaces]
+    #alignments = [a for a in alignments if (a.modes == {"proximity", "assertion"} and "chronique" in a.authority_namespaces) or "manto" in a.authority_namespaces]
+    alignments = [a.asdict() for a in alignments]
+    print(json.dumps(alignments, ensure_ascii=False, indent=4, sort_keys=True))
 
 if __name__ == "__main__":
     main(

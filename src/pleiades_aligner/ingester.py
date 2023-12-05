@@ -67,13 +67,15 @@ class IngesterBase:
 
     def _set_feature_types_from_properties(self, fieldname: str, feature_types: dict):
         for place in self.data.places:
-            type_code = self._norm_string(place.raw_properties[fieldname])
-            try:
-                place.feature_types.add(feature_types[type_code])
-            except KeyError:
-                raise KeyError(
-                    f"Unsupported feature type code '{type_code}' in field {fieldname}"
-                )
+            type_codes = self._norm_string(place.raw_properties[fieldname]).split(",")
+            type_codes = [c.strip() for c in type_codes if c.strip()]
+            for type_code in type_codes:
+                try:
+                    place.feature_types.add(feature_types[type_code])
+                except KeyError:
+                    raise KeyError(
+                        f"Unsupported feature type code '{type_code}' in field {fieldname}"
+                    )
 
     def _set_titles_from_properties(self, format_string: str):
         for place in self.data.places:
