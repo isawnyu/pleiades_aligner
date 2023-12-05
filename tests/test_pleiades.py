@@ -35,3 +35,7 @@ class TestIngesterPleiades:
         cc = [round(c, 6) for c in cc]
         assert cc == [18.519463, 51.893773]
         assert round(place.footprint.length, 5) == 0.91527
+        place = i.data.get_place_by_id("727070")
+        assert place.alignments == {"manto:11015142"}
+        place = i.data.get_place_by_id("590095")
+        assert place.alignments == {"chronique:16315"}

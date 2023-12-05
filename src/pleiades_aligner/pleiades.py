@@ -17,6 +17,14 @@ from pleiades_local.filesystem import PleiadesFilesystem
 from pprint import pformat
 from shapely.geometry import shape
 
+SUPPORTED_ALIGNMENTS = {
+    "chronique toponyms": {
+        "uri_base": "https://chronique.efa.gr/?kroute=topo_public&id=",
+        "namespace": "chronique",
+    },
+    "manto": {"uri_base": "https://resource.manto.unh.edu/", "namespace": "manto"},
+}
+
 
 class IngesterPleiades(IngesterBase):
     def __init__(self, filepath: Path):
@@ -30,7 +38,22 @@ class IngesterPleiades(IngesterBase):
         for pid in self._pleiades_file_system.get_pids():
             datum = self._pleiades_file_system.get(pid)
             p = Place(id=pid)
+
             # alignments
+            alignment_ids = set()
+            for p_ref in datum["references"]:
+                uri = p_ref["accessURI"].strip()
+                if uri:
+                    for sup in SUPPORTED_ALIGNMENTS.values():
+                        if uri.startswith(sup["uri_base"]):
+                            alignment_ids.add(
+                                ":".join(
+                                    (sup["namespace"], uri[len(sup["uri_base"]) :])
+                                )
+                            )
+            if alignment_ids:
+                p.alignments = alignment_ids
+
             # geometries
             for p_loc in datum["locations"]:
                 if p_loc["geometry"]:
