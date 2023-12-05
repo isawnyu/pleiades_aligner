@@ -28,3 +28,10 @@ class TestIngesterPleiades:
         assert len(i.data) == 1391
         place = i.data.get_place_by_id("837")
         assert place.names == {"Asia Minor"}
+        # assert place.title == "837: Asia Minor"
+        place = i.data.get_place_by_id("20521")
+        assert round(place.accuracy, 3) == 0.146
+        cc = list(place.centroid.coords)[0]
+        cc = [round(c, 6) for c in cc]
+        assert cc == [18.519463, 51.893773]
+        assert round(place.footprint.length, 5) == 0.91527

@@ -9,7 +9,9 @@
 Define common classes for managing ingested datasets and their place records
 """
 
+from haversine import inverse_haversine, Direction, Unit
 from logging import getLogger
+from pprint import pformat
 from shapely import (
     GeometryCollection,
     Point,
@@ -19,6 +21,7 @@ from shapely import (
     MultiPoint,
     MultiPolygon,
     MultiLineString,
+    distance,
 )
 from shapely.geometry import box
 from slugify import slugify
@@ -131,7 +134,7 @@ class Place:
         self._alignments = set()
         self._geometries = list()
         self._name_strings = set()
-        self.accuracy = 0.0  # assume unsigned decimal degrees
+        self._accuracy = 0.0  # assume unsigned decimal degrees
         self.feature_types = set()
         self._centroid = None  # assume signed decimal degrees WGS84
         self._footprint = None  # assume signed decimal degrees WGS84
@@ -160,6 +163,41 @@ class Place:
                 f"Expected non-empty string for id argument, but got '{slug}'"
             )
         self._id = id
+
+    @property
+    def accuracy(self) -> float:
+        return self._accuracy
+
+    def set_accuracy_if_larger(self, origin: Point, val: float, unit: str = "DD"):
+        if unit.lower() == "dd":
+            dd_val = val
+        elif unit.lower() in ["m", "meters", "metres"]:
+            dd_val = distance(origin, self._furthest_cardinal_point(origin, val))
+        else:
+            raise ValueError(unit)
+        if dd_val > self._accuracy:
+            self._accuracy = dd_val
+            self._recalculate_spatial_metadata()
+
+    def _furthest_cardinal_point(self, origin: Point, distance_meters: float) -> Point:
+        points = [
+            inverse_haversine(
+                (origin.y, origin.x), distance_meters, dir, unit=Unit.METERS
+            )
+            for dir in [
+                Direction.NORTH,
+                Direction.EAST,
+                Direction.SOUTH,
+                Direction.WEST,
+            ]
+        ]
+        points = [Point((d[1], d[0])) for d in points]
+        points = sorted(
+            points,
+            key=lambda d: distance(d, origin),
+            reverse=True,
+        )
+        return points[0]
 
     @property
     def id(self):
@@ -291,7 +329,10 @@ class Place:
                 Polygon,
             ),
         ):
-            gg = set(self.geometries.geoms)
+            try:
+                gg = set(self.geometries.geoms)
+            except AttributeError:
+                gg = set()
             gg.add(values)
             self._geometries = GeometryCollection(list(gg))
         self._recalculate_spatial_metadata()

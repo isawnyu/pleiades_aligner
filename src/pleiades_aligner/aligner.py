@@ -200,7 +200,6 @@ class Aligner:
                         bins[place.bin].add(place)
 
         for geom, places in bins.items():
-            print(f"{geom}: {len(places)}")
             for place_a in places:
                 for place_b in places:
                     if place_a == place_b:
