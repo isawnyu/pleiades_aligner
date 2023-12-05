@@ -1,7 +1,8 @@
 {
     "data_sources": {
         "chronique": "tests/data/chronique/chronique_example.csv",
-        "manto": "tests/data/manto/manto_example.csv"
+        "manto": "tests/data/manto/manto_example.csv",
+        "pleiades": "tests/data/pleiades/pleiades_example"
     },
     "redirects": {
         "pleiades.stoa.org": {
