@@ -59,6 +59,8 @@ def main(**kwargs):
     with open(config_file_path, "r", encoding="utf-8") as f:
         config = json.load(f)
     del f
+
+    # configure ingesters for namespaces indicated in the config file
     ingesters = dict()
     for namespace, file_path in config["data_sources"].items():
         if namespace == "chronique":
@@ -72,23 +74,34 @@ def main(**kwargs):
                 f"No supported ingester for namespace '{namespace}'"
             )
     logger.info(f"Ingesters are configured for the following namespaces: {", ".join(list(ingesters.keys()))}")
+
+    # using the configured ingesters, ingest data from filepaths indicated in the config file
     for namespace, ingester in ingesters.items():
         logger.info(f"Ingesting data for namespace '{namespace}'")
         ingester.ingest()
         logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
+
+    # perform alignment operations indicated in the config file using the ingested data
     logger.info("Performing alignments")
     aligner = pleiades_aligner.Aligner(ingesters, config["data_sources"], config["redirects"])
     aligner.align(modes=config["alignment_modes"], proximity_categories=config["proximity_categories"])
     logger.info(f"Identified {len(aligner.alignments)} alignments")
 
+    # prepare a JSON-formatted report according to the parameters defined in the config file
     logger.info(f"Preparing report")
     report = config["report"]
+
+    # >>> ignore alignments relying only on authority namespaces explicitly excluded by the config file
     alignments = [a for a in aligner.alignments.values() if not a.authority_namespaces.intersection(report["ignore_authority_namespaces"])]
+    
+    # >>> further filter alignments by removing any that aren't based on the combination of alignment modes indicated in config file
     required_modes = set(report["require_modes"])
     alignments = [a for a in alignments if required_modes.issubset(a.modes)]
-    # alignments = [a for a in alignments if "chronique" in a.authority_namespaces]
-    #alignments = [a for a in alignments if (a.modes == {"proximity", "assertion"} and "chronique" in a.authority_namespaces) or "manto" in a.authority_namespaces]
+
+    # >>> convert alignments to dictionaries in anticipation of serializing to JSON
     alignments = [a.asdict() for a in alignments]
+
+    # >>> further filter alignment dictionaries to exclude those involving places from datasets (i.e. namespaces) explicitly excluded by the config file
     filtered_alignments = list()
     for a in alignments:
         pids = a["aligned_ids"]
@@ -99,7 +112,9 @@ def main(**kwargs):
                 break
             places[namespace] = ingesters[namespace].data.get_place_by_id(this_id)
         if len(places) == 2:
+            # >>> copy essential place information into the alignment dictionaries
             b = deepcopy(a)
+            # >>> calculate a centroid distance to include in the output for further evaluation
             centroid_coords = list()
             for namespace, place in places.items():
                 b[namespace] = {
@@ -114,11 +129,16 @@ def main(**kwargs):
                 centroid_coords.append(these_coords)
             b["centroid_distance"] = haversine(*centroid_coords, unit=Unit.METERS)
             filtered_alignments.append(b)
+
+    # >>> sort the list of alignment dictionaries using the criteria defined in the config file
+    # NB: this could be more flexible
     for sort_field, sort_order in report["sort"]:
         reverse = False
         if sort_order == "reverse":
             reverse = True
         filtered_alignments = sorted(filtered_alignments, key=lambda a: a[sort_field], reverse=reverse)
+
+    # output the report
     print(json.dumps(filtered_alignments, ensure_ascii=False, indent=4, sort_keys=True))
     logger.info(f"Reported on {len(filtered_alignments)} alignments after filtering")
 
