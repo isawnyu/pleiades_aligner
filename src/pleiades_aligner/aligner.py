@@ -30,7 +30,7 @@ class Alignment:
         else:
             self._authorities = set()
         self._authority_namespaces = {a.split(":")[0] for a in self._authorities}
-        self.supported_modes = ["assertion", "proximity"]
+        self.supported_modes = ["assertion", "proximity", "inference"]
         if mode in self.supported_modes:
             self._modes = {
                 mode,
@@ -99,7 +99,9 @@ class Alignment:
     def asdict(self):
         d = {
             "aligned_ids": list(self.aligned_ids),
+            "aligned_namespaces": list(self.id_namespaces),
             "authorities": sorted(self.authorities),
+            "hash": hash(self),
             "modes": sorted(self.modes),
         }
         if "proximity" in self.modes:

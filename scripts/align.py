@@ -118,6 +118,7 @@ def main(**kwargs):
             centroid_coords = list()
             for namespace, place in places.items():
                 b[namespace] = {
+                    "id": place.id,
                     "title": place.title, 
                     "names": list(place.names),
                     "uri": ingesters[namespace].base_uri + place.id,
@@ -129,6 +130,52 @@ def main(**kwargs):
                 centroid_coords.append(these_coords)
             b["centroid_distance"] = haversine(*centroid_coords, unit=Unit.METERS)
             filtered_alignments.append(b)
+
+    # >>> add second-generation alignments, if any, using inference criteria defined in the config file
+    inferred_alignments = dict()
+    if config["infer"]:
+        for inference_rule in config["infer"]:
+            primary_alignments = aligner.alignments_by_id_namespace(inference_rule["primary_namespace"])
+            logger.debug(f"identified {len(primary_alignments)} primary alignments from primary namespace {inference_rule['primary_namespace']}")
+            primary_alignments = {a for a in primary_alignments if inference_rule["aligned_namespace"] in a.id_namespaces}
+            logger.debug(f"filtered primary alignments down to {len(primary_alignments)} involving the primary namespace {inference_rule['primary_namespace']} and the previously aligned namespace {inference_rule['aligned_namespace']}")
+
+            candidate_alignments = aligner.alignments_by_id_namespace(inference_rule["inferred_namespace"])
+            logger.debug(f"identified {len(candidate_alignments)} candidate alignments from inferred namespace {inference_rule['inferred_namespace']}")
+            candidate_alignments = {a for a in candidate_alignments if "assertion" in a.modes and inference_rule["aligned_namespace"] in a.id_namespaces}
+            logger.debug(f"filtered candidate alignments down to {len(candidate_alignments)} involving the inferred namespace {inference_rule['inferred_namespace']} and previously aligned namespace {inference_rule['aligned_namespace']}")
+
+            for candidate in candidate_alignments:
+                # get the already aligned full id
+                aligned_id = [f for f in candidate.aligned_ids if not f.startswith(inference_rule["inferred_namespace"])][0]
+                logger.debug(f">>> aligned_id: {aligned_id}")
+                these_primary = {a for a in primary_alignments if aligned_id in a.aligned_ids}
+                logger.debug(f">>> these_primary: {these_primary}")
+                if not these_primary:
+                    continue
+                these_candidate = {a for a in candidate_alignments if aligned_id in a.aligned_ids}
+                logger.debug(f">>> these_candidate: {these_candidate}")
+                if not these_candidate:
+                    continue
+                for this_primary in these_primary:
+                    primary_id = [f for f in this_primary.aligned_ids if f.startswith(inference_rule["primary_namespace"])][0]
+                    for this_candidate in these_candidate:
+                        inferred_id = [f for f in this_candidate.aligned_ids if f.startswith(inference_rule["inferred_namespace"])][0]
+                        new_alignment = pleiades_aligner.aligner.Alignment(primary_id, inferred_id, "inference", authority=aligned_id)
+                        logger.debug(pformat(new_alignment.asdict(), indent=4))
+                        inferred_alignments[hash(new_alignment)] = new_alignment
+                
+            primary_alignment_dicts = [a for a in filtered_alignments if inference_rule["primary_namespace"] in a["aligned_namespaces"] and inference_rule["aligned_namespace"] in a["aligned_namespaces"]]
+            logger.error(len(primary_alignment_dicts))
+
+            # >>> >>> get a unique list of relevant place dictionaries
+            primary_places = list({a[inference_rule["primary_namespace"]]["id"]: a[inference_rule["primary_namespace"]] for a in primary_alignment_dicts}.values())
+            aligned_places = list({a[inference_rule["aligned_namespace"]]["id"]: a[inference_rule["aligned_namespace"]] for a in primary_alignment_dicts}.values())
+
+            logger.error(len(primary_places))
+            logger.error(len(aligned_places))
+            exit()
+
 
     # >>> sort the list of alignment dictionaries using the criteria defined in the config file
     # NB: this could be more flexible
