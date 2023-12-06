@@ -22,7 +22,8 @@ python scripts/align.py -c data/chronique2pleiades_config.json -v > ~/scratch/al
 
 - [x] add support for Pleiades ingest
 - [x] test proximity alignment with Pleiades
-- [ ] work on getting good chronique alignments
+- [x] work on getting good chronique alignments
+- [ ] refactor to move inferred alignments from the align script to the actual aligner module
 
 ## Supported Datasets
 
