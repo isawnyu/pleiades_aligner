@@ -174,7 +174,6 @@ def main(**kwargs):
 
             logger.error(len(primary_places))
             logger.error(len(aligned_places))
-            exit()
 
 
     # >>> sort the list of alignment dictionaries using the criteria defined in the config file
