@@ -81,6 +81,9 @@ class Alignment:
     def add_proximity(self, value: str):
         self._proximity.add(value)
 
+    def update_proximity(self, value: set):
+        self._proximity.update(value)
+
     def add_mode(self, mode: str):
         if mode in self.supported_modes:
             self._modes.add(mode)
@@ -119,7 +122,11 @@ class Aligner:
         self._alignment_hashes_by_id_namespace = dict()
         self._alignment_hashes_by_authority_namespace = dict()
         self._alignment_hashes_by_full_id = dict()
-        self._alignment_hashes_by_mode = dict()
+        self._alignment_hashes_by_mode = {
+            "inference": set(),
+            "assertion": set(),
+            "proximity": set(),
+        }
 
     def align(self, modes: list, **kwargs):
         for mode in modes:
@@ -166,39 +173,49 @@ class Aligner:
                         authority=full_place_id,
                         mode="assertion",
                     )
-                    ahash = hash(alignment)
-                    try:
-                        self.alignments[ahash]
-                    except KeyError:
-                        self.alignments[ahash] = alignment
-                    else:
-                        # alignment already noted
-                        prior_alignment = self.alignments[ahash]
-                        prior_alignment.add_authority(full_place_id)
-                        prior_alignment.add_mode("assertion")
-                    # populate indexes
-                    self._alignment_hashes_by_mode["assertion"].add(ahash)
-                    for id in [full_place_id, target_id]:
-                        try:
-                            self._alignment_hashes_by_full_id[id]
-                        except KeyError:
-                            self._alignment_hashes_by_full_id[id] = set()
-                        finally:
-                            self._alignment_hashes_by_full_id[id].add(ahash)
-                    for ns in alignment.authority_namespaces:
-                        try:
-                            self._alignment_hashes_by_authority_namespace[ns]
-                        except KeyError:
-                            self._alignment_hashes_by_authority_namespace[ns] = set()
-                        finally:
-                            self._alignment_hashes_by_authority_namespace[ns].add(ahash)
-                    for ns in alignment.id_namespaces:
-                        try:
-                            self._alignment_hashes_by_id_namespace[ns]
-                        except KeyError:
-                            self._alignment_hashes_by_id_namespace[ns] = set()
-                        finally:
-                            self._alignment_hashes_by_id_namespace[ns].add(ahash)
+                    self._register_alignment(alignment)
+
+    def _register_alignment(self, alignment: Alignment):
+        this_alignment = alignment
+        ahash = hash(this_alignment)
+        try:
+            self.alignments[ahash]
+        except KeyError:
+            self.alignments[ahash] = this_alignment
+        else:
+            # alignment already noted
+            prior_alignment = self.alignments[ahash]
+            for authority_id in this_alignment.authorities:
+                prior_alignment.add_authority(authority_id)
+            for mode in this_alignment.modes:
+                prior_alignment.add_mode(mode)
+            if this_alignment.proximity:
+                prior_alignment.update_proximity(this_alignment.proximity)
+            this_alignment = prior_alignment
+        # populate indexes
+        for mode in this_alignment.modes:
+            self._alignment_hashes_by_mode[mode].add(ahash)
+        for id in this_alignment.aligned_ids:
+            try:
+                self._alignment_hashes_by_full_id[id]
+            except KeyError:
+                self._alignment_hashes_by_full_id[id] = set()
+            finally:
+                self._alignment_hashes_by_full_id[id].add(ahash)
+        for ns in this_alignment.authority_namespaces:
+            try:
+                self._alignment_hashes_by_authority_namespace[ns]
+            except KeyError:
+                self._alignment_hashes_by_authority_namespace[ns] = set()
+            finally:
+                self._alignment_hashes_by_authority_namespace[ns].add(ahash)
+        for ns in this_alignment.id_namespaces:
+            try:
+                self._alignment_hashes_by_id_namespace[ns]
+            except KeyError:
+                self._alignment_hashes_by_id_namespace[ns] = set()
+            finally:
+                self._alignment_hashes_by_id_namespace[ns].add(ahash)
 
     def _align_proximity(self, proximity_categories: dict, **kwargs):
         """Compare all ingested places to find possible associations by proximity"""
@@ -253,15 +270,59 @@ class Aligner:
                                         mode="proximity",
                                         proximity=cat_name,
                                     )
-                                    ahash = hash(alignment)
-                                    try:
-                                        self.alignments[ahash]
-                                    except KeyError:
-                                        self.alignments[ahash] = alignment
-                                    else:
-                                        prior_alignment = self.alignments[ahash]
-                                        prior_alignment.add_mode("proximity")
-                                        prior_alignment.add_proximity(cat_name)
-                                else:
-                                    alignment.add_mode("proximity")
-                                    alignment.add_proximity(cat_name)
+                                self._register_alignment(alignment)
+                                break
+
+    def align_by_inference(
+        self,
+        primary_namespace: str,
+        aligned_namespace: str,
+        inference_namespace: str,
+        **kwargs,
+    ):
+        """Record all alignments that can be inferred from chained assertions in ingested data items"""
+        self.logger.info(
+            f"Inferring alignments between {primary_namespace} and {inference_namespace} based on assertions found in {aligned_namespace} already matched with {primary_namespace}."
+        )
+        primary_alignments = {
+            a
+            for a in self.alignments_by_id_namespace(primary_namespace)
+            if aligned_namespace in a.id_namespaces
+        }
+        candidate_alignments = {
+            a
+            for a in self.alignments_by_id_namespace(inference_namespace)
+            if "assertion" in a.modes and aligned_namespace in a.id_namespaces
+        }
+        for candidate in candidate_alignments:
+            aligned_id = [
+                f
+                for f in candidate.aligned_ids
+                if not f.startswith(inference_namespace)
+            ][0]
+            these_primary = {
+                a for a in primary_alignments if aligned_id in a.aligned_ids
+            }
+            if not these_primary:
+                continue
+            these_candidate = {
+                a for a in candidate_alignments if aligned_id in a.aligned_ids
+            }
+            if not these_candidate:
+                continue
+            for this_primary in these_primary:
+                primary_id = [
+                    f
+                    for f in this_primary.aligned_ids
+                    if f.startswith(primary_namespace)
+                ][0]
+                for this_candidate in these_candidate:
+                    inferred_id = [
+                        f
+                        for f in this_candidate.aligned_ids
+                        if f.startswith(inference_namespace)
+                    ][0]
+                    new_alignment = Alignment(
+                        primary_id, inferred_id, "inference", authority=aligned_id
+                    )
+                    self._register_alignment(new_alignment)
