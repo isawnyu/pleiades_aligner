@@ -81,7 +81,7 @@ class TestAligner:
                 "near": ("footprint", 0.001),
             },
         )
-        assert len(self.aligner.alignments_by_mode("proximity")) == 23
+        assert len(self.aligner.alignments_by_mode("proximity")) == 26
 
         aptera_chronique = {
             a
@@ -108,7 +108,7 @@ class TestAligner:
             if "pleiades:589704" in a.aligned_ids and "chronique:3891" in a.aligned_ids
         }
         assert len(foo) == 1
-        assert list(foo)[0].modes == {"assertion"}
+        assert list(foo)[0].modes == {"assertion", "proximity"}
 
         self.aligner.align(
             modes=["proximity"],
