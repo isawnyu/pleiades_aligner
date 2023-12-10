@@ -23,7 +23,6 @@ class Alignment:
         authority: str = None,
         proximity: str = None,
     ):
-        self.logger = getLogger("Alignment")
         self._aligned_ids = {id_1, id_2}
         self._namespaces = {id.split(":")[0] for id in self._aligned_ids}
         if authority:
@@ -90,7 +89,6 @@ class Alignment:
     def add_mode(self, mode: str):
         if mode in self.supported_modes:
             self._modes.add(mode)
-            self.logger.info(f"mode: {mode}")
         else:
             raise ValueError(f"Unsupported alignment mode '{mode}'")
 
@@ -181,101 +179,22 @@ class Aligner:
                     self._register_alignment(alignment)
 
     def _register_alignment(self, alignment: Alignment):
-        if (
-            "pleiades:589704" in alignment.aligned_ids
-            and "chronique:3891" in alignment.aligned_ids
-        ):
-            self.logger.info(f"WOOT: {alignment.modes} {alignment.authorities}")
-
         this_alignment = alignment
         ahash = hash(this_alignment)
         try:
             self.alignments[ahash]
         except KeyError:
-            if (
-                "pleiades:589704" in alignment.aligned_ids
-                and "chronique:3891" in alignment.aligned_ids
-            ):
-                self.logger.info("adding new")
             self.alignments[ahash] = this_alignment
         else:
             # alignment already noted
-            if (
-                "pleiades:589704" in alignment.aligned_ids
-                and "chronique:3891" in alignment.aligned_ids
-            ):
-                self.logger.info("updating existing")
             prior_alignment = self.alignments[ahash]
             this_alignment = deepcopy(prior_alignment)
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-            ):
-                self.logger.info(
-                    "before:\n" + pformat(this_alignment.asdict(), indent=4)
-                )
             for authority_id in alignment.authorities:
                 this_alignment.add_authority(authority_id)
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-            ):
-                self.logger.info(
-                    "added authorities:\n" + pformat(this_alignment.asdict(), indent=4)
-                )
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-            ):
-                self.logger.info("modes to add:\n" + pformat(alignment.modes))
-
-            frumpus = False
             for mode in alignment.modes:
-                if (
-                    "pleiades:589704" in this_alignment.aligned_ids
-                    and "chronique:3891" in this_alignment.aligned_ids
-                ):
-                    self.logger.info(f"adding mode: {mode}")
                 this_alignment.add_mode(mode)
-                if (
-                    "pleiades:589704" in this_alignment.aligned_ids
-                    and "chronique:3891" in this_alignment.aligned_ids
-                    and mode == "proximity"
-                ):
-                    self.logger.info(pformat(this_alignment.asdict(), indent=4))
-                    frumpus = True
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-                and frumpus
-            ):
-                self.logger.info(
-                    "added modes:\n" + pformat(this_alignment.asdict(), indent=4)
-                )
-            frumpus = False
-            if "proximity" in alignment.modes and alignment.proximity:
-                this_alignment.update_proximity(this_alignment.proximity)
-                frumpus = True
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-                and frumpus
-            ):
-                self.logger.info(
-                    "after:\n" + pformat(this_alignment.asdict(), indent=4)
-                )
             self.alignments[ahash] = this_alignment
-            frumpus = False
-            if "proximity" in alignment.modes and alignment.proximity:
-                frumpus = True
-            if (
-                "pleiades:589704" in this_alignment.aligned_ids
-                and "chronique:3891" in this_alignment.aligned_ids
-                and frumpus
-            ):
-                self.logger.info(
-                    "result:\n" + pformat(self.alignments[ahash].asdict(), indent=4)
-                )
+
         # populate indexes
         for mode in this_alignment.modes:
             self._alignment_hashes_by_mode[mode].add(ahash)
@@ -318,46 +237,17 @@ class Aligner:
                         bins[place.bin].add((ingester.data.namespace, place))
 
         for geom, places_info in bins.items():
-            # self.logger.info("boom")
             for place_a_namespace, place_a in places_info:
-                # self.logger.info("doom")
                 for place_b_namespace, place_b in places_info:
-                    # self.logger.info("foom")
                     if place_a_namespace == place_b_namespace:
                         continue
-                    # self.logger.info("zoom")
                     alignment = None
-                    if (
-                        place_a_namespace == "pleiades"
-                        and place_b_namespace == "chronique"
-                        and place_a.id == "589704"
-                        and place_b.id == "3891"
-                    ):
-                        self.logger.info(f"Pleiades/Choronique bin: {geom}")
                     for cat_name, cat_params in proximity_categories.items():
                         attr_name = cat_params[0]
                         val_a = getattr(place_a, attr_name)
                         val_b = getattr(place_b, attr_name)
                         threshold = cat_params[1]
-                        if (
-                            place_a_namespace == "pleiades"
-                            and place_b_namespace == "chronique"
-                            and place_a.id == "589704"
-                            and place_b.id == "3891"
-                        ):
-                            self.logger.info(
-                                f"cat_name: {cat_name}, attr_name: {attr_name}, distance: {distance(val_a, val_b)}, threshold: {threshold}"
-                            )
                         if distance(val_a, val_b) <= threshold:
-                            if (
-                                place_a_namespace == "pleiades"
-                                and place_b_namespace == "chronique"
-                                and place_a.id == "589704"
-                                and place_b.id == "3891"
-                            ):
-                                self.logger.info(
-                                    f"Palpable: {distance(val_a, val_b)} ({cat_name})"
-                                )
                             place_a_full_id = ":".join((place_a_namespace, place_a.id))
                             place_b_full_id = ":".join((place_b_namespace, place_b.id))
                             alignment = Alignment(

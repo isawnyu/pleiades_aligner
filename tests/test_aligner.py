@@ -8,7 +8,6 @@
 """
 Test the pleiades_aligner.aligner module
 """
-from logging import getLogger
 from pathlib import Path
 import pleiades_aligner
 from pprint import pformat
@@ -134,10 +133,6 @@ class TestAligner:
         them = {"proximity", "assertion"}
         both = {a for a in self.aligner.alignments.values() if them.issubset(a.modes)}
         assert len(both) == 3
-
-        logger = getLogger("both")
-        for foo in list(both):
-            logger.info(pformat(foo.asdict(), indent=4))
 
         # NB: asserted was first set before proximities were run, so there have been changes
         # we need to pick up before testing intersection
