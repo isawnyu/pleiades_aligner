@@ -22,7 +22,7 @@
         ],
         "tight": [
             "centroid",
-            0.0001
+            0.001
         ],
         "overlapping": [
             "footprint",
@@ -30,7 +30,7 @@
         ],
         "close": [
             "centroid",
-            0.001
+            0.005
         ],
         "near": [
             "footprint",

@@ -8,8 +8,10 @@
 """
 Test the pleiades_aligner.aligner module
 """
+from logging import getLogger
 from pathlib import Path
 import pleiades_aligner
+from pprint import pformat
 
 
 class TestAligner:
@@ -54,18 +56,106 @@ class TestAligner:
 
         assert len(self.aligner.alignments_by_mode("assertion")) == 72
 
+        aptera_chronique = {
+            a
+            for a in self.aligner.alignments_by_full_id("chronique:3891")
+            if "pleiades:589704" in a.aligned_ids
+        }
+        assert len(aptera_chronique) == 1
+        aptera_pleiades = {
+            a
+            for a in self.aligner.alignments_by_full_id("pleiades:589704")
+            if "chronique:3891" in a.aligned_ids
+        }
+        assert len(aptera_pleiades) == 1
+        aptera_both = aptera_chronique.intersection(aptera_pleiades)
+        assert len(aptera_both) == 1
+
     def test_proximity(self):
         self.aligner.align(
             modes=["proximity"],
             proximity_categories={
                 "identical": ("centroid", 0.0),
-                "tight": ("centroid", 0.0001),
+                "tight": ("centroid", 0.001),
                 "overlapping": ("footprint", 0.0),
-                "close": ("centroid", 0.001),
+                "close": ("centroid", 0.01),
                 "near": ("footprint", 0.001),
             },
         )
         assert len(self.aligner.alignments_by_mode("proximity")) == 23
 
+        aptera_chronique = {
+            a
+            for a in self.aligner.alignments_by_full_id("chronique:3891")
+            if "pleiades:589704" in a.aligned_ids
+        }
+        assert len(aptera_chronique) == 1
+        aptera_pleiades = {
+            a
+            for a in self.aligner.alignments_by_full_id("pleiades:589704")
+            if "chronique:3891" in a.aligned_ids
+        }
+        assert len(aptera_pleiades) == 1
+        aptera_both = aptera_chronique.intersection(aptera_pleiades)
+        assert len(aptera_both) == 1
+
+    def test_multimodal(self):
+        self.aligner.align(modes=["assertions"])
+        asserted = set(self.aligner.alignments_by_mode("assertion"))
+        assert len(asserted) == 72
+        foo = {
+            a
+            for a in asserted
+            if "pleiades:589704" in a.aligned_ids and "chronique:3891" in a.aligned_ids
+        }
+        assert len(foo) == 1
+        assert list(foo)[0].modes == {"assertion"}
+
+        self.aligner.align(
+            modes=["proximity"],
+            proximity_categories={
+                "identical": ("centroid", 0.0),
+                "tight": ("centroid", 0.001),
+                "overlapping": ("footprint", 0.0),
+                "close": ("centroid", 0.01),
+                "near": ("footprint", 0.001),
+            },
+        )
+        proximate = set(self.aligner.alignments_by_mode("proximity"))
+        assert len(proximate) == 26
+        bar = {
+            a
+            for a in proximate
+            if "pleiades:589704" in a.aligned_ids and "chronique:3891" in a.aligned_ids
+        }
+        assert len(bar) == 1
+        assert list(bar)[0].modes == {"proximity", "assertion"}
+
+        them = {"proximity", "assertion"}
+        both = {a for a in self.aligner.alignments.values() if them.issubset(a.modes)}
+        assert len(both) == 3
+
+        logger = getLogger("both")
+        for foo in list(both):
+            logger.info(pformat(foo.asdict(), indent=4))
+
+        # NB: asserted was first set before proximities were run, so there have been changes
+        # we need to pick up before testing intersection
+        asserted = set(self.aligner.alignments_by_mode("assertion"))
+        both_expected = asserted.intersection(proximate)
+        assert len(both_expected) == 3
+        baz = {
+            a
+            for a in both_expected
+            if "pleiades:589704" in a.aligned_ids and "chronique:3891" in a.aligned_ids
+        }
+        assert len(baz) == 1
+        assert list(baz)[0].modes == {"proximity", "assertion"}
+
     def test_inferences(self):
-        pass
+        self.aligner.align(modes=["assertions"])
+        self.aligner.align_by_inference("pleiades", "chronique", "geonames")
+        geonames = self.aligner.alignments_by_id_namespace("geonames")
+        assert len(geonames) == 35
+        inferred_geo = {a for a in geonames if "inference" in a.modes}
+        assert len(inferred_geo) == 23
