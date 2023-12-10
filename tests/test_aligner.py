@@ -29,41 +29,41 @@ class TestAligner:
         }
         for ingester in cls.ingesters.values():
             ingester.ingest()
-        cls.aligner = pleiades_aligner.Aligner(
-            cls.ingesters,
+
+    def test_assertions(self):
+        this_aligner = pleiades_aligner.Aligner(
+            self.ingesters,
             {
                 "chronique": "tests/data/chronique/chronique_example.csv",
                 "manto": "tests/data/manto/manto_example.csv",
             },
             redirects=dict(),
         )
+        this_aligner.align(modes=["assertions"])
 
-    def test_assertions(self):
-        self.aligner.align(modes=["assertions"])
+        assert len(this_aligner.alignments_by_id_namespace("pleiades")) == 60
+        assert len(this_aligner.alignments_by_id_namespace("chronique")) == 34
+        assert len(this_aligner.alignments_by_id_namespace("geonames")) == 12
+        assert len(this_aligner.alignments_by_id_namespace("manto")) == 38
 
-        assert len(self.aligner.alignments_by_id_namespace("pleiades")) == 60
-        assert len(self.aligner.alignments_by_id_namespace("chronique")) == 34
-        assert len(self.aligner.alignments_by_id_namespace("geonames")) == 12
-        assert len(self.aligner.alignments_by_id_namespace("manto")) == 38
+        assert len(this_aligner.alignments_by_authority_namespace("pleiades")) == 43
+        assert len(this_aligner.alignments_by_authority_namespace("chronique")) == 15
+        assert len(this_aligner.alignments_by_authority_namespace("geonames")) == 0
+        assert len(this_aligner.alignments_by_authority_namespace("manto")) == 17
 
-        assert len(self.aligner.alignments_by_authority_namespace("pleiades")) == 43
-        assert len(self.aligner.alignments_by_authority_namespace("chronique")) == 15
-        assert len(self.aligner.alignments_by_authority_namespace("geonames")) == 0
-        assert len(self.aligner.alignments_by_authority_namespace("manto")) == 17
+        assert len(this_aligner.alignments_by_full_id("pleiades:589704")) == 2
 
-        assert len(self.aligner.alignments_by_full_id("pleiades:589704")) == 2
-
-        assert len(self.aligner.alignments_by_mode("assertion")) == 72
+        assert len(this_aligner.alignments_by_mode("assertion")) == 72
 
         aptera_chronique = {
             a
-            for a in self.aligner.alignments_by_full_id("chronique:3891")
+            for a in this_aligner.alignments_by_full_id("chronique:3891")
             if "pleiades:589704" in a.aligned_ids
         }
         assert len(aptera_chronique) == 1
         aptera_pleiades = {
             a
-            for a in self.aligner.alignments_by_full_id("pleiades:589704")
+            for a in this_aligner.alignments_by_full_id("pleiades:589704")
             if "chronique:3891" in a.aligned_ids
         }
         assert len(aptera_pleiades) == 1
@@ -71,7 +71,15 @@ class TestAligner:
         assert len(aptera_both) == 1
 
     def test_proximity(self):
-        self.aligner.align(
+        this_aligner = pleiades_aligner.Aligner(
+            self.ingesters,
+            {
+                "chronique": "tests/data/chronique/chronique_example.csv",
+                "manto": "tests/data/manto/manto_example.csv",
+            },
+            redirects=dict(),
+        )
+        this_aligner.align(
             modes=["proximity"],
             proximity_categories={
                 "identical": ("centroid", 0.0),
@@ -81,17 +89,17 @@ class TestAligner:
                 "near": ("footprint", 0.001),
             },
         )
-        assert len(self.aligner.alignments_by_mode("proximity")) == 26
+        assert len(this_aligner.alignments_by_mode("proximity")) == 26
 
         aptera_chronique = {
             a
-            for a in self.aligner.alignments_by_full_id("chronique:3891")
+            for a in this_aligner.alignments_by_full_id("chronique:3891")
             if "pleiades:589704" in a.aligned_ids
         }
         assert len(aptera_chronique) == 1
         aptera_pleiades = {
             a
-            for a in self.aligner.alignments_by_full_id("pleiades:589704")
+            for a in this_aligner.alignments_by_full_id("pleiades:589704")
             if "chronique:3891" in a.aligned_ids
         }
         assert len(aptera_pleiades) == 1
@@ -99,8 +107,16 @@ class TestAligner:
         assert len(aptera_both) == 1
 
     def test_multimodal(self):
-        self.aligner.align(modes=["assertions"])
-        asserted = set(self.aligner.alignments_by_mode("assertion"))
+        this_aligner = pleiades_aligner.Aligner(
+            self.ingesters,
+            {
+                "chronique": "tests/data/chronique/chronique_example.csv",
+                "manto": "tests/data/manto/manto_example.csv",
+            },
+            redirects=dict(),
+        )
+        this_aligner.align(modes=["assertions"])
+        asserted = set(this_aligner.alignments_by_mode("assertion"))
         assert len(asserted) == 72
         foo = {
             a
@@ -108,9 +124,9 @@ class TestAligner:
             if "pleiades:589704" in a.aligned_ids and "chronique:3891" in a.aligned_ids
         }
         assert len(foo) == 1
-        assert list(foo)[0].modes == {"assertion", "proximity"}
+        assert list(foo)[0].modes == {"assertion"}
 
-        self.aligner.align(
+        this_aligner.align(
             modes=["proximity"],
             proximity_categories={
                 "identical": ("centroid", 0.0),
@@ -120,7 +136,7 @@ class TestAligner:
                 "near": ("footprint", 0.001),
             },
         )
-        proximate = set(self.aligner.alignments_by_mode("proximity"))
+        proximate = set(this_aligner.alignments_by_mode("proximity"))
         assert len(proximate) == 26
         bar = {
             a
@@ -131,12 +147,12 @@ class TestAligner:
         assert list(bar)[0].modes == {"proximity", "assertion"}
 
         them = {"proximity", "assertion"}
-        both = {a for a in self.aligner.alignments.values() if them.issubset(a.modes)}
+        both = {a for a in this_aligner.alignments.values() if them.issubset(a.modes)}
         assert len(both) == 3
 
         # NB: asserted was first set before proximities were run, so there have been changes
         # we need to pick up before testing intersection
-        asserted = set(self.aligner.alignments_by_mode("assertion"))
+        asserted = set(this_aligner.alignments_by_mode("assertion"))
         both_expected = asserted.intersection(proximate)
         assert len(both_expected) == 3
         baz = {
@@ -148,9 +164,17 @@ class TestAligner:
         assert list(baz)[0].modes == {"proximity", "assertion"}
 
     def test_inferences(self):
-        self.aligner.align(modes=["assertions"])
-        self.aligner.align_by_inference("pleiades", "chronique", "geonames")
-        geonames = self.aligner.alignments_by_id_namespace("geonames")
-        assert len(geonames) == 35
+        this_aligner = pleiades_aligner.Aligner(
+            self.ingesters,
+            {
+                "chronique": "tests/data/chronique/chronique_example.csv",
+                "manto": "tests/data/manto/manto_example.csv",
+            },
+            redirects=dict(),
+        )
+        this_aligner.align(modes=["assertions"])
+        this_aligner.align_by_inference("pleiades", "chronique", "geonames")
+        geonames = this_aligner.alignments_by_id_namespace("geonames")
+        assert len(geonames) == 16
         inferred_geo = {a for a in geonames if "inference" in a.modes}
-        assert len(inferred_geo) == 23
+        assert len(inferred_geo) == 4
