@@ -22,6 +22,9 @@ class TestAligner:
             "manto": pleiades_aligner.IngesterMANTO(
                 Path("tests/data/manto/manto_example.csv")
             ),
+            "pleiades": pleiades_aligner.IngesterPleiades(
+                Path("tests/data/pleiades/pleiades_example")
+            ),
         }
         for ingester in cls.ingesters.values():
             ingester.ingest()
@@ -37,19 +40,19 @@ class TestAligner:
     def test_assertions(self):
         self.aligner.align(modes=["assertions"])
 
-        assert len(self.aligner.alignments_by_id_namespace("pleiades")) == 20
-        assert len(self.aligner.alignments_by_id_namespace("chronique")) == 15
+        assert len(self.aligner.alignments_by_id_namespace("pleiades")) == 60
+        assert len(self.aligner.alignments_by_id_namespace("chronique")) == 34
         assert len(self.aligner.alignments_by_id_namespace("geonames")) == 12
-        assert len(self.aligner.alignments_by_id_namespace("manto")) == 17
+        assert len(self.aligner.alignments_by_id_namespace("manto")) == 38
 
-        assert len(self.aligner.alignments_by_authority_namespace("pleiades")) == 0
+        assert len(self.aligner.alignments_by_authority_namespace("pleiades")) == 43
         assert len(self.aligner.alignments_by_authority_namespace("chronique")) == 15
         assert len(self.aligner.alignments_by_authority_namespace("geonames")) == 0
         assert len(self.aligner.alignments_by_authority_namespace("manto")) == 17
 
         assert len(self.aligner.alignments_by_full_id("pleiades:589704")) == 2
 
-        assert len(self.aligner.alignments_by_mode("assertion")) == 32
+        assert len(self.aligner.alignments_by_mode("assertion")) == 72
 
     def test_proximity(self):
         self.aligner.align(
@@ -62,4 +65,7 @@ class TestAligner:
                 "near": ("footprint", 0.001),
             },
         )
-        assert len(self.aligner.alignments_by_mode("proximity")) == 0
+        assert len(self.aligner.alignments_by_mode("proximity")) == 23
+
+    def test_inferences(self):
+        pass
