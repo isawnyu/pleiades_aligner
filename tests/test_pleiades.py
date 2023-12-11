@@ -25,7 +25,7 @@ class TestIngesterPleiades:
         whence = data_path / "pleiades" / "pleiades_example"
         i = IngesterPleiades(filepath=whence)
         i.ingest()
-        assert len(i.data) == 1391
+        assert len(i.data) == 1392
         place = i.data.get_place_by_id("837")
         assert place.names == {"Asia Minor"}
         # assert place.title == "837: Asia Minor"

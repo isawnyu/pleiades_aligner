@@ -26,7 +26,7 @@ class TestIngesterCSV:
         whence = data_path / "chronique" / "chronique_example.csv"
         i = IngesterCSV(namespace="chronique", filepath=whence)
         i.ingest()
-        assert len(i.data) == 13
+        assert len(i.data) == 14
         pid = i.data.pids[0]
         assert pid == 'GA_OPE_EDIT" target="_blank">10006'
         place = i.data.get_place_by_id(pid)

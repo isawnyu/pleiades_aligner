@@ -10,7 +10,6 @@ Run Alignments
 
 from airtight.cli import configure_commandline
 from copy import deepcopy
-from haversine import haversine, Unit
 import json
 import logging
 from pathlib import Path
@@ -124,8 +123,6 @@ def main(**kwargs):
             continue
         b = deepcopy(a)
         # >>> copy essential place information into the alignment dictionaries
-        # >>> calculate a centroid distance to include in the output for further evaluation
-        centroid_coords = list()
         for namespace, place in places.items():
             b[namespace] = {
                 "id": place.id,
@@ -135,14 +132,6 @@ def main(**kwargs):
                 "centroid": to_wkt(place.centroid),
                 "footprint": to_wkt(place.footprint)
             }
-            try:
-                these_coords = list(list(place.centroid.coords)[0])
-            except AttributeError:
-                continue
-            these_coords.reverse()  # haversine expects lat, lon order instead of shapely's lon, lat
-            centroid_coords.append(these_coords)
-        if len(centroid_coords) == 2:
-            b["centroid_distance"] = haversine(*centroid_coords, unit=Unit.METERS)
         filtered_alignments.append(b)
 
     # output the report

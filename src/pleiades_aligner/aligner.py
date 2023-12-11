@@ -9,7 +9,9 @@
 Define the aligner class
 """
 from copy import deepcopy
+from haversine import haversine, Unit
 from logging import getLogger
+from pleiades_aligner.dataset import Place
 from pprint import pformat
 from shapely import distance
 
@@ -22,6 +24,8 @@ class Alignment:
         mode: str,
         authority: str = None,
         proximity: str = None,
+        centroid_distance_dd: float = None,
+        centroid_distance_m: float = None,
     ):
         self._aligned_ids = {id_1, id_2}
         self._namespaces = {id.split(":")[0] for id in self._aligned_ids}
@@ -45,6 +49,10 @@ class Alignment:
             }
         else:
             self._proximity = set()
+        if centroid_distance_dd is not None:
+            self.centroid_distance_dd = centroid_distance_dd
+        if centroid_distance_m is not None:
+            self.centroid_distance_m = centroid_distance_m
 
     @property
     def aligned_ids(self) -> list:
@@ -110,8 +118,20 @@ class Alignment:
             "modes": sorted(self.modes),
         }
         if "proximity" in self.modes:
-            if self.proximity:
-                d["proximity"] = list(self.proximity)[0]
+            d["proximity"] = list(self.proximity)[0]
+            try:
+                self.centroid_distance_dd
+            except AttributeError:
+                pass
+            else:
+                d["centroid_distance_dd"] = self.centroid_distance_dd
+            try:
+                self.centroid_distance_m
+            except AttributeError:
+                pass
+            else:
+                d["centroid_distance_m"] = self.centroid_distance_m
+
         return d
 
 
@@ -193,6 +213,17 @@ class Aligner:
                 this_alignment.add_authority(authority_id)
             for mode in alignment.modes:
                 this_alignment.add_mode(mode)
+            if "proximity" in alignment.modes:
+                for prox_class in alignment.proximity:
+                    this_alignment.add_proximity(prox_class)
+                try:
+                    this_alignment.centroid_distance_dd = alignment.centroid_distance_dd
+                except AttributeError:
+                    self.logger.error(pformat(alignment.asdict(), indent=4))
+                    self.logger.error(pformat(prior_alignment.asdict(), indent=4))
+                    raise
+                this_alignment.centroid_distance_m = alignment.centroid_distance_m
+
             self.alignments[ahash] = this_alignment
 
         # populate indexes
@@ -247,17 +278,34 @@ class Aligner:
                         val_a = getattr(place_a, attr_name)
                         val_b = getattr(place_b, attr_name)
                         threshold = cat_params[1]
-                        if distance(val_a, val_b) <= threshold:
+                        d = distance(val_a, val_b)
+                        if d <= threshold:
                             place_a_full_id = ":".join((place_a_namespace, place_a.id))
                             place_b_full_id = ":".join((place_b_namespace, place_b.id))
+                            if attr_name != "centroid":
+                                d = distance(
+                                    getattr(place_a, "centroid"),
+                                    getattr(place_b, "centroid"),
+                                )
                             alignment = Alignment(
                                 place_a_full_id,
                                 place_b_full_id,
                                 mode="proximity",
                                 proximity=cat_name,
+                                centroid_distance_dd=d,
+                                centroid_distance_m=self._d_centroid_meters(
+                                    place_a, place_b
+                                ),
                             )
                             self._register_alignment(alignment)
                             break
+
+    def _d_centroid_meters(self, a: Place, b: Place):
+        coords_a = list(list(a.centroid.coords)[0])
+        coords_b = list(list(b.centroid.coords)[0])
+        coords_a.reverse()
+        coords_b.reverse()
+        return haversine(coords_a, coords_b, unit=Unit.METERS)
 
     def align_by_inference(
         self,

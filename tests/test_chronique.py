@@ -27,7 +27,7 @@ class TestIngesterChronique:
         whence = data_path / "chronique" / "chronique_example.csv"
         i = IngesterChronique(filepath=whence)
         i.ingest()
-        assert len(i.data) == 13
+        assert len(i.data) == 14
         place = i.data.get_place_by_id("10035")
         assert place.title == "Toponym 10035: Neon Petritsion, Vetrina, Vetren"
         assert place.names == {
