@@ -101,6 +101,9 @@ def main(**kwargs):
             aligned_places[this_pid_raw][that_namespace][that_pid_raw]
         except KeyError:
             aligned_places[this_pid_raw][that_namespace][that_pid_raw] = dict()
+        else:
+            logger.error(pformat(a, indent=4))
+            raise RuntimeError("Well, that was unexpected")
         for k, v in a.items():
             if k in [
                 primary_namespace,
@@ -112,14 +115,14 @@ def main(**kwargs):
                 continue
             aligned_places[this_pid_raw][that_namespace][that_pid_raw][k] = v
         try:
-            a["that_namespace"]
+            a[that_namespace]
         except KeyError:
             pass
         else:
-            for k, v in a["that_namespace"].items():
+            for k, v in a[that_namespace].items():
                 if k in ["id"]:
                     continue
-                aligned_places[this_pid_raw][that_namespace][that_pid_raw][k]
+                aligned_places[this_pid_raw][that_namespace][that_pid_raw][k] = v
     logger.info(f"{len(aligned_places)} aligned places")
 
     # place the aligned places into categories of interest
