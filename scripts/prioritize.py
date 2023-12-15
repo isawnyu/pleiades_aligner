@@ -12,6 +12,7 @@ from airtight.cli import configure_commandline
 import json
 import logging
 from pathlib import Path
+from pprint import pformat
 
 logger = logging.getLogger(__name__)
 
@@ -39,6 +40,22 @@ POSITIONAL_ARGUMENTS = [
     # each row is a list with 3 elements: name, type, help
     ["jsonpath", str, "path to JSON file containing alignments"]
 ]
+
+
+def proximity_sort_key(p: dict):
+    distances = set()
+    proximity_types = set()
+
+    for ns, data in p.items():
+        if ns == "pleiades":
+            continue
+        for pid, datum in data.items():
+            if "proximity" not in datum["modes"]:
+                continue
+            proximity_types.add(datum["proximity"])
+            distances.add(datum["centroid_distance_m"])
+    type_convert = {"identical": 1, "tight": 2, "overlapping": 3, "close": 4, "near": 5}
+    return (min(distances), min([type_convert[t] for t in proximity_types]))
 
 
 def main(**kwargs):
@@ -103,8 +120,42 @@ def main(**kwargs):
                 if k in ["id"]:
                     continue
                 aligned_places[this_pid_raw][that_namespace][that_pid_raw][k]
+    logger.info(f"{len(aligned_places)} aligned places")
 
-    print(json.dumps(aligned_places, ensure_ascii=False, indent=4, sort_keys=True))
+    # place the aligned places into categories of interest
+    categories = dict()
+    for pleiades_id, data in aligned_places.items():
+        modes = set()
+        for ns, alignment in data.items():
+            if ns == "pleiades":
+                continue
+            for placeid, datum in alignment.items():
+                modes.add(",".join(sorted(datum["modes"])))
+        logger.error(modes)
+        cat = None
+        if "assertion,names,proximity" in modes:
+            cat = 1
+        elif "assertion,proximity" in modes:
+            cat = 2
+        elif "names,proximity" in modes:
+            cat = 3
+        elif "proximity" in modes:
+            cat = 4
+        else:
+            cat = 5
+        try:
+            categories[cat]
+        except KeyError:
+            categories[cat] = list()
+        categories[cat].append(data)
+
+    # sort each category
+    for cat, pplaces in categories.items():
+        if cat < 5:
+            pplaces.sort(key=proximity_sort_key)
+
+    print(json.dumps(categories, ensure_ascii=False, indent=4, sort_keys=True))
+    # print(json.dumps(aligned_places, ensure_ascii=False, indent=4, sort_keys=True))
 
 
 if __name__ == "__main__":
