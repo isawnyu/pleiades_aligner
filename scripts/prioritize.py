@@ -136,11 +136,11 @@ def main(**kwargs):
                 modes.add(",".join(sorted(datum["modes"])))
         logger.error(modes)
         cat = None
-        if "assertion,names,proximity" in modes:
+        if "assertion,proximity,toponymy" in modes:
             cat = 1
         elif "assertion,proximity" in modes:
             cat = 2
-        elif "names,proximity" in modes:
+        elif "toponymy,proximity" in modes:
             cat = 3
         elif "proximity" in modes:
             cat = 4
