@@ -14,6 +14,7 @@ from logging import getLogger
 from pleiades_aligner.dataset import Place
 from pprint import pformat
 from shapely import distance
+from textnorm import normalize_space, normalize_unicode
 
 
 class Alignment:
@@ -36,7 +37,7 @@ class Alignment:
         else:
             self._authorities = set()
         self._authority_namespaces = {a.split(":")[0] for a in self._authorities}
-        self.supported_modes = ["assertion", "proximity", "inference"]
+        self.supported_modes = ["assertion", "proximity", "inference", "toponymy"]
         if mode in self.supported_modes:
             self._modes = {
                 mode,
@@ -306,6 +307,47 @@ class Aligner:
         coords_a.reverse()
         coords_b.reverse()
         return haversine(coords_a, coords_b, unit=Unit.METERS)
+
+    def _align_toponymy(self, apply_to_modes: list, **kwargs):
+        self.logger.info(
+            f"Performing proximity alignment checks for alignment modes {apply_to_modes}"
+        )
+        candidate_hashes = set()
+        for m in apply_to_modes:
+            candidate_hashes.update(self._alignment_hashes_by_mode[m])
+        places = dict()
+        filtered_hashes = set()
+        for chash in candidate_hashes:
+            c = self.alignments[chash]
+            consider = True
+            for pid in c.aligned_ids:
+                ns, rawid = pid.split(":")
+                try:
+                    i = self.ingesters[ns]
+                except KeyError:
+                    consider = False
+                    break
+                p = i.data.get_place_by_id(rawid)
+                if not p.names:
+                    consider = False
+                    break
+                places[pid] = p
+            if consider:
+                filtered_hashes.add(chash)
+        for chash in filtered_hashes:
+            c = self.alignments[chash]
+            pid1, pid2 = c.aligned_ids
+            names1 = {
+                normalize_space(normalize_unicode(n)).lower()
+                for n in places[pid1].names
+            }
+            names2 = {
+                normalize_space(normalize_unicode(n)).lower()
+                for n in places[pid2].names
+            }
+            common = names1.intersection(names2)
+            if common:
+                self.alignments[chash].add_mode("toponymy")
 
     def align_by_inference(
         self,

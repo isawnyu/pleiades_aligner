@@ -85,6 +85,8 @@ def main(**kwargs):
     aligner = pleiades_aligner.Aligner(ingesters, config["data_sources"], config["redirects"])
     aligner.align(modes=config["alignment_modes"], proximity_categories=config["proximity_categories"])
     logger.info(f"Identified {len(aligner.alignments)} alignments")
+    for k, v in config["secondary_modes"].items():
+        aligner.align(modes=[k,], apply_to_modes=v)
 
     # >>> add second-generation alignments, if any, using inference criteria defined in the config file
     for inference_rule in config["infer"]:
