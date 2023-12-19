@@ -130,6 +130,7 @@ def main(**kwargs):
                 "id": place.id,
                 "title": place.title, 
                 "names": list(place.names),
+                "feature_types": list(place.feature_types),
                 "uri": ingesters[namespace].base_uri + place.id,
                 "centroid": to_wkt(place.centroid),
                 "footprint": to_wkt(place.footprint)

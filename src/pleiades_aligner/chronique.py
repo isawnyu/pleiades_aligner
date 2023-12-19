@@ -89,8 +89,25 @@ class IngesterChronique(IngesterCSV):
             "PLN": "plain",
             "ARCH": "arch",
         }
+        aliases = {
+            "DD": [
+                "settlement",
+            ],
+            "CAPE": [
+                "promuntory",
+            ],
+            "PPLQ": [
+                "settlement",
+            ],
+            "CNLN": [
+                "canal",
+            ],
+            "ANS": [
+                "archaeological site",
+            ],
+        }
         self._set_feature_types_from_properties(
-            fieldname="Dsg", feature_types=place_type_values
+            fieldname="Dsg", feature_types=place_type_values, aliases=aliases
         )
         alignment_fields = {
             "Pleiades_id": {"namespace": "pleiades", "prefix": ""},

@@ -78,6 +78,9 @@ class IngesterPleiades(IngesterBase):
                 p.names = name_strings
 
             places.append(p)
+
+            # place types
+            p.feature_types = set(datum["placeTypes"])
         if places:
             self.data.places = places
         self._digest()

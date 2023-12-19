@@ -136,16 +136,18 @@ def main(**kwargs):
                 modes.add(",".join(sorted(datum["modes"])))
         logger.error(modes)
         cat = None
-        if "assertion,proximity,toponymy" in modes:
+        if "assertion,proximity,toponymy,typology" in modes:
             cat = 1
-        elif "assertion,proximity" in modes:
+        elif "assertion,proximity,typology" or "proximity,toponymy,typology" in modes:
             cat = 2
-        elif "toponymy,proximity" in modes:
+        elif "assertion,proximity,toponymy" in modes:
             cat = 3
-        elif "proximity" in modes:
+        elif "toponymy,proximity" in modes:
             cat = 4
-        else:
+        elif "proximity" in modes:
             cat = 5
+        else:
+            cat = 6
         try:
             categories[cat]
         except KeyError:

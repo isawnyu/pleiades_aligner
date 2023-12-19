@@ -25,6 +25,7 @@ classifiers = [
 ]
 dependencies = [
   "airtight",
+  "colorama",
   "encoded_csv @ https://github.com/paregorios/encoded_csv/archive/refs/heads/main.zip",
   "haversine",
   #"iteration_utilities",
