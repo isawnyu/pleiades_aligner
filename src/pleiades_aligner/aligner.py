@@ -333,7 +333,12 @@ class Aligner:
                 except KeyError:
                     consider = False
                     break
-                p = i.data.get_place_by_id(rawid)
+                try:
+                    p = i.data.get_place_by_id(rawid)
+                except KeyError as err:
+                    self.logger.error(f"During toponymy alignment: {str(err)}")
+                    consider = False
+                    break
                 if not p.names:
                     consider = False
                     break
@@ -374,7 +379,12 @@ class Aligner:
                 except KeyError:
                     consider = False
                     break
-                p = i.data.get_place_by_id(rawid)
+                try:
+                    p = i.data.get_place_by_id(rawid)
+                except KeyError as err:
+                    self.logger.error(f"During typology alignment: {str(err)}")
+                    consider = False
+                    break
                 if not p.feature_types:
                     consider = False
                     break
