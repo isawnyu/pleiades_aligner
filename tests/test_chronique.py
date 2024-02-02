@@ -37,7 +37,7 @@ class TestIngesterChronique:
             "Δ.Δ.Νέου Πετριτσίου",
         }
         assert place.alignments == {"geonames:734947"}
-        assert place.feature_types == {"municipality"}
+        assert place.feature_types == {"municipality", "settlement"}
 
         place = i.data.get_place_by_id("1083")
         assert place.alignments == {"pleiades:589694", "geonames:264858"}
