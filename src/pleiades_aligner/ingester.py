@@ -36,36 +36,51 @@ class IngesterBase:
         self.filepath = filepath
 
     def _set_alignments_from_properties(self, alignment_fields: dict):
-        for place in self.data.places:
-            alignment_ids = set()
-            for fn, meta in alignment_fields.items():
-                raw = place.raw_properties[fn]
-                if not raw:
+        if set(alignment_fields.keys()) == {"fieldname", "namespaces"}:
+            fn = alignment_fields["fieldname"]
+            for place in self.data.places:
+                alignment_ids = set()
+                for meta in alignment_fields["namespaces"]:
+                    these_alignment_ids = self._get_alignment_id(place, fn, meta)
+                    if these_alignment_ids:
+                        alignment_ids.update(these_alignment_ids)
+                place.alignments = alignment_ids
+        else:
+            for place in self.data.places:
+                alignment_ids = set()
+                for fn, meta in alignment_fields.items():
+                    these_alignment_ids = self._get_alignment_id(place, fn, meta)
+                    if these_alignment_ids:
+                        alignment_ids.update(these_alignment_ids)
+                place.alignments = alignment_ids
+
+    def _get_alignment_id(self, place, fn, meta):
+        these_alignments = set()
+        try:
+            raw = place.raw_properties[fn]
+        except KeyError as err:
+            pass
+        if not raw:
+            return None
+        if isinstance(raw, str):
+            clean = {self._norm_string(r) for r in raw.split(",")}
+        elif isinstance(raw, (list, set)):
+            clean = {self._norm_string(r) for r in raw}
+        clean = {c for c in clean if c}
+        if not clean:
+            return None
+        clean = [c for c in clean if not c.startswith("(") and not c.endswith(")")]
+        if not clean:
+            return None
+        for c in clean:
+            if meta["prefix"]:
+                if not c.startswith(meta["prefix"]):
                     continue
-                if isinstance(raw, str):
-                    clean = {self._norm_string(r) for r in raw.split(",")}
-                elif isinstance(raw, (list, set)):
-                    clean = {self._norm_string(r) for r in raw}
-                clean = {c for c in clean if c}
-                if not clean:
-                    continue
-                clean = [
-                    c for c in clean if not c.startswith("(") and not c.endswith(")")
-                ]
-                if not clean:
-                    continue
-                for c in clean:
-                    if meta["prefix"]:
-                        if not c.startswith(meta["prefix"]):
-                            self.logger.error(
-                                f"Ignored invalid alignment value '{c}' in field '{fn}' because it was missing expected prefix '{meta['prefix']}'"
-                            )
-                            continue
-                        plain_id = c[len(meta["prefix"]) :]
-                    else:
-                        plain_id = c
-                    alignment_ids.add(":".join((meta["namespace"], plain_id)))
-            place.alignments = alignment_ids
+                plain_id = c[len(meta["prefix"]) :]
+            else:
+                plain_id = c
+            these_alignments.add(":".join((meta["namespace"], plain_id)))
+        return these_alignments
 
     def _set_feature_types_from_properties(
         self, fieldname: str, feature_types: dict, aliases: dict = dict()
