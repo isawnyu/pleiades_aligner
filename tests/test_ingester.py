@@ -10,7 +10,7 @@ Test the pleiades_aligner.ingester module
 """
 from pathlib import Path
 from pprint import pformat, pprint
-from pleiades_aligner.ingester import IngesterCSV
+from pleiades_aligner.ingester import IngesterCSV, IngesterWHGJSON
 from pytest import raises
 from shapely import Point
 
@@ -75,4 +75,30 @@ class TestIngesterCSV:
             "River Lima",
             "River Belion",
             "River Limia",
+        }
+
+
+class TestIngesterWHGJSON:
+    def test_init(self):
+        with raises(TypeError):
+            IngesterWHGJSON()
+
+    def test_load(self):
+        whence = data_path / "topostext" / "topostext_example.json"
+        i = IngesterWHGJSON(
+            namespace="topostext",
+            filepath=whence,
+            base_uri="https://topostext.org/place/",
+        )
+        i.ingest()
+        assert len(i.data) == 18
+        pid = i.data.pids[0]
+        assert pid == "257326PThe"
+        place = i.data.get_place_by_id(pid)
+        assert place.centroid == Point([32.641, 25.684])
+        assert set(place.raw_properties.keys()) == {
+            "title",
+            "types",
+            "close_matches",
+            "description",
         }

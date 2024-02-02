@@ -12,12 +12,14 @@ import chardet
 import codecs
 from collections import Counter
 from encoded_csv import get_csv
+import json
 from logging import getLogger
 import os
 from pathlib import Path
 from pleiades_aligner.dataset import DataSet, Place
 from pprint import pformat
 from shapely import Point
+from shapely.geometry import shape
 from textnorm import normalize_space, normalize_unicode
 
 FIELDNAME_GUESSES = {
@@ -266,3 +268,49 @@ class IngesterCSV(IngesterBase):
             return fieldnames
         else:
             return headers
+
+
+class IngesterWHGJSON(IngesterBase):
+    def __init__(self, namespace: str, filepath: Path = None, base_uri: str = None):
+        self.base_uri = base_uri
+        IngesterBase.__init__(self, namespace, filepath)
+
+    def ingest(self, id_clean=dict()):
+        with open(self.filepath, "r", encoding="utf-8") as f:
+            colxn = json.load(f)
+        del f
+        places = list()
+        for feat in colxn["features"]:
+            props = {
+                "title": self._norm_string(feat["properties"]["title"]),
+                "types": [t["identifier"].strip() for t in feat["types"]],
+                "description": self._norm_string(feat["descriptions"][0]["value"]),
+                "close_matches": set(),
+            }
+            try:
+                feat["links"]
+            except KeyError:
+                pass
+            else:
+                props["close_matches"].update(
+                    {
+                        l["identifier"].strip()
+                        for l in feat["links"]
+                        if l["type"] == "closeMatch"
+                    }
+                )
+            this_id = feat["@id"]
+            if self.base_uri is not None:
+                if this_id.startswith(self.base_uri):
+                    this_id = this_id[len(self.base_uri) :]
+            p = Place(
+                id=this_id,
+                base_uri=self.base_uri,
+                geometries=shape(feat["geometry"]["geometries"][0]),
+                names=[self._norm_string(n["toponym"]) for n in feat["names"]],
+                raw_properties=props,
+            )
+            places.append(p)
+
+        if places:
+            self.data.places = places
