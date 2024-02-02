@@ -1,0 +1,1 @@
+- add feature type parsing for topostext
