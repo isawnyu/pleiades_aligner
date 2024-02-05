@@ -68,6 +68,8 @@ def main(**kwargs):
             ingesters[namespace] = pleiades_aligner.IngesterMANTO(file_path)
         elif namespace == "pleiades":
             ingesters[namespace] = pleiades_aligner.IngesterPleiades(file_path)
+        elif namespace == "topostext":
+            ingesters[namespace] = pleiades_aligner.IngesterTopostext(file_path)
         else:
             raise NotImplementedError(
                 f"No supported ingester for namespace '{namespace}'"

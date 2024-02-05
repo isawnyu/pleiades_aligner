@@ -13,3 +13,4 @@ from pleiades_aligner.aligner import Aligner
 from pleiades_aligner.chronique import IngesterChronique
 from pleiades_aligner.manto import IngesterMANTO
 from pleiades_aligner.pleiades import IngesterPleiades
+from pleiades_aligner.topostext import IngesterTopostext
