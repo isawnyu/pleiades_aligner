@@ -388,7 +388,6 @@ class Aligner:
                 try:
                     p = i.data.get_place_by_id(rawid)
                 except KeyError as err:
-                    self.logger.error(f"During typology alignment: {str(err)}")
                     consider = False
                     break
                 if not p.feature_types:
