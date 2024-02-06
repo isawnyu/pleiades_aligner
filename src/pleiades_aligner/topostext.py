@@ -17,7 +17,7 @@ class IngesterTopostext(IngesterWHGJSON):
     def __init__(self, filepath: Path):
         self.base_uri = "https://topostext.org/place/"
         IngesterWHGJSON.__init__(
-            self, namespace="chronique", filepath=filepath, base_uri=self.base_uri
+            self, namespace="topostext", filepath=filepath, base_uri=self.base_uri
         )
         self.logger = getLogger("IngesterTopostext")
 
