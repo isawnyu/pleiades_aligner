@@ -9,12 +9,18 @@
 Define the aligner class
 """
 from copy import deepcopy
+import functools
 from haversine import haversine, Unit
 from logging import getLogger
 from pleiades_aligner.dataset import Place
 from pprint import pformat
-from shapely import distance
+from shapely import distance as shapely_distance
 from textnorm import normalize_space, normalize_unicode
+
+
+@functools.cache
+def distance(a, b):
+    return shapely_distance(a, b)
 
 
 class Alignment:
