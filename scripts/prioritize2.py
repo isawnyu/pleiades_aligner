@@ -58,28 +58,28 @@ cat_criteria = {
         "inference_modes": {},
     },
     "4": {
-        "modes": {"assertion", "proximity", "toponymy"},
-        "proximity_types": {"identical", "tight", "overlapping", "close"},
-        "inference_modes": {},
-    },
-    "5": {
-        "modes": {"assertion", "toponymy"},
-        "proximity_types": {},
-        "inference_modes": {},
-    },
-    "6": {
         "modes": {"proximity", "toponymy", "typology"},
         "proximity_types": {"identical", "tight"},
         "inference_modes": {},
     },
-    "7": {
+    "5": {
         "modes": {"proximity", "toponymy", "typology"},
         "proximity_types": {"overlapping"},
         "inference_modes": {},
     },
-    "8": {
+    "6": {
         "modes": {"proximity", "toponymy", "typology"},
         "proximity_types": {"close"},
+        "inference_modes": {},
+    },
+    "7": {
+        "modes": {"assertion", "proximity", "toponymy"},
+        "proximity_types": {"identical", "tight", "overlapping", "close"},
+        "inference_modes": {},
+    },
+    "8": {
+        "modes": {"assertion", "toponymy"},
+        "proximity_types": {},
         "inference_modes": {},
     },
 }
