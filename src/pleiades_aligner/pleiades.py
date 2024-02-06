@@ -23,6 +23,9 @@ SUPPORTED_ALIGNMENTS = {
         "namespace": "chronique",
     },
     "manto": {"uri_base": "https://resource.manto.unh.edu/", "namespace": "manto"},
+    "topostext": {"uri_base": "https://topostext.org/place/", "namespace": "topostext"},
+    "wikidata": {"uri_base": "https://wikidata.org/wiki/", "namespace": "wikidata"},
+    "geonames": {"uri_base": "https://www.geonames.org/", "namespace": "geonames"},
 }
 
 
