@@ -85,6 +85,9 @@ def output_place(pid: str, place: dict):
         modes = list()
     else:
         print(", ".join(sorted(modes)))
+    if "assertion" in modes or "inference" in modes:
+        ns = place["authorities"]
+        print(f"authorities: {', '.join(list(ns))}")
     if "proximity" in modes:
         d = place["centroid_distance_m"]
         print(f"proximity:{place['proximity']}={math.ceil(d)}")
@@ -104,6 +107,14 @@ def main(**kwargs):
     for cat, aligned_places in categorized_aligments.items():
         for pleiades_id, pleiades_data in aligned_places.items():
             wipe_terminal()
+            print(
+                Fore.RED
+                + Style.BRIGHT
+                + f"CATEGORY {cat}\n"
+                + "-" * 78
+                + Style.NORMAL
+                + Fore.RESET
+            )
             output_place(pleiades_id, pleiades_data[pleiades_id])
             for other_id, other_data in pleiades_data.items():
                 if other_id == pleiades_id:
