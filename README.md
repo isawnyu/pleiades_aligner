@@ -18,6 +18,14 @@ Now try:
 python scripts/align.py -c data/chronique2pleiades_config.json -v > ~/scratch/alignments.json
 ```
 
+## How to run the new comparison strip to produce useful info on the status of alignment
+
+Currently in the "comparison" branch. 
+
+```bash
+python scripts/compare.py -c data/chronique2pleiades_config.json -v manto ~/Documents/files/P/pleiades.datasets/data/indexes/manto.json > ~/scratch/mantomatch.json
+```
+
 ## Next step
 
 - [x] add support for Pleiades ingest
