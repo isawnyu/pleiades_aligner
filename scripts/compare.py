@@ -97,21 +97,55 @@ def main(**kwargs):
     del f
     index_alignments = dict()
     base_hostname = urlparse(ingester.base_uri).hostname
-    base_len = len(base_hostname)
+    base_uri_len = len(ingester.base_uri)
     for uri, place in index.items():
         uri_parts = urlparse(uri)
         if uri_parts.hostname != base_hostname:
             continue
-        place_id = uri[base_len:].strip()
+        place_id = uri[base_uri_len:].strip()
         full_place_id = ":".join((namespace, place_id))
         for a_uri in place["alignments"]:
             target_id = "pleiades:" + a_uri.split("/")[-1]
             alignment = Alignment(
-                full_place_id, target_id, authority=full_place_id, mode="assertion"
+                full_place_id, target_id, authority=target_id, mode="assertion"
             )
             a_hash = hash(alignment)
             index_alignments[a_hash] = alignment
     logger.info(f"parsed {len(index_alignments)} alignments from {index_path}")
+
+    matching = dict()
+    index_unmatched = dict()
+    dataset_unmatched = dict()
+
+    for index_hash in index_alignments.keys():
+        try:
+            a = aligner.alignments[index_hash]
+        except KeyError:
+            index_unmatched[index_hash] = index_alignments[index_hash]
+        else:
+            matching[index_hash] = a
+            for auth in index_alignments[index_hash].authorities:
+                matching[index_hash].add_authority(auth)
+    for dataset_hash in aligner.alignments.keys():
+        try:
+            matching[dataset_hash]
+        except KeyError:
+            dataset_unmatched[dataset_hash] = aligner.alignments[dataset_hash]
+
+    results = {
+        "matching_alignments": [a.asdict() for a in matching.values()],
+        "unmatched_in_index": [a.asdict() for a in index_unmatched.values()],
+        "unmatched_in_dataset": [a.asdict() for a in dataset_unmatched.values()],
+    }
+    print(json.dumps(results, ensure_ascii=False, indent=4, sort_keys=True))
+    logger.info(
+        f"There are {len(aligner.alignments)} asserted alignments in the "
+        f"{namespace} dataset. Of these, Pleiades includes {len(matching)} "
+        f"matching assertions, leaving {len(dataset_unmatched)} to be "
+        f"addressed. There are an additional {len(index_unmatched)} asserted "
+        f"alignments in Pleiades that are not reflected in the {namespace} "
+        "dataset."
+    )
 
 
 if __name__ == "__main__":
