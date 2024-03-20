@@ -39,6 +39,7 @@ OPTIONAL_ARGUMENTS = [
         False,
     ],
     ["-c", "--config", DEFAULT_CONFIG_FILE_PATH, "path to config file", False],
+    ["-z", "--fromcache", False, "load alignments from cache instead of raw data", False]
 ]
 POSITIONAL_ARGUMENTS = [
     # each row is a list with 3 elements: name, type, help
@@ -225,12 +226,26 @@ def main(**kwargs):
 
     config_path = Path(kwargs["config"]).expanduser().resolve()
     config = get_config(config_path)
-    ingesters = configure_ingesters(config)
-    ingest(ingesters)
-    aligner = align(config, ingesters)
-    alignment_groups = group_alignments(aligner, ingesters)
-    concurrence(alignment_groups)
-    print(json.dumps(alignment_groups, ensure_ascii=False, indent=4, sort_keys=True, cls=SetEncoder))
+
+    cache_path = Path(user_cache_dir()) / "alignments.json"
+    if not kwargs["fromcache"]:
+        ingesters = configure_ingesters(config)
+        ingest(ingesters)
+        aligner = align(config, ingesters)
+        alignment_groups = group_alignments(aligner, ingesters)
+        concurrence(alignment_groups)
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump(alignment_groups, f, ensure_ascii=False, indent=4, sort_keys=True, cls=SetEncoder)
+        del f
+        logger.info(f"Cached alignment data at {cache_path}")
+    else:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            alignment_groups = json.load(f)
+        del f
+        logger.info(f"Loaded cached alignment data from {cache_path}")
+
+    
+
 
 
 if __name__ == "__main__":
