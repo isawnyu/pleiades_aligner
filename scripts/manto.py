@@ -44,6 +44,12 @@ POSITIONAL_ARGUMENTS = [
     # each row is a list with 3 elements: name, type, help
 ]
 
+class SetEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, set):
+            return list(obj)
+        return json.JSONEncoder.default(self, obj)
+
 def align(config: dict, ingesters: dict) -> Aligner:
     """
     perform alignment operations indicated in the config file using the ingested data
@@ -53,6 +59,24 @@ def align(config: dict, ingesters: dict) -> Aligner:
     logger = logging.getLogger(sys._getframe().f_code.co_name)
     logger.info(f"Identified {len(aligner.alignments)} alignments")
     return aligner
+
+def concurrence(alignment_groups: dict):
+    """ Check for concurrence """
+    for manto_id, group in alignment_groups.items():
+        concurrence_reciprocal(manto_id, group)
+
+def concurrence_reciprocal(manto_id: str, group: dict):
+    for qualified_id in group["alignments"]:
+        other_namespace, other_id = qualified_id.split(":")
+        try:
+            alignments = group[other_namespace][other_id]["alignments"]
+        except KeyError:
+            continue
+        else:
+            if f"manto:{manto_id}" in alignments:
+                group["reciprocal"] = True
+                return
+    group["reciprocal"] = False
 
 def configure_ingesters(config: dict) -> dict:
     """ Configure ingesters for namespaces indicated in the config file """
@@ -97,12 +121,13 @@ def get_config(config_path: Path) -> dict:
     del f
     return config
 
-def group_alignments(aligner: Aligner) -> dict:
+def group_alignments(aligner: Aligner, ingesters: dict) -> dict:
     """
     Group alignments by MANTO id
     Returns a dictionary of alignment group dictionaries
     """
     logger = logging.getLogger(sys._getframe().f_code.co_name)
+    common_fields = ["title", "uri", "names", "alignments", "feature_types"]
     alignment_groups = dict()
     for alignment in aligner.alignments_by_authority_namespace("manto"):
         manto_id = alignment.aligned_id_for_namespace(namespace="manto")
@@ -110,6 +135,16 @@ def group_alignments(aligner: Aligner) -> dict:
             alignment_groups[manto_id]
         except KeyError:
             alignment_groups[manto_id] = dict()
+            try:
+                this_place = ingesters["manto"].data.get_place_by_id(manto_id)
+            except KeyError as err:
+                logger.error(str(err))
+            else:
+                for fn in common_fields:
+                    try:
+                        alignment_groups[manto_id][fn] = getattr(this_place, fn)
+                    except AttributeError:
+                        pass
         this_group = alignment_groups[manto_id]
         other_namespace = [ns for ns in alignment.id_namespaces if ns != "manto"][0]
         try:
@@ -118,6 +153,17 @@ def group_alignments(aligner: Aligner) -> dict:
             this_group[other_namespace] = dict()
         other_id = alignment.aligned_id_for_namespace(other_namespace)
         this_group[other_namespace][other_id] = alignment.asdict()
+        try:
+            other_place = ingesters[other_namespace].data.get_place_by_id(other_id)
+        except KeyError as err:
+            logger.error(str(err))
+        else:
+            for fn in common_fields:
+                try:
+                    this_group[other_namespace][other_id][fn] = getattr(other_place, fn)
+                except AttributeError:
+                    pass
+
     return alignment_groups
 
 def ingest(ingesters: dict):
@@ -142,8 +188,9 @@ def main(**kwargs):
     ingesters = configure_ingesters(config)
     ingest(ingesters)
     aligner = align(config, ingesters)
-    alignment_groups = group_alignments(aligner)
-    print(json.dumps(alignment_groups, ensure_ascii=False, indent=4, sort_keys=True))
+    alignment_groups = group_alignments(aligner, ingesters)
+    concurrence(alignment_groups)
+    print(json.dumps(alignment_groups, ensure_ascii=False, indent=4, sort_keys=True, cls=SetEncoder))
 
 
 if __name__ == "__main__":
