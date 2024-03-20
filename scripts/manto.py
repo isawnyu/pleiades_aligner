@@ -64,6 +64,27 @@ def concurrence(alignment_groups: dict):
     """ Check for concurrence """
     for manto_id, group in alignment_groups.items():
         concurrence_reciprocal(manto_id, group)
+        concurrence_names(manto_id, group)
+        concurrence_types(manto_id, group)
+
+def concurrence_names(manto_id: str, group: dict):
+    if not group["names"]:
+        return
+    else:
+        manto_names = set(group["names"])
+    for qualified_id in group["alignments"]:
+        other_namespace, other_id = qualified_id.split(":")
+        if other_namespace != "pleiades":
+            continue
+        try:
+            pleiades_names = set(group[other_namespace][other_id]["names"])
+        except KeyError:
+            continue
+        if manto_names.intersection(pleiades_names):
+            group["name_concurrence"] = True
+            return
+    group["name_concurrence"] = False
+    
 
 def concurrence_reciprocal(manto_id: str, group: dict):
     for qualified_id in group["alignments"]:
@@ -77,6 +98,25 @@ def concurrence_reciprocal(manto_id: str, group: dict):
                 group["reciprocal"] = True
                 return
     group["reciprocal"] = False
+
+def concurrence_types(manto_id: str, group: dict):
+    if not group["feature_types"]:
+        return
+    else:
+        manto_types = set(group["feature_types"])
+    for qualified_id in group["alignments"]:
+        other_namespace, other_id = qualified_id.split(":")
+        if other_namespace != "pleiades":
+            continue
+        try:
+            pleiades_types = set(group[other_namespace][other_id]["feature_types"])
+        except KeyError:
+            continue
+        if manto_types.intersection(pleiades_types):
+            group["type_concurrence"] = True
+            return
+    group["type_concurrence"] = False
+
 
 def configure_ingesters(config: dict) -> dict:
     """ Configure ingesters for namespaces indicated in the config file """
