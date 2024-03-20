@@ -71,6 +71,13 @@ class Alignment:
     def aligned_ids(self) -> list:
         return sorted(list(self._aligned_ids))
 
+    def aligned_id_for_namespace(self, namespace: str) -> str:
+        return [
+            this_id.split(":")[-1]
+            for this_id in self._aligned_ids
+            if this_id.startswith(f"{namespace}:")
+        ][0]
+
     @property
     def id_namespaces(self):
         return self._namespaces
