@@ -9,11 +9,13 @@ Work on MANTO alignments
 """
 
 from airtight.cli import configure_commandline
+from colorama import Fore, Back, Style
 import json
 import logging
 from pathlib import Path
 from platformdirs import user_cache_dir, user_config_dir, user_documents_dir
 from pleiades_aligner import configure_ingester, Aligner
+from pprint import pformat
 import sys
 
 DEFAULT_CONFIG_FILE_PATH = str(
@@ -61,6 +63,24 @@ def align(config: dict, ingesters: dict) -> Aligner:
     logger.info(f"Identified {len(aligner.alignments)} alignments")
     return aligner
 
+def annotate(config: dict, alignment_groups: dict):
+    """
+    load notes from file and incorporate into alignment groups
+    """
+    logger = logging.getLogger(sys._getframe().f_code.co_name)
+    notes_path = Path(config["notes"])
+    with open(notes_path, "r", encoding="utf-8") as f:
+        notes = json.load(f)
+    del f
+    logger.info(f"Loaded {len(notes)} notes from {notes_path}.")
+    for manto_id, note in notes.items():
+        try:
+            group = alignment_groups[manto_id]
+        except KeyError:
+            logger.error(f"notes contain manto_id {manto_id} which is not in an alignment group in the data")
+            continue
+        group["note"] = note
+
 def concurrence(alignment_groups: dict):
     """ Check for concurrence """
     for manto_id, group in alignment_groups.items():
@@ -102,6 +122,7 @@ def concurrence_reciprocal(manto_id: str, group: dict):
 
 def concurrence_types(manto_id: str, group: dict):
     if not group["feature_types"]:
+        group["type_concurrence"] = False
         return
     else:
         manto_types = set(group["feature_types"])
@@ -138,9 +159,7 @@ def create_config(config_path: Path):
             "pleiades": f"{user_documents_dir()}/files/P/pleiades.datasets/data/json/",
             "manto": f"{user_documents_dir()}/files/P/pleiades_manto/data/raw/combined.csv",
         },
-        "notes": {
-            "manto": f"{user_documents_dir()}/files/P/pleiades_manto/data/alignment_notes.json"
-        },
+        "notes": f"{user_documents_dir()}/files/P/pleiades_manto/data/alignment_notes.json"
     }
     config_path.parent.mkdir(parents=True, exist_ok=True)
     with open(config_path, "w", encoding="utf-8") as f:
@@ -207,6 +226,44 @@ def group_alignments(aligner: Aligner, ingesters: dict) -> dict:
 
     return alignment_groups
 
+def index(alignment_groups: dict) -> dict:
+    """
+    determine which manto ids to work with when
+    """
+    idx = {
+        "done": set(),
+        "pending_discussion": set(),
+        "ready": {
+            "likely": set(),
+            "probable": set(),
+            "asserted": set()
+        }
+    }
+    for manto_id, group in alignment_groups.items():
+        if group["reciprocal"]:
+            idx["done"].add(manto_id)
+        else:
+            try:
+                group["note"]
+            except KeyError:
+                pass
+            else:
+                if group["note"]["discuss"]:
+                    idx["pending_discussion"].add(manto_id)
+                    continue
+            try:
+                group["type_concurrence"]
+            except KeyError:
+                raise RuntimeError(pformat(group, indent=4))
+            if group["name_concurrence"] and group["type_concurrence"]:
+                idx["ready"]["likely"].add(manto_id)
+            elif group["name_concurrence"]:
+                idx["ready"]["probable"].add(manto_id)
+            else:
+                idx["ready"]["asserted"].add(manto_id)
+    return idx
+
+
 def ingest(ingesters: dict):
     """
     Read data associated with configured ingesters
@@ -217,6 +274,70 @@ def ingest(ingesters: dict):
         ingester.ingest()
         logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
 
+def spoon_header(v: str):
+    outs = f"{v}\n"
+    print(
+        Fore.BLUE
+        + Style.BRIGHT
+        + outs
+        + "-" * len(outs)
+        + Style.NORMAL
+        + Fore.RESET
+    )
+
+def spoonout(alignment_groups: dict, idx: dict):
+    logger = logging.getLogger(sys._getframe().f_code.co_name)
+
+    wipe_terminal()
+    spoon_header("MANTO alignments to Pleiades")
+
+
+    done = len(idx["done"])
+    print(f"Reciprocal (complete): {done}")
+
+    discuss = len(idx["pending_discussion"])
+    print(f"Pending discussion: {discuss}\n")
+
+    print("Ready for review:")
+    likely = len(idx["ready"]["likely"])
+    print(f"    Likely: {likely}")
+
+    probable = len(idx["ready"]["probable"])
+    print(f"    Probable: {probable}")
+
+    asserted = len(idx["ready"]["asserted"])
+    print(f"    Asserted: {asserted}\n")
+
+    commands = {k.lower(): k.lower() for k in idx["ready"]}
+    logger.debug(f"commands: {pformat(commands, indent=4)}")
+    commands = dict(commands, **{k[0]: k for k in commands.keys()})
+    logger.debug(f"commands: {pformat(commands, indent=4)}")
+
+    while True:
+        try:
+            s = spoonprompt("Choose a category to review ('q' to quit)").lower()
+        except KeyboardInterrupt:
+            s = "q"
+        if s in {"q", "quit"}:
+            exit()
+        try:
+            cmd = commands[s]
+        except KeyError:
+            spoonerror(f"Invalid category. Try one of: {', '.join(idx["ready"].keys())}")
+            continue
+        manto_ids = idx["ready"][cmd]
+
+def spoonerror(p: str):
+    v = Fore.RED + p + Fore.RESET
+    print(v)
+
+def spoonprompt(p: str) -> str:
+    v = Fore.BLUE + f"{p}: " + Fore.RESET
+    return input(v).strip()
+
+
+def wipe_terminal():
+    print("\033[H\033[2J", end="")
 
 def main(**kwargs):
     """
@@ -244,7 +365,11 @@ def main(**kwargs):
         del f
         logger.info(f"Loaded cached alignment data from {cache_path}")
 
-    
+    annotate(config, alignment_groups)
+    idx = index(alignment_groups)
+
+    spoonout(alignment_groups, idx)    
+
 
 
 
