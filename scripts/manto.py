@@ -15,9 +15,16 @@ import logging
 from pathlib import Path
 from platformdirs import user_cache_dir, user_config_dir, user_documents_dir
 from pleiades_aligner import configure_ingester, Aligner
-from pprint import pformat
+from pprint import pformat, pprint
+from slugify import slugify
 import sys
+from textnorm import normalize_space, normalize_unicode
+import textwrap
 
+dirty_notes = False
+notes_path = None  # Path
+
+TAB = "  "
 DEFAULT_CONFIG_FILE_PATH = str(
     Path(user_config_dir("pleiades_aligner", "isaw_nyu")) / "script_manto_config.json"
 )
@@ -67,6 +74,8 @@ def annotate(config: dict, alignment_groups: dict):
     """
     load notes from file and incorporate into alignment groups
     """
+    global notes_path
+
     logger = logging.getLogger(sys._getframe().f_code.co_name)
     notes_path = Path(config["notes"])
     with open(notes_path, "r", encoding="utf-8") as f:
@@ -80,6 +89,32 @@ def annotate(config: dict, alignment_groups: dict):
             logger.error(f"notes contain manto_id {manto_id} which is not in an alignment group in the data")
             continue
         group["note"] = note
+
+def annotate_save(alignment_groups: dict):
+    """
+    save notes to file
+    """
+    global dirty_notes
+    global notes_path
+    
+    if not dirty_notes:
+        return
+
+    logger = logging.getLogger(sys._getframe().f_code.co_name)
+
+    notes = dict()
+    for manto_id, group in alignment_groups.items():
+        try:
+            group["note"]
+        except KeyError:
+            continue
+        notes[manto_id] = {k: v.strip() for k, v in group["note"].items()}
+    notes_path.rename(str(notes_path) + ".bak")
+    with open(notes_path, "w", encoding="utf-8") as f:
+        json.dump(notes, f, ensure_ascii=False, indent=4, sort_keys=True)
+    del f
+    logger.info(f"Saved updated notes file to {notes_path}. Previous version copied to .bak.")
+    dirty_notes = False
 
 def concurrence(alignment_groups: dict):
     """ Check for concurrence """
@@ -248,9 +283,14 @@ def index(alignment_groups: dict) -> dict:
             except KeyError:
                 pass
             else:
-                if group["note"]["discuss"]:
-                    idx["pending_discussion"].add(manto_id)
-                    continue
+                try:
+                    group["note"]["discuss"]
+                except KeyError:
+                    pass
+                else:
+                    if group["note"]["discuss"]:
+                        idx["pending_discussion"].add(manto_id)
+                        continue
             try:
                 group["type_concurrence"]
             except KeyError:
@@ -274,23 +314,35 @@ def ingest(ingesters: dict):
         ingester.ingest()
         logger.info(f"Successfully ingested {len(ingester.data)} places for namespace '{namespace}'")
 
-def spoon_header(v: str):
-    outs = f"{v}\n"
-    print(
-        Fore.BLUE
-        + Style.BRIGHT
-        + outs
-        + "-" * len(outs)
-        + Style.NORMAL
-        + Fore.RESET
-    )
+def spoon_header(v: str, level: int=1):
+    if level < 1:
+        level = 1
+    indent = (level-1)*TAB
+    outs = f"{indent}{v}\n"
+    if level == 1:
+        hcolor = Fore.GREEN
+    else:
+        hcolor = Fore.BLUE
+    if level <= 2:
+        print(
+            hcolor
+            + Style.BRIGHT
+            + outs
+            + indent
+            + "-" * len(outs.strip())
+            + Style.NORMAL
+            + Fore.RESET
+        )
+    else:
+        print(
+            hcolor + Style.BRIGHT + outs[:-1] + Style.NORMAL + Fore.RESET
+        )
 
 def spoonout(alignment_groups: dict, idx: dict):
     logger = logging.getLogger(sys._getframe().f_code.co_name)
 
     wipe_terminal()
     spoon_header("MANTO alignments to Pleiades")
-
 
     done = len(idx["done"])
     print(f"Reciprocal (complete): {done}")
@@ -300,13 +352,13 @@ def spoonout(alignment_groups: dict, idx: dict):
 
     print("Ready for review:")
     likely = len(idx["ready"]["likely"])
-    print(f"    Likely: {likely}")
+    print(f"{TAB}Likely: {likely}")
 
     probable = len(idx["ready"]["probable"])
-    print(f"    Probable: {probable}")
+    print(f"{TAB}Probable: {probable}")
 
     asserted = len(idx["ready"]["asserted"])
-    print(f"    Asserted: {asserted}\n")
+    print(f"{TAB}Asserted: {asserted}\n")
 
     commands = {k.lower(): k.lower() for k in idx["ready"]}
     logger.debug(f"commands: {pformat(commands, indent=4)}")
@@ -319,22 +371,139 @@ def spoonout(alignment_groups: dict, idx: dict):
         except KeyboardInterrupt:
             s = "q"
         if s in {"q", "quit"}:
-            exit()
+            spoonquit(alignment_groups)
         try:
             cmd = commands[s]
         except KeyError:
             spoonerror(f"Invalid category. Try one of: {', '.join(idx["ready"].keys())}")
             continue
         manto_ids = idx["ready"][cmd]
+        manto_ids = sorted(manto_ids)
+        for manto_id in manto_ids:
+            s = spoonout_group(manto_id, alignment_groups[manto_id])
+            if s in {"q", "quit"}:
+                spoonquit(alignment_groups)
+            
+def spoonout_group(manto_id: str, group: dict) -> str:
+    global dirty_notes
+    logger = logging.getLogger(sys._getframe().f_code.co_name)
+
+    wipe_terminal()
+    spoon_header(f"MANTO: {group['title']}")
+
+    alignment_keys = sorted([k.split(":")[0] for k in group["alignments"]])
+
+    print(f"Names: {', '.join(sorted(group['names'], key=slugify))}")
+    if group["name_concurrence"]:
+        manto_names = set(group["names"])
+        concurrence = set()
+        for k in alignment_keys:
+            for p in group[k].values():
+                try:
+                    these_names = set(p["names"])
+                except KeyError:
+                    continue
+                this_set = manto_names.intersection(these_names)
+                if this_set:
+                    concurrence.update(this_set)
+        print(f"Name Concurrence: {', '.join(sorted(concurrence))}")
+
+    print(f"Feature Types: {', '.join(sorted(group['feature_types']))}")
+    if group["type_concurrence"]:
+        manto_types = set(group["feature_types"])
+        concurrence = set()
+        for k in alignment_keys:
+            for p in group[k].values():
+                try:
+                    these_types = set(p["feature_types"])
+                except KeyError:
+                    continue
+                this_set = manto_types.intersection(these_types)
+                if this_set:
+                    concurrence.update(this_set)
+        print(f"Feature Type Concurrence: {', '.join(sorted(concurrence))}")
+
+    try:
+        note = group["note"]
+    except KeyError:
+        print("Notes: <None>")
+    else:
+        try:
+            note["comments"]
+        except KeyError:
+            pass
+        else:
+            if note["comments"]:
+                v = textwrap.wrap(note["comments"], initial_indent=f"Comments:", subsequent_indent=TAB)
+                print("\n".join(v))
+        try:
+            note["discuss"]
+        except KeyError:
+            pass
+        else:
+            if note["discuss"]:
+                v = textwrap.wrap(note["discuss"], initial_indent=f"Discuss:", subsequent_indent=TAB)
+                print("\n".join(v))
+
+    for k in alignment_keys:
+        print()
+        spoon_header(k.title(), level=2)
+        for pid, p in group[k].items():
+            title = p["title"]
+            if pid not in p["title"]:
+                title = f"{pid}: {title}"
+            spoon_header(title, level=3)
+            print(f"{TAB*2}Names: {', '.join(sorted(p['names'], key=slugify))}")
+            print(f"{TAB*2}Feature Types: {', '.join(sorted(p['feature_types']))}")
+    
+    logger.debug(pformat(group, indent=4))
+
+    commands = ["annotate", "discuss", "skip", "quit"]
+    commands = {v: v for v in commands}
+    commands = dict(commands, **{v[0]: v for v in commands.values()})
+    print()
+    s = spoonprompt(", ".join(sorted(set(commands.values()))))
+    if s in ["annotate", "a"]:
+        try:
+            group["note"]
+        except KeyError:
+            group["note"] = dict()
+        try:
+            group["note"]["comments"]
+        except KeyError:
+            group["note"]["comments"] = ""
+        new = spoonprompt("Add to comments")
+        if new:
+            group["note"]["comments"] += (f"\n{new}")
+            dirty_notes = True
+    elif s in ["discuss", "d"]:
+        try:
+            group["note"]
+        except KeyError:
+            group["note"] = dict()
+        try:
+            group["note"]["discuss"]
+        except KeyError:
+            group["note"]["discuss"] = ""
+        new = spoonprompt("Add to discussion")
+        if new:
+            group["note"]["discuss"] += (f"\n{new}")
+            dirty_notes = True
+    return s
+
+            
 
 def spoonerror(p: str):
     v = Fore.RED + p + Fore.RESET
     print(v)
 
 def spoonprompt(p: str) -> str:
-    v = Fore.BLUE + f"{p}: " + Fore.RESET
-    return input(v).strip()
+    v = Fore.BLUE + f"> {p}: " + Fore.RESET
+    return normalize_space(normalize_unicode(input(v)))
 
+def spoonquit(alignment_groups: dict):
+    annotate_save(alignment_groups)
+    exit()
 
 def wipe_terminal():
     print("\033[H\033[2J", end="")
